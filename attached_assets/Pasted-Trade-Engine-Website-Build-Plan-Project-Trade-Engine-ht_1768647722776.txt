@@ -1,0 +1,104 @@
+Trade Engine Website - Build Plan
+Project: Trade Engine (https://tradeengine.io) Purpose: Marketing website to sell AI-powered white-label websites to trade businesses, starting with landscaping. Pricing: £4,995 setup + £199/month
+
+Brand Identity
+* Primary Color: Deep blue (#1e40af) - trust, professionalism
+* Secondary Color: Electric blue (#3b82f6) - innovation, tech
+* Accent Color: Vibrant green (#10b981) - growth, success, trades
+* Style: Modern SaaS, clean white backgrounds, bold typography
+* Tone: Professional but approachable, results-focused
+
+Site Structure (Single Page with Sections)
+1. Navigation
+* Logo (Trade Engine)
+* Links: Features, How It Works, Demo, Pricing, Contact
+* CTA Button: "Book a Demo"
+2. Hero Section
+* Headline: "AI-Powered Websites That Convert Leads Into Customers"
+* Subheadline: "Give your trade business an unfair advantage with instant quotes, AI design visualization, and automated follow-ups - all white-labeled to your brand."
+* Primary CTA: "See It In Action" (links to Premium Landscapes demo)
+* Secondary CTA: "Book a Call"
+* Hero image/video: Screenshot or animation of the quote system
+3. Problem/Solution Section
+* "Your competitors are still using contact forms. You'll be closing deals."
+* Pain points: Slow quote turnaround, lost leads, no follow-up, outdated websites
+* Solution: AI-powered instant engagement
+4. Features Breakdown (with icons/visuals)
+Feature cards with expandable details:
+a) AI Instant Quote System
+* 6-step conversational form
+* Dual mode: Full project quotes OR individual product selection
+* Real-time price calculations
+* PDF quotes generated automatically
+* "Customers get pricing in 2 minutes, not 2 days"
+b) AI Garden Visualization
+* Upload photo → AI transforms it into design preview
+* Delivered via email in 90 seconds
+* Based on customer's actual requirements
+* "Let customers SEE their new garden before you build it"
+c) Automated CRM & Follow-ups
+* Every lead captured automatically
+* WhatsApp & email follow-up sequences
+* Integration with Airtable/Zoho CRM
+* "Never lose a lead again"
+d) White-Label Ready
+* Your logo, colors, contact details
+* Your domain
+* Fully branded PDF quotes
+* "Looks like you spent £20k on development"
+e) n8n Workflow Automation
+* Quote routing based on project type
+* Automated notifications
+* Pricing logic from your spreadsheet
+* "Set it and forget it"
+5. Live Demo Section
+* Embedded iframe or prominent link to Premium Landscapes demo
+* "Try the exact system your customers will use"
+* Callouts highlighting key features as they explore
+6. How It Works (Timeline)
+1. Discovery Call - We understand your business and services
+2. Setup (1 Week) - We configure everything with your branding
+3. Training - Quick walkthrough of your new system
+4. Go Live - Start converting more leads immediately
+5. Ongoing Support - We handle updates and optimizations
+7. Pricing Section
+* Setup: £4,995 one-time
+    * Includes: Full website, AI quote system, AI design generator, CRM integration, automation workflows, white-labeling, training
+* Monthly: £199/month
+    * Includes: Hosting, maintenance, AI credits, support, updates
+* CTA: "Book Your Demo"
+* Note: "ROI after just 2-3 extra jobs per month"
+8. FAQ Section
+* How long does setup take?
+* Do I need technical knowledge?
+* What if I want changes?
+* How does the AI design work?
+* What CRM systems do you integrate with?
+* Can I see a live example?
+9. Testimonials/Social Proof
+* Placeholder for client quotes
+* Stats: "Average 40% increase in quote requests"
+* Logos of integrations (n8n, Make, Airtable, WhatsApp, etc.)
+10. Final CTA Section
+* "Ready to transform your trade business?"
+* Book a Demo button
+* "Or call us: [phone number]"
+11. Footer
+* Trade Engine logo
+* Links: Features, Pricing, Demo, Contact, Privacy Policy
+* Contact details
+* Social links
+* Copyright
+
+Technical Requirements
+* Single-page scrolling design
+* Mobile-first responsive
+* Tailwind CSS
+* Smooth scroll navigation
+* Contact/demo booking form (webhook to CRM)
+* Fast loading, optimized images
+
+Pages to Build
+1. index.html - Main landing page (all sections above)
+2. privacy.html - Privacy policy
+3. terms.html - Terms of service
