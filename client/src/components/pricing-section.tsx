@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Zap, ArrowRight, Calculator } from "lucide-react";
+import { CheckCircle2, Zap, ArrowRight, Calculator, Gift, Sparkles } from "lucide-react";
 
 const setupIncludes = [
   "Full website design & development",
@@ -32,7 +32,7 @@ export function PricingSection() {
     <section id="pricing" className="py-20 md:py-28 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
             <Zap size={16} className="fill-current" />
             <span className="text-sm font-medium">Simple Pricing</span>
@@ -46,19 +46,42 @@ export function PricingSection() {
           </p>
         </div>
 
+        {/* Special Offer Banner */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                <Gift size={24} className="text-accent" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-foreground flex items-center justify-center sm:justify-start gap-2">
+                  <Sparkles size={18} className="text-accent" />
+                  Limited Time Offer
+                </h3>
+                <p className="text-muted-foreground">
+                  First month AI included FREE + £500 in free ad spend via Meta & Google Ads
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Setup Fee */}
           <Card className="relative overflow-visible" data-testid="card-pricing-setup">
             <div className="absolute -top-3 left-6">
-              <span className="px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
-                One-Time
+              <span className="px-3 py-1 bg-accent text-accent-foreground text-sm font-medium rounded-full">
+                Special Offer
               </span>
             </div>
             <CardHeader className="pt-8">
-              <CardTitle className="flex items-baseline gap-2">
-                <span className="text-4xl font-bold">£4,995</span>
-                <span className="text-muted-foreground">setup</span>
+              <CardTitle className="flex flex-col gap-1">
+                <div className="flex items-baseline gap-3">
+                  <span className="text-4xl font-bold text-accent">£3,499</span>
+                  <span className="text-xl text-muted-foreground line-through">£4,995</span>
+                </div>
+                <span className="text-muted-foreground text-base font-normal">one-time setup</span>
               </CardTitle>
               <p className="text-muted-foreground mt-2">
                 Complete setup and configuration of your Trade Engine website
@@ -73,13 +96,22 @@ export function PricingSection() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-6 p-4 bg-accent/10 rounded-md border border-accent/20">
+                <p className="text-sm font-medium text-foreground flex items-center gap-2">
+                  <Gift size={16} className="text-accent" />
+                  Bonus: £500 free ad spend included
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Get your campaigns running on Meta & Google Ads
+                </p>
+              </div>
             </CardContent>
           </Card>
 
           {/* Monthly Fee */}
           <Card className="relative overflow-visible border-primary" data-testid="card-pricing-monthly">
             <div className="absolute -top-3 left-6">
-              <span className="px-3 py-1 bg-accent text-accent-foreground text-sm font-medium rounded-full">
+              <span className="px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
                 Ongoing
               </span>
             </div>
@@ -101,6 +133,15 @@ export function PricingSection() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-6 p-4 bg-accent/10 rounded-md border border-accent/20">
+                <p className="text-sm font-medium text-foreground flex items-center gap-2">
+                  <Sparkles size={16} className="text-accent" />
+                  First month AI credits FREE
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Save £199 on your first month
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
