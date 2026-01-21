@@ -30,7 +30,7 @@ export function HeroSection() {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            AI-Powered Websites That{" "}
+            AI-Powered Websites Engine That{" "}
             <span className="text-primary">Convert Leads</span> Into Customers
           </h1>
 
