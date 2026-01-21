@@ -21,7 +21,7 @@ export function ProductTeaserSection() {
           </p>
         </div>
 
-        <Link href="/products" className="block max-w-3xl mx-auto group cursor-pointer" data-testid="link-product-teaser">
+        <Link href="/landscaping" className="block max-w-3xl mx-auto group cursor-pointer" data-testid="link-product-teaser">
           <Card className="overflow-visible transition-all duration-200 group-hover:shadow-lg group-hover:border-primary/30" data-testid="card-product-teaser">
             <CardContent className="p-8">
               {/* Special Offer Banner */}

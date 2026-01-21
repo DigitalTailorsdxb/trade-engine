@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 
 const navLinks = [
-  { href: "/products", label: "Products", isPage: true },
+  { href: "/landscaping", label: "Landscaping AI Engine", isPage: true },
   { href: "#features", label: "Features" },
   { href: "#pricing", label: "Pricing" },
   { href: "#contact", label: "Contact" },
