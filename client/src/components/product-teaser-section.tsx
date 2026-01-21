@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Sparkles, Gift } from "lucide-react";
 import { Link } from "wouter";
-import gardenDesignImage from "@assets/Lewis-Reid-quote-1768925587897-design_1768990223449.jpg";
 
 export function ProductTeaserSection() {
   return (
@@ -25,15 +24,6 @@ export function ProductTeaserSection() {
         <Link href="/products" className="block max-w-3xl mx-auto group cursor-pointer" data-testid="link-product-teaser">
           <Card className="overflow-visible transition-all duration-200 group-hover:shadow-lg group-hover:border-primary/30" data-testid="card-product-teaser">
             <CardContent className="p-8">
-              {/* AI Design Preview Image */}
-              <div className="mb-8 rounded-md overflow-hidden border">
-                <img 
-                  src={gardenDesignImage} 
-                  alt="AI-generated garden design example" 
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-
               {/* Special Offer Banner */}
               <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-4 mb-8">
                 <div className="flex items-center justify-center gap-3 text-center">

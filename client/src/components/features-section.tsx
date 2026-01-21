@@ -13,7 +13,9 @@ import {
   MessageSquare,
   Database,
   Settings,
+  Sparkles,
 } from "lucide-react";
+import gardenDesignImage from "@assets/Lewis-Reid-quote-1768925587897-design_1768990223449.jpg";
 
 const features = [
   {
@@ -155,6 +157,23 @@ export function FeaturesSection() {
             A complete system designed specifically for trade businesses. No technical
             knowledge required — we handle everything.
           </p>
+        </div>
+
+        {/* AI Design Showcase */}
+        <div className="mb-16">
+          <div className="relative max-w-4xl mx-auto rounded-md overflow-hidden border shadow-lg">
+            <img 
+              src={gardenDesignImage} 
+              alt="AI-generated garden design example" 
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+              <div className="flex items-center gap-2 text-white">
+                <Sparkles size={20} className="text-accent" />
+                <span className="font-medium">AI-Generated Design — Delivered in 90 Seconds</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Feature Cards */}
