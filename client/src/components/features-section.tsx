@@ -16,7 +16,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import gardenDesignImage from "@assets/Lewis-Reid-quote-1768925587897-design_1768990223449.jpg";
-import gardenBeforeImage from "@assets/scrivs_house__1768990932047.jpg";
 
 const features = [
   {
@@ -160,35 +159,20 @@ export function FeaturesSection() {
           </p>
         </div>
 
-        {/* AI Design Showcase - Before & After */}
+        {/* AI Design Showcase */}
         <div className="mb-16">
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {/* Before */}
-            <div className="relative rounded-md overflow-hidden border shadow-lg">
-              <img 
-                src={gardenBeforeImage} 
-                alt="Garden before AI transformation" 
-                className="w-full h-64 sm:h-80 object-cover"
-              />
-              <div className="absolute top-4 left-4 bg-black/60 text-white px-3 py-1 rounded-md text-sm font-medium">
-                Before
+          <div className="relative max-w-4xl mx-auto rounded-md overflow-hidden border shadow-lg">
+            <img 
+              src={gardenDesignImage} 
+              alt="AI-generated garden design example" 
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+              <div className="flex items-center gap-2 text-white">
+                <Sparkles size={20} className="text-accent" />
+                <span className="font-medium">AI-Generated Design — Delivered in 90 Seconds</span>
               </div>
             </div>
-            {/* After */}
-            <div className="relative rounded-md overflow-hidden border shadow-lg">
-              <img 
-                src={gardenDesignImage} 
-                alt="AI-generated garden design" 
-                className="w-full h-64 sm:h-80 object-cover"
-              />
-              <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-md text-sm font-medium">
-                After — AI Generated
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground">
-            <Sparkles size={16} className="text-accent" />
-            <span className="text-sm">AI design delivered in just 90 seconds</span>
           </div>
         </div>
 
