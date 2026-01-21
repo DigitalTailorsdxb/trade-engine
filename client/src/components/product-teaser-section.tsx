@@ -35,7 +35,7 @@ export function ProductTeaserSection() {
               </div>
 
               {/* Pricing Display */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-6">
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-1">Setup Fee</p>
                   <div className="flex items-baseline gap-2 justify-center">
@@ -53,6 +53,15 @@ export function ProductTeaserSection() {
                   </div>
                   <p className="text-xs text-accent font-medium">First month FREE</p>
                 </div>
+              </div>
+
+              {/* What's Included */}
+              <div className="flex flex-wrap justify-center gap-3 mb-8">
+                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">New Website</span>
+                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">AI Powered Engine</span>
+                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">Instant Quotes</span>
+                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">Instant Garden Design</span>
+                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">CRM System</span>
               </div>
 
               {/* CTA indicator */}
