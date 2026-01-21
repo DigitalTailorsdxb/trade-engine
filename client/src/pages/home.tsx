@@ -1,9 +1,9 @@
 import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
+import { ProductTeaserSection } from "@/components/product-teaser-section";
 import { ProblemSection } from "@/components/problem-section";
 import { FeaturesSection } from "@/components/features-section";
 import { DemoSection } from "@/components/demo-section";
-import { HowItWorksSection } from "@/components/how-it-works-section";
 import { PricingSection } from "@/components/pricing-section";
 import { FAQSection } from "@/components/faq-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
@@ -17,10 +17,10 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
+        <ProductTeaserSection />
         <ProblemSection />
         <FeaturesSection />
         <DemoSection />
-        <HowItWorksSection />
         <PricingSection />
         <TestimonialsSection />
         <FAQSection />
