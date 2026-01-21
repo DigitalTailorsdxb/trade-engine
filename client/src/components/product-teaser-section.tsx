@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Sparkles, Gift } from "lucide-react";
 import { Link } from "wouter";
@@ -22,53 +21,53 @@ export function ProductTeaserSection() {
           </p>
         </div>
 
-        <Card className="max-w-3xl mx-auto overflow-visible" data-testid="card-product-teaser">
-          <CardContent className="p-8">
-            {/* Special Offer Banner */}
-            <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-4 mb-8">
-              <div className="flex items-center justify-center gap-3 text-center">
-                <Gift size={20} className="text-accent flex-shrink-0" />
-                <p className="text-sm font-medium text-foreground">
-                  Limited Time: First month AI FREE + £500 in free ad spend
+        <Link href="/products" className="block max-w-3xl mx-auto group cursor-pointer" data-testid="link-product-teaser">
+          <Card className="overflow-visible transition-all duration-200 group-hover:shadow-lg group-hover:border-primary/30" data-testid="card-product-teaser">
+            <CardContent className="p-8">
+              {/* Special Offer Banner */}
+              <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-4 mb-8">
+                <div className="flex items-center justify-center gap-3 text-center">
+                  <Gift size={20} className="text-accent flex-shrink-0" />
+                  <p className="text-sm font-medium text-foreground">
+                    Limited Time: First month AI FREE + £500 in free ad spend
+                  </p>
+                </div>
+              </div>
+
+              {/* Pricing Display */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
+                <div className="text-center">
+                  <p className="text-sm text-muted-foreground mb-1">Setup Fee</p>
+                  <div className="flex items-baseline gap-2 justify-center">
+                    <span className="text-3xl font-bold text-accent">£3,499</span>
+                    <span className="text-lg text-muted-foreground line-through">£4,995</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">one-time</p>
+                </div>
+                <div className="hidden sm:block w-px h-16 bg-border" />
+                <div className="text-center">
+                  <p className="text-sm text-muted-foreground mb-1">Monthly</p>
+                  <div className="flex items-baseline gap-1 justify-center">
+                    <span className="text-3xl font-bold">£199</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-xs text-accent font-medium">First month FREE</p>
+                </div>
+              </div>
+
+              {/* CTA indicator */}
+              <div className="text-center">
+                <div className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
+                  <span>Learn More About Our AI Engine</span>
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Click to see how it works and what's included
                 </p>
               </div>
-            </div>
-
-            {/* Pricing Display */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
-              <div className="text-center">
-                <p className="text-sm text-muted-foreground mb-1">Setup Fee</p>
-                <div className="flex items-baseline gap-2 justify-center">
-                  <span className="text-3xl font-bold text-accent">£3,499</span>
-                  <span className="text-lg text-muted-foreground line-through">£4,995</span>
-                </div>
-                <p className="text-xs text-muted-foreground">one-time</p>
-              </div>
-              <div className="hidden sm:block w-px h-16 bg-border" />
-              <div className="text-center">
-                <p className="text-sm text-muted-foreground mb-1">Monthly</p>
-                <div className="flex items-baseline gap-1 justify-center">
-                  <span className="text-3xl font-bold">£199</span>
-                  <span className="text-muted-foreground">/month</span>
-                </div>
-                <p className="text-xs text-accent font-medium">First month FREE</p>
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="text-center">
-              <Button size="lg" asChild data-testid="button-product-learn-more">
-                <Link href="/products">
-                  Learn More About Our AI Engine
-                  <ArrowRight size={18} className="ml-2" />
-                </Link>
-              </Button>
-              <p className="text-sm text-muted-foreground mt-4">
-                See how it works and what's included
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </Link>
       </div>
     </section>
   );
