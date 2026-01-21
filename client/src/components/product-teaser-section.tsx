@@ -25,7 +25,7 @@ export function ProductTeaserSection() {
           <Card className="overflow-visible transition-all duration-200 group-hover:shadow-lg group-hover:border-primary/30" data-testid="card-product-teaser">
             <CardContent className="p-8">
               {/* Special Offer Banner */}
-              <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-4 mb-8">
+              <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-4 mb-2">
                 <div className="flex items-center justify-center gap-3 text-center">
                   <Gift size={20} className="text-accent flex-shrink-0" />
                   <p className="text-sm font-medium text-foreground">
@@ -33,6 +33,7 @@ export function ProductTeaserSection() {
                   </p>
                 </div>
               </div>
+              <p className="text-xs text-muted-foreground text-center mb-8">Click for more info</p>
 
               {/* Pricing Display */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-6">
