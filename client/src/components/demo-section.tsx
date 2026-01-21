@@ -63,7 +63,7 @@ export function DemoSection() {
                   </p>
                   <Button asChild data-testid="button-demo-external">
                     <a
-                      href="https://premiumlandscapes.co.uk"
+                      href="https://www.premium-landscapes.co.uk"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

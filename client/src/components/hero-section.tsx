@@ -3,8 +3,7 @@ import { ArrowRight, Play, Zap, Clock, TrendingUp } from "lucide-react";
 
 export function HeroSection() {
   const handleDemoClick = () => {
-    const element = document.querySelector("#demo");
-    if (element) element.scrollIntoView({ behavior: "smooth" });
+    window.open("https://www.premium-landscapes.co.uk", "_blank", "noopener,noreferrer");
   };
 
   const handleContactClick = () => {
