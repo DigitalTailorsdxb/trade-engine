@@ -63,8 +63,8 @@ export function ProductTeaserSection() {
                 <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">Instant Quotes</span>
                 <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">Instant Garden Design</span>
                 <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">CRM System</span>
-                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">Onboarding Training</span>
-                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">Ongoing Support</span>
+                <span className="px-3 py-1 bg-accent/20 border border-accent/30 rounded-full text-sm text-accent font-medium">Onboarding Training</span>
+                <span className="px-3 py-1 bg-accent/20 border border-accent/30 rounded-full text-sm text-accent font-medium">Ongoing Support</span>
               </div>
 
               {/* CTA indicator */}
