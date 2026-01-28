@@ -1,0 +1,95 @@
+Sales info for landscaping sites 
+
+Key Features
+1. AI-Powered Instant Quote System
+Customers get quotes in minutes, not days
+6-step guided process that's easy to follow
+Two quote paths: Full Garden Makeover OR Individual Products
+No waiting around - instant engagement
+2. AI Garden Design Visualisation
+Customers upload a photo of their garden
+AI transforms it into a photorealistic preview of their new design
+Delivered in 90 seconds via email
+Completely FREE for customers - removes all barriers to engagement
+3. Professional 10-Article Blog
+SEO-optimised content covering garden costs, materials, design ideas
+Establishes you as the local expert
+Drives organic search traffic to your site
+4. Complete Service Showcase
+Patios & Paving
+Decking (Composite & Timber)
+Lawns (Natural & Artificial)
+Fencing
+Garden Lighting
+Full Garden Redesigns
+5. Mobile-First Design
+Works perfectly on phones, tablets, and desktops
+Easy hamburger menu navigation
+Fast loading times
+
+What Makes This Different 
+Feature
+Benefit
+AI Instant Quotes
+Captures leads 24/7 - even when you're asleep
+AI Design Previews
+Customers see their dream garden before committing
+"100% FREE" Messaging
+Removes hesitation - nothing to lose for the customer
+Full SEO Package
+Found on Google when people search for landscapers
+Social Sharing Ready
+Looks professional when shared on Facebook, Twitter, LinkedIn
+White-Label Ready
+Your branding, your business - ready in days not weeks
+
+
+SEO & Marketing Built-In
+Optimised for Google - Meta titles, descriptions, keywords on every page
+Social Media Ready - Professional previews when shared online
+Sitemap & Robots.txt - Search engines can find and index your site
+Local Business Schema - Shows business info directly in Google results
+
+Pages Included
+Homepage with hero section and services overview
+About Us page with company story
+Full Services page with detailed descriptions
+Project Gallery with filterable portfolio
+Contact page with form and business details
+AI-Powered Quote & Design page
+Blog with 10 professionally written articles
+
+Why Customers Choose You
+Speed - Instant quotes beat competitors who take days
+Visualisation - See the result before spending a penny
+Trust - Professional website builds confidence
+Convenience - Get quotes from the sofa at any time
+No Pressure - Free quotes with no obligation
+
+Bottom Line
+This website turns website visitors into qualified leads by removing friction, offering instant value, and making it effortless for customers to take the next step.
+Ready to grow your landscaping business?
+
+
+SEO 
+On-Page SEO:
+Optimized title tags for each page
+Unique meta descriptions with relevant keywords
+Keywords meta tags for search relevance
+Robots meta tags allowing indexing
+Canonical URLs preventing duplicate content issues
+Social Sharing Tags:
+Complete Open Graph tags (og:type, og:url, og:title, og:description, og:image)
+Twitter Card tags (summary_large_image with title, description, and image)
+All pages now show rich previews when shared on Facebook, Twitter, LinkedIn, etc.
+Structured Data:
+JSON-LD LocalBusiness schema on the homepage with:
+Business name, description, contact details
+Opening hours
+Service catalog (patios, decking, lawns, fencing, lighting, garden redesign)
+Technical SEO:
+sitemap.xml - Lists all 17 URLs for search engine crawling
+robots.txt - Allows full site crawling with sitemap reference
+Pages Covered:
+index, quote, about, services, gallery, contact, blog, and all 10 blog posts (blog-1 through blog-10)
+
