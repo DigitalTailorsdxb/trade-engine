@@ -202,7 +202,7 @@ const workflowCapabilities = [
 const comparisonTable = [
   { feature: "AI Instant Quotes", benefit: "Captures leads 24/7 - even when you're asleep" },
   { feature: "AI Design Previews", benefit: "Customers see their dream garden before committing" },
-  { feature: "\"100% FREE\" Messaging", benefit: "Removes hesitation - nothing to lose for the customer" },
+  { feature: "CRM Systems", benefit: "Every lead captured and nurtured automatically" },
   { feature: "Full SEO Package", benefit: "Found on Google when people search for landscapers" },
   { feature: "Social Sharing Ready", benefit: "Looks professional when shared on social media" },
   { feature: "White-Label Ready", benefit: "Your branding, your business - ready in days not weeks" },
