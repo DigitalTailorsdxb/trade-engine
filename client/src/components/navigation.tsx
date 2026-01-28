@@ -62,7 +62,7 @@ export function Navigation() {
             <img 
               src={logoImage} 
               alt="Trade Engine" 
-              className="h-20 md:h-24 w-auto"
+              className="h-40 md:h-48 w-auto"
             />
           </Link>
 
