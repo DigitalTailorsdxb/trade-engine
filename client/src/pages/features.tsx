@@ -36,7 +36,7 @@ import {
 } from "lucide-react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import gardenDesignImage from "@assets/design_(2)_1769642158706.png";
+import gardenDesignImage from "@assets/design_(3)_1769644086766.png";
 import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
 
 const coreFeatures = [
