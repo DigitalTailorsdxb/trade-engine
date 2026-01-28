@@ -342,9 +342,9 @@ export default function Features() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="max-w-3xl mx-auto">
             {/* Feature tabs */}
-            <div className="space-y-3">
+            <div className="space-y-3 mb-8">
               {coreFeatures.map((feature, index) => (
                 <FeatureTab
                   key={index}
@@ -355,30 +355,32 @@ export default function Features() {
               ))}
             </div>
 
-            {/* Feature detail */}
-            <div>
-              <Card className="sticky top-24 border-0 shadow-xl shadow-slate-200/50">
-                <CardContent className="p-8">
-                  <div className="w-14 h-14 rounded-xl bg-amber-100 glow-ring-subtle flex items-center justify-center mb-6">
+            {/* Feature detail - appears below the selected tab */}
+            <Card className="border-0 shadow-xl shadow-slate-200/50">
+              <CardContent className="p-8">
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="w-14 h-14 rounded-xl bg-amber-100 glow-ring-subtle flex items-center justify-center flex-shrink-0">
                     <currentFeature.icon size={28} className="text-amber-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                    {currentFeature.title}
-                  </h3>
-                  <p className="text-amber-600 font-medium mb-4">{currentFeature.tagline}</p>
-                  <p className="text-slate-600 mb-6">{currentFeature.description}</p>
-                  
-                  <ul className="space-y-3">
-                    {currentFeature.highlights.map((highlight, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-slate-700">{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                      {currentFeature.title}
+                    </h3>
+                    <p className="text-amber-600 font-medium mb-4">{currentFeature.tagline}</p>
+                    <p className="text-slate-600 mb-6">{currentFeature.description}</p>
+                    
+                    <ul className="grid sm:grid-cols-2 gap-3">
+                      {currentFeature.highlights.map((highlight, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
+                          <span className="text-slate-700">{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
