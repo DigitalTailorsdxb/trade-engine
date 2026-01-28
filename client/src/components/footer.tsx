@@ -4,9 +4,8 @@ import { SiLinkedin, SiX, SiFacebook, SiInstagram } from "react-icons/si";
 const footerLinks = {
   product: [
     { label: "Features", href: "#features" },
-    { label: "How It Works", href: "#how-it-works" },
     { label: "Pricing", href: "#pricing" },
-    { label: "Demo", href: "#demo" },
+    { label: "FAQ", href: "#faq" },
   ],
   company: [
     { label: "Contact", href: "#contact" },
@@ -34,22 +33,22 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-foreground text-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid md:grid-cols-4 gap-8 md:gap-12">
+    <footer className="bg-slate-900 text-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">T</span>
+                <span className="text-white font-bold text-lg">T</span>
               </div>
               <span className="text-xl font-bold">Trade Engine</span>
             </div>
-            <p className="text-background/70 mb-6 max-w-sm">
+            <p className="text-slate-400 mb-6 max-w-sm leading-relaxed">
               AI-powered websites that convert leads into customers. Built specifically
               for trade businesses.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
@@ -58,11 +57,11 @@ export function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
+                    className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors"
                     aria-label={social.label}
                     data-testid={`link-social-${social.label.toLowerCase()}`}
                   >
-                    <Icon size={18} />
+                    <Icon size={18} className="text-slate-400" />
                   </a>
                 );
               })}
@@ -71,14 +70,14 @@ export function Footer() {
 
           {/* Product Links */}
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-slate-300">Product</h4>
             <ul className="space-y-3">
               {footerLinks.product.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-background/70 hover:text-background transition-colors"
+                    className="text-slate-400 hover:text-white transition-colors"
                     data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                   >
                     {link.label}
@@ -90,14 +89,14 @@ export function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-slate-300">Company</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
                   {link.href.startsWith("/") ? (
                     <Link
                       href={link.href}
-                      className="text-background/70 hover:text-background transition-colors"
+                      className="text-slate-400 hover:text-white transition-colors"
                       data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                     >
                       {link.label}
@@ -106,7 +105,7 @@ export function Footer() {
                     <a
                       href={link.href}
                       onClick={(e) => handleNavClick(e, link.href)}
-                      className="text-background/70 hover:text-background transition-colors"
+                      className="text-slate-400 hover:text-white transition-colors"
                       data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                     >
                       {link.label}
@@ -119,16 +118,16 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-background/10">
+        <div className="mt-12 pt-8 border-t border-slate-800">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-background/60">
+            <p className="text-sm text-slate-500">
               © {new Date().getFullYear()} Trade Engine. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm text-background/60">
-              <Link href="/privacy" className="hover:text-background transition-colors">
+            <div className="flex gap-6 text-sm text-slate-500">
+              <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy
               </Link>
-              <Link href="/terms" className="hover:text-background transition-colors">
+              <Link href="/terms" className="hover:text-white transition-colors">
                 Terms
               </Link>
             </div>

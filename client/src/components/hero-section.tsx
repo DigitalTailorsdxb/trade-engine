@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Zap, Clock, TrendingUp } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 
 declare global {
   interface Window {
@@ -55,17 +55,17 @@ export function HeroSection() {
             minWidth: 200.0,
             scale: 1.0,
             scaleMobile: 1.0,
-            backgroundColor: 0xfafafa,
-            color1: 0xe1ff,
-            color2: 0x3b3b72,
-            colorMode: "variance",
-            birdSize: 2.0,
-            wingSpan: 23.0,
-            speedLimit: 4.0,
-            separation: 41.0,
-            alignment: 32.0,
-            cohesion: 42.0,
-            quantity: 4.0,
+            backgroundColor: 0xf8fafc,
+            color1: 0x1e40af,
+            color2: 0x3b82f6,
+            colorMode: "lerp",
+            birdSize: 1.5,
+            wingSpan: 20.0,
+            speedLimit: 3.0,
+            separation: 50.0,
+            alignment: 40.0,
+            cohesion: 40.0,
+            quantity: 3.0,
           });
           setVantaEffect(effect);
         }
@@ -91,78 +91,70 @@ export function HeroSection() {
   };
 
   return (
-    <section ref={vantaRef} className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden bg-[#fafafa]">
+    <section ref={vantaRef} className="relative min-h-screen flex items-center overflow-hidden bg-slate-50">
       {!vantaEffect && (
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-100" />
       )}
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-6">
-            <Zap size={16} className="fill-current" />
-            <span className="text-sm font-medium">For Trade Businesses</span>
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="max-w-3xl">
+          {/* Subtle badge */}
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary mb-8">
+            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+            <span className="text-xs font-medium tracking-wide uppercase">For Trade Businesses</span>
           </div>
 
-          {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-4">
-            AI-Powered Website Engine
+          {/* Main headline - clean and impactful */}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+            <span className="text-slate-900">AI-Powered</span>
+            <br />
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Website Engine
+            </span>
           </h1>
-          <p className="text-2xl sm:text-3xl text-muted-foreground mb-8">
-            Powering your business using AI
-          </p>
 
           {/* Subheadline */}
-          <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Give your trade business an unfair advantage with instant quotes, AI design
-            visualisation, and automated follow-ups — all white-labelled to your brand.
+          <p className="text-xl sm:text-2xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
+            Instant quotes. AI design visualisation. Automated follow-ups.
+            <span className="text-slate-900 font-medium"> All white-labelled to your brand.</span>
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" onClick={handleDemoClick} data-testid="button-hero-demo">
+          {/* CTA Buttons - clean and prominent */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-16">
+            <Button 
+              size="lg" 
+              onClick={handleDemoClick}
+              className="group text-base"
+              data-testid="button-hero-demo"
+            >
               <Play size={18} className="mr-2" />
               See It In Action
+              <ArrowRight size={16} className="ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
             </Button>
             <Button
               size="lg"
               variant="outline"
               onClick={handleContactClick}
+              className="text-base"
               data-testid="button-hero-contact"
             >
               Book a Call
-              <ArrowRight size={18} className="ml-2" />
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="flex flex-wrap gap-8 justify-center">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-                <Clock size={20} className="text-accent" />
-              </div>
-              <div className="text-left">
-                <p className="text-2xl font-bold text-foreground">15 sec</p>
-                <p className="text-sm text-muted-foreground">Quote time</p>
-              </div>
+          {/* Stats - minimal and elegant */}
+          <div className="flex gap-12 border-t border-slate-200 pt-8">
+            <div>
+              <p className="text-3xl font-bold text-slate-900">15s</p>
+              <p className="text-sm text-slate-500 mt-1">Quote generation</p>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <TrendingUp size={20} className="text-primary" />
-              </div>
-              <div className="text-left">
-                <p className="text-2xl font-bold text-foreground">90 sec</p>
-                <p className="text-sm text-muted-foreground">AI design</p>
-              </div>
+            <div>
+              <p className="text-3xl font-bold text-slate-900">90s</p>
+              <p className="text-sm text-slate-500 mt-1">AI design delivery</p>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
-                <Zap size={20} className="text-secondary" />
-              </div>
-              <div className="text-left">
-                <p className="text-2xl font-bold text-foreground">24/7</p>
-                <p className="text-sm text-muted-foreground">AI runs</p>
-              </div>
+            <div>
+              <p className="text-3xl font-bold text-slate-900">24/7</p>
+              <p className="text-sm text-slate-500 mt-1">Automated follow-up</p>
             </div>
           </div>
         </div>

@@ -1,25 +1,27 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Zap, ArrowRight, Calculator, Gift, Sparkles } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle2, ArrowRight, Gift, Sparkles } from "lucide-react";
 
 const setupIncludes = [
   "Full website design & development",
   "AI-powered quote system",
   "AI garden design generator",
-  "CRM integration (Airtable, Zoho, etc.)",
+  "HubSpot CRM integration",
   "n8n automation workflows",
-  "Complete white-labeling",
+  "Complete white-labelling",
   "Your own domain setup",
-  "Staff training session",
+  "Complete onboarding",
 ];
 
 const monthlyIncludes = [
   "Premium hosting & SSL",
-  "Ongoing maintenance",
+  "24/7 error monitoring & handling",
   "AI credits for design generation",
+  "Continuous feature upgrades",
+  "SEO optimisation & updates",
   "Priority support",
-  "Regular feature updates",
-  "Performance optimization",
+  "Performance optimisation",
+  "Security updates & backups",
 ];
 
 export function PricingSection() {
@@ -29,161 +31,118 @@ export function PricingSection() {
   };
 
   return (
-    <section id="pricing" className="py-20 md:py-28 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pricing" className="py-24 md:py-32 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
-            <Zap size={16} className="fill-current" />
-            <span className="text-sm font-medium">Simple Pricing</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Invest in Growth,{" "}
-            <span className="text-primary">Not Guesswork</span>
+          <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Pricing</p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+            Simple, Transparent
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Transparent pricing with everything included. No hidden fees, no surprises.
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Everything included. No hidden fees.
           </p>
         </div>
 
-        {/* Special Offer Banner */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-6">
+        {/* Offer banner */}
+        <div className="max-w-3xl mx-auto mb-12">
+          <div className="bg-gradient-to-r from-accent/10 via-amber-50 to-accent/10 rounded-xl border border-accent/20 p-6">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
               <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
                 <Gift size={24} className="text-accent" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-foreground flex items-center justify-center sm:justify-start gap-2">
-                  <Sparkles size={18} className="text-accent" />
+                <p className="font-semibold text-slate-900 flex items-center justify-center sm:justify-start gap-2">
+                  <Sparkles size={16} className="text-accent" />
                   Limited Time Offer
-                </h3>
-                <p className="text-muted-foreground">
-                  First month AI included FREE + £500 in free ad spend via Meta & Google Ads
+                </p>
+                <p className="text-slate-600">
+                  First month AI FREE + £250 in free ad spend via Meta & Google Ads
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* Setup Fee */}
-          <Card className="relative overflow-visible" data-testid="card-pricing-setup">
-            <div className="absolute -top-3 left-6">
-              <span className="px-3 py-1 bg-accent text-accent-foreground text-sm font-medium rounded-full">
-                Special Offer
-              </span>
-            </div>
-            <CardHeader className="pt-8">
-              <CardTitle className="flex flex-col gap-1">
-                <div className="flex items-baseline gap-3">
-                  <span className="text-4xl font-bold text-accent">£3,499</span>
-                  <span className="text-xl text-muted-foreground line-through">£4,995</span>
-                </div>
-                <span className="text-muted-foreground text-base font-normal">one-time setup</span>
-              </CardTitle>
-              <p className="text-muted-foreground mt-2">
-                Complete setup and configuration of your Trade Engine website
+        {/* Pricing cards */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+          {/* Setup */}
+          <Card className="border-0 shadow-xl shadow-slate-200/50" data-testid="card-pricing-setup">
+            <CardContent className="p-8">
+              <div className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-medium mb-6">
+                Setup
+              </div>
+              <div className="mb-6">
+                <span className="text-5xl font-bold text-slate-900">£3,499</span>
+                <p className="text-slate-500 mt-1">One-time setup fee</p>
+              </div>
+              <p className="text-slate-600 mb-6">
+                Everything to get you up and running
               </p>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-8">
                 {setupIncludes.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">{item}</span>
+                    <CheckCircle2 size={18} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-700 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 p-4 bg-accent/10 rounded-md border border-accent/20">
-                <p className="text-sm font-medium text-foreground flex items-center gap-2">
+              <div className="p-4 bg-accent/10 rounded-lg">
+                <p className="text-sm font-medium text-slate-900 flex items-center gap-2">
                   <Gift size={16} className="text-accent" />
-                  Bonus: £500 free ad spend included
-                </p>
-                <p className="text-xs text-muted-foreground mt-1">
-                  Get your campaigns running on Meta & Google Ads
+                  Bonus: £250 free ad spend
                 </p>
               </div>
             </CardContent>
           </Card>
 
-          {/* Monthly Fee */}
-          <Card className="relative overflow-visible border-primary" data-testid="card-pricing-monthly">
-            <div className="absolute -top-3 left-6">
-              <span className="px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
-                Ongoing
-              </span>
-            </div>
-            <CardHeader className="pt-8">
-              <CardTitle className="flex items-baseline gap-2">
-                <span className="text-4xl font-bold">£199</span>
-                <span className="text-muted-foreground">/month</span>
-              </CardTitle>
-              <p className="text-muted-foreground mt-2">
-                Keep everything running smoothly with ongoing support
+          {/* Monthly */}
+          <Card className="border-2 border-primary shadow-xl shadow-primary/10" data-testid="card-pricing-monthly">
+            <CardContent className="p-8">
+              <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-6">
+                Monthly
+              </div>
+              <div className="mb-6">
+                <span className="text-5xl font-bold text-slate-900">£199</span>
+                <span className="text-slate-500">/month</span>
+                <p className="text-accent font-medium mt-1">First month FREE</p>
+              </div>
+              <p className="text-slate-600 mb-6">
+                Ongoing support and maintenance
               </p>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-8">
                 {monthlyIncludes.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">{item}</span>
+                    <CheckCircle2 size={18} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-700 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 p-4 bg-accent/10 rounded-md border border-accent/20">
-                <p className="text-sm font-medium text-foreground flex items-center gap-2">
-                  <Sparkles size={16} className="text-accent" />
+              <div className="p-4 bg-primary/10 rounded-lg">
+                <p className="text-sm font-medium text-slate-900 flex items-center gap-2">
+                  <Sparkles size={16} className="text-primary" />
                   First month AI credits FREE
-                </p>
-                <p className="text-xs text-muted-foreground mt-1">
-                  Save £199 on your first month
                 </p>
               </div>
             </CardContent>
           </Card>
         </div>
 
-        {/* ROI Callout */}
-        <div className="mt-12 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-md border p-6 md:p-8">
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Calculator size={32} className="text-primary" />
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  ROI After Just 2-3 Extra Jobs Per Month
-                </h3>
-                <p className="text-muted-foreground">
-                  Most trade businesses charge £2,000+ per job. With our average 40%
-                  increase in quote requests, the system pays for itself in the first
-                  month — and keeps delivering returns every month after.
-                </p>
-              </div>
-              <Button onClick={handleContactClick} data-testid="button-pricing-cta">
-                Book Your Demo
-                <ArrowRight size={18} className="ml-2" />
-              </Button>
-            </div>
+        {/* ROI callout */}
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-slate-50 rounded-xl p-8 text-center">
+            <h3 className="text-xl font-semibold text-slate-900 mb-2">
+              ROI After Just 2-3 Extra Jobs
+            </h3>
+            <p className="text-slate-600 mb-6">
+              Most landscaping jobs are £2,000+. With our 40% average increase in leads, 
+              the system pays for itself in the first month.
+            </p>
+            <Button onClick={handleContactClick} data-testid="button-pricing-cta">
+              Get Started
+              <ArrowRight size={18} className="ml-2" />
+            </Button>
           </div>
-        </div>
-
-        {/* Guarantee */}
-        <div className="mt-8 text-center">
-          <p className="text-sm text-muted-foreground">
-            Questions about pricing?{" "}
-            <button
-              onClick={handleContactClick}
-              className="text-primary hover:underline font-medium"
-              data-testid="button-pricing-questions"
-            >
-              Get in touch
-            </button>{" "}
-            — we're happy to discuss your specific needs.
-          </p>
         </div>
       </div>
     </section>

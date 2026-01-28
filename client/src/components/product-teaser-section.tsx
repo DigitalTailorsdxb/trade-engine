@@ -1,84 +1,94 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Sparkles, Gift } from "lucide-react";
-import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles, Gift, CheckCircle2 } from "lucide-react";
 
 export function ProductTeaserSection() {
+  const handleLearnMore = () => {
+    const element = document.querySelector("#features");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-6">
-            <Sparkles size={16} className="fill-current" />
-            <span className="text-sm font-medium">Our Flagship Product</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Landscaping{" "}
-            <span className="text-primary">AI Engine</span>
+    <section className="py-24 md:py-32 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section header */}
+        <div className="text-center mb-16">
+          <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Our Flagship Product</p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+            Landscaping AI Engine
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            The complete AI-powered website solution for landscaping businesses. 
-            Instant quotes, stunning visualizations, and automated lead nurturing.
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            The complete AI-powered website solution built specifically for landscaping businesses.
           </p>
         </div>
 
-        <Link href="/landscaping" className="block max-w-3xl mx-auto group cursor-pointer" data-testid="link-product-teaser">
-          <Card className="overflow-visible transition-all duration-200 border-2 border-accent shadow-[0_0_20px_rgba(16,185,129,0.4)] group-hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] group-hover:border-accent" data-testid="card-product-teaser">
-            <CardContent className="p-8">
-              {/* Special Offer Banner */}
-              <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-4 mb-2">
-                <div className="flex items-center justify-center gap-3 text-center">
-                  <Gift size={20} className="text-accent flex-shrink-0" />
-                  <p className="text-sm font-medium text-foreground">
+        {/* Main card */}
+        <div 
+          className="max-w-4xl mx-auto cursor-pointer group" 
+          onClick={handleLearnMore} 
+          data-testid="link-product-teaser"
+        >
+          <Card className="overflow-hidden border-0 shadow-xl shadow-slate-200/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-slate-300/50" data-testid="card-product-teaser">
+            <CardContent className="p-0">
+              {/* Offer banner - elegant accent strip */}
+              <div className="bg-gradient-to-r from-accent via-accent to-amber-400 p-4">
+                <div className="flex items-center justify-center gap-3">
+                  <Gift size={18} className="text-white" />
+                  <p className="text-sm font-medium text-white">
                     Limited Time: First month AI FREE + £250 in free ad spend
                   </p>
                 </div>
               </div>
-              <p className="text-xs text-muted-foreground text-center mb-8">Click for more info</p>
 
-              {/* Pricing Display */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-6">
-                <div className="text-center">
-                  <p className="text-sm text-muted-foreground mb-1">Setup Fee</p>
-                  <div className="flex items-baseline gap-2 justify-center">
-                    <span className="text-3xl font-bold text-foreground">£3,499</span>
+              <div className="p-10 md:p-12">
+                {/* Pricing - clean two-column layout */}
+                <div className="grid md:grid-cols-2 gap-8 mb-10">
+                  <div className="text-center md:text-left p-6 rounded-xl bg-slate-50">
+                    <p className="text-sm font-medium text-slate-500 mb-2">Setup Fee</p>
+                    <p className="text-5xl font-bold text-slate-900">£3,499</p>
+                    <p className="text-sm text-slate-500 mt-2">One-time payment</p>
                   </div>
-                  <p className="text-xs text-muted-foreground">one-time</p>
-                </div>
-                <div className="hidden sm:block w-px h-16 bg-border" />
-                <div className="text-center">
-                  <p className="text-sm text-muted-foreground mb-1">Monthly</p>
-                  <div className="flex items-baseline gap-1 justify-center">
-                    <span className="text-3xl font-bold">£199</span>
-                    <span className="text-muted-foreground">/month</span>
+                  <div className="text-center md:text-left p-6 rounded-xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/10">
+                    <p className="text-sm font-medium text-slate-500 mb-2">Monthly</p>
+                    <div className="flex items-baseline gap-1">
+                      <p className="text-5xl font-bold text-primary">£199</p>
+                      <span className="text-slate-500">/mo</span>
+                    </div>
+                    <p className="text-sm text-accent font-medium mt-2">First month FREE</p>
                   </div>
-                  <p className="text-xs text-accent font-medium">First month FREE</p>
                 </div>
-              </div>
 
-              {/* What's Included */}
-              <div className="flex flex-wrap justify-center gap-3 mb-8">
-                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">New Website</span>
-                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">AI Powered Engine</span>
-                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">Instant Quotes</span>
-                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">Instant Garden Design</span>
-                <span className="px-3 py-1 bg-muted rounded-full text-sm text-foreground">CRM System</span>
-                <span className="px-3 py-1 bg-accent/20 border border-accent/30 rounded-full text-sm text-accent font-medium">Onboarding Training</span>
-                <span className="px-3 py-1 bg-accent/20 border border-accent/30 rounded-full text-sm text-accent font-medium">Ongoing Support</span>
-              </div>
-
-              {/* CTA indicator */}
-              <div className="text-center">
-                <div className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-                  <span>Learn More About Our AI Engine</span>
-                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                {/* Features grid - clean checkmarks */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                  {[
+                    "New Website",
+                    "AI Quote System",
+                    "AI Visualisation",
+                    "HubSpot CRM",
+                    "Automation",
+                    "White-labelled",
+                    "SEO Included",
+                    "24/7 Support"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <CheckCircle2 size={16} className="text-primary flex-shrink-0" />
+                      <span className="text-sm text-slate-700">{item}</span>
+                    </div>
+                  ))}
                 </div>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Click to see how it works and what's included
-                </p>
+
+                {/* CTA */}
+                <div className="text-center">
+                  <Button size="lg" className="group/btn" onClick={handleLearnMore}>
+                    <Sparkles size={16} className="mr-2" />
+                    Explore Features
+                    <ArrowRight size={16} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                  </Button>
+                </div>
               </div>
             </CardContent>
           </Card>
-        </Link>
+        </div>
       </div>
     </section>
   );

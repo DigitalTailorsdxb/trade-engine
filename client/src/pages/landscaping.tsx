@@ -27,7 +27,7 @@ const features = [
   },
   {
     icon: Palette,
-    title: "AI Garden Visualizer",
+    title: "AI Garden Visualiser",
     description: "Let customers see their dream garden before any work begins. Upload a photo and our AI creates stunning design mockups.",
   },
   {
@@ -42,8 +42,8 @@ const features = [
   },
   {
     icon: Users,
-    title: "CRM Integration",
-    description: "Seamlessly connects with Airtable, Zoho, HubSpot, and more. All your leads in one place, automatically synced.",
+    title: "HubSpot CRM Integration",
+    description: "Seamlessly connects with HubSpot CRM. All your leads in one place, automatically synced and ready for follow-up.",
   },
   {
     icon: Zap,
@@ -56,20 +56,22 @@ const setupIncludes = [
   "Full website design & development",
   "AI-powered quote system",
   "AI garden design generator",
-  "CRM integration setup",
+  "HubSpot CRM integration",
   "n8n automation workflows",
-  "Complete white-labeling",
+  "Complete white-labelling",
   "Your own domain setup",
-  "Staff training session",
+  "Complete onboarding",
 ];
 
 const monthlyIncludes = [
   "Premium hosting & SSL",
-  "Ongoing maintenance",
+  "24/7 error monitoring & handling",
   "AI credits for design generation",
+  "Continuous feature upgrades",
+  "SEO optimisation & updates",
   "Priority support",
-  "Regular feature updates",
-  "Performance optimization",
+  "Performance optimisation",
+  "Security updates & backups",
 ];
 
 export default function Products() {
@@ -95,8 +97,8 @@ export default function Products() {
                 <span className="text-primary">AI Engine</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                The complete white-label website solution that turns your landscaping business 
-                into a lead-generating machine with AI-powered quotes, stunning visualizations, 
+                The complete white-labelled website solution that turns your landscaping business 
+                into a lead-generating machine with AI-powered quotes, stunning visualisations, 
                 and automated follow-ups.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -164,7 +166,7 @@ export default function Products() {
                 <p className="text-lg text-muted-foreground mb-6">
                   We've built a complete demo site for Premium Landscapes to show you exactly 
                   what your customers will experience. From instant quotes to stunning AI 
-                  garden visualizations, everything is live and ready to explore.
+                  garden visualisations, everything is live and ready to explore.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
