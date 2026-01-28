@@ -29,7 +29,7 @@ export function ProductTeaserSection() {
                 <div className="flex items-center justify-center gap-3 text-center">
                   <Gift size={20} className="text-accent flex-shrink-0" />
                   <p className="text-sm font-medium text-foreground">
-                    Limited Time: First month AI FREE + £500 in free ad spend
+                    Limited Time: First month AI FREE + £250 in free ad spend
                   </p>
                 </div>
               </div>
@@ -40,8 +40,7 @@ export function ProductTeaserSection() {
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-1">Setup Fee</p>
                   <div className="flex items-baseline gap-2 justify-center">
-                    <span className="text-3xl font-bold text-accent">£3,499</span>
-                    <span className="text-lg text-muted-foreground line-through">£4,995</span>
+                    <span className="text-3xl font-bold text-foreground">£3,499</span>
                   </div>
                   <p className="text-xs text-muted-foreground">one-time</p>
                 </div>

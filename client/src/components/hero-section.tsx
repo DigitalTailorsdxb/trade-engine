@@ -29,15 +29,17 @@ export function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            AI-Powered Websites Engine That{" "}
-            <span className="text-primary">Convert Leads</span> Into Customers
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-4">
+            AI-Powered Website Engine
           </h1>
+          <p className="text-2xl sm:text-3xl text-muted-foreground mb-8">
+            Powering your business using AI
+          </p>
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Give your trade business an unfair advantage with instant quotes, AI design
-            visualization, and automated follow-ups — all white-labeled to your brand.
+            visualisation, and automated follow-ups — all white-labelled to your brand.
           </p>
 
           {/* CTA Buttons */}
@@ -64,7 +66,7 @@ export function HeroSection() {
                 <Clock size={20} className="text-accent" />
               </div>
               <div className="text-left">
-                <p className="text-2xl font-bold text-foreground">2 min</p>
+                <p className="text-2xl font-bold text-foreground">15 sec</p>
                 <p className="text-sm text-muted-foreground">Quote time</p>
               </div>
             </div>
@@ -73,8 +75,8 @@ export function HeroSection() {
                 <TrendingUp size={20} className="text-primary" />
               </div>
               <div className="text-left">
-                <p className="text-2xl font-bold text-foreground">40%</p>
-                <p className="text-sm text-muted-foreground">More leads</p>
+                <p className="text-2xl font-bold text-foreground">90 sec</p>
+                <p className="text-sm text-muted-foreground">AI design</p>
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -83,7 +85,7 @@ export function HeroSection() {
               </div>
               <div className="text-left">
                 <p className="text-2xl font-bold text-foreground">24/7</p>
-                <p className="text-sm text-muted-foreground">Lead capture</p>
+                <p className="text-sm text-muted-foreground">AI runs</p>
               </div>
             </div>
           </div>

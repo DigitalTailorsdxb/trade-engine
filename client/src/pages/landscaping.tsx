@@ -237,7 +237,7 @@ export default function Products() {
                       Limited Time Offer
                     </h3>
                     <p className="text-muted-foreground">
-                      First month AI included FREE + £500 in free ad spend via Meta & Google Ads
+                      First month AI included FREE + £250 in free ad spend via Meta & Google Ads
                     </p>
                   </div>
                 </div>
@@ -249,15 +249,14 @@ export default function Products() {
               {/* Setup Fee */}
               <Card className="relative overflow-visible" data-testid="card-products-pricing-setup">
                 <div className="absolute -top-3 left-6">
-                  <span className="px-3 py-1 bg-accent text-accent-foreground text-sm font-medium rounded-full">
-                    Special Offer
+                  <span className="px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
+                    Setup
                   </span>
                 </div>
                 <CardContent className="pt-10 pb-8 px-6">
                   <div className="flex flex-col gap-1 mb-4">
                     <div className="flex items-baseline gap-3">
-                      <span className="text-4xl font-bold text-accent">£3,499</span>
-                      <span className="text-xl text-muted-foreground line-through">£4,995</span>
+                      <span className="text-4xl font-bold text-foreground">£3,499</span>
                     </div>
                     <span className="text-muted-foreground">one-time setup</span>
                   </div>
@@ -275,7 +274,7 @@ export default function Products() {
                   <div className="mt-6 p-4 bg-accent/10 rounded-md border border-accent/20">
                     <p className="text-sm font-medium text-foreground flex items-center gap-2">
                       <Gift size={16} className="text-accent" />
-                      Bonus: £500 free ad spend
+                      Bonus: £250 free ad spend
                     </p>
                   </div>
                 </CardContent>
