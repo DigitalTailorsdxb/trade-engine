@@ -22,7 +22,7 @@ export function ProductTeaserSection() {
         </div>
 
         <Link href="/landscaping" className="block max-w-3xl mx-auto group cursor-pointer" data-testid="link-product-teaser">
-          <Card className="overflow-visible transition-all duration-200 group-hover:shadow-lg group-hover:border-primary/30" data-testid="card-product-teaser">
+          <Card className="overflow-visible transition-all duration-200 border-2 border-accent shadow-[0_0_20px_rgba(16,185,129,0.4)] group-hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] group-hover:border-accent" data-testid="card-product-teaser">
             <CardContent className="p-8">
               {/* Special Offer Banner */}
               <div className="bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 rounded-md border border-accent/30 p-4 mb-2">
