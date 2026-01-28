@@ -1,7 +1,83 @@
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Zap, Clock, TrendingUp } from "lucide-react";
 
+declare global {
+  interface Window {
+    VANTA: {
+      BIRDS: (options: Record<string, unknown>) => { destroy: () => void };
+    };
+  }
+}
+
 export function HeroSection() {
+  const vantaRef = useRef<HTMLDivElement>(null);
+  const [vantaEffect, setVantaEffect] = useState<{ destroy: () => void } | null>(null);
+
+  useEffect(() => {
+    const loadVanta = async () => {
+      if (vantaEffect) return;
+
+      const canvas = document.createElement("canvas");
+      const webglSupported = !!(
+        canvas.getContext("webgl") || canvas.getContext("webgl2")
+      );
+
+      if (!webglSupported) {
+        return;
+      }
+
+      const loadScript = (src: string): Promise<void> => {
+        return new Promise((resolve, reject) => {
+          if (document.querySelector(`script[src="${src}"]`)) {
+            resolve();
+            return;
+          }
+          const script = document.createElement("script");
+          script.src = src;
+          script.onload = () => resolve();
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      };
+
+      try {
+        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js");
+        await loadScript("https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js");
+
+        if (vantaRef.current && window.VANTA) {
+          const effect = window.VANTA.BIRDS({
+            el: vantaRef.current,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            backgroundColor: 0xfafafa,
+            color1: 0xe1ff,
+            color2: 0x3b3b72,
+            birdSize: 1.7,
+            wingSpan: 40.0,
+            separation: 41.0,
+            alignment: 56.0,
+            cohesion: 32.0,
+          });
+          setVantaEffect(effect);
+        }
+      } catch {
+        // Silently fail - fallback background will show
+      }
+    };
+
+    loadVanta();
+
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   const handleDemoClick = () => {
     window.open("https://www.premium-landscapes.co.uk", "_blank", "noopener,noreferrer");
   };
@@ -12,13 +88,10 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
-      
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
+    <section ref={vantaRef} className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden bg-[#fafafa]">
+      {!vantaEffect && (
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+      )}
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="max-w-4xl mx-auto text-center">
