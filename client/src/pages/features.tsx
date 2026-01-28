@@ -36,7 +36,7 @@ import {
 } from "lucide-react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import gardenDesignImage from "@assets/Lewis-Reid-quote-1768925587897-design_1768990223449.jpg";
+import gardenDesignImage from "@assets/design_(2)_1769642158706.png";
 
 const coreFeatures = [
   {

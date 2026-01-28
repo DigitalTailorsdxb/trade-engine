@@ -11,7 +11,7 @@ import {
   Play,
   ExternalLink,
 } from "lucide-react";
-import gardenDesignImage from "@assets/Lewis-Reid-quote-1768925587897-design_1768990223449.jpg";
+import gardenDesignImage from "@assets/design_(2)_1769642158706.png";
 
 const features = [
   {
