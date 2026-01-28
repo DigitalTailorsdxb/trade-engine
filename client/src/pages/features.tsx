@@ -269,7 +269,7 @@ function FeatureAccordion({
 }
 
 export default function Features() {
-  const [activeFeature, setActiveFeature] = useState(0);
+  const [activeFeature, setActiveFeature] = useState<number | null>(0);
 
   const handleDemoClick = () => {
     window.open("https://www.premium-landscapes.co.uk", "_blank", "noopener,noreferrer");
@@ -368,7 +368,7 @@ export default function Features() {
                   key={index}
                   feature={feature}
                   isActive={activeFeature === index}
-                  onClick={() => setActiveFeature(index)}
+                  onClick={() => setActiveFeature(activeFeature === index ? null : index)}
                 />
               ))}
             </div>
