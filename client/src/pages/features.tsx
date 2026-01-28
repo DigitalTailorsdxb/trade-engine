@@ -305,7 +305,7 @@ export default function Features() {
       {/* AI Visualisation Showcase */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-slate-300/50">
+          <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden glow-ring-intense">
             <img 
               src={gardenDesignImage} 
               alt="AI-generated garden design visualisation" 
@@ -359,7 +359,7 @@ export default function Features() {
             <div>
               <Card className="sticky top-24 border-0 shadow-xl shadow-slate-200/50">
                 <CardContent className="p-8">
-                  <div className="w-14 h-14 rounded-xl bg-amber-100 flex items-center justify-center mb-6">
+                  <div className="w-14 h-14 rounded-xl bg-amber-100 glow-ring-subtle flex items-center justify-center mb-6">
                     <currentFeature.icon size={28} className="text-amber-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-2">

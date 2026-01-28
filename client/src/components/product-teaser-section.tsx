@@ -28,7 +28,7 @@ export function ProductTeaserSection() {
           onClick={handleLearnMore} 
           data-testid="link-product-teaser"
         >
-          <Card className="overflow-hidden border-0 shadow-xl shadow-slate-200/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-slate-300/50" data-testid="card-product-teaser">
+          <Card className="overflow-hidden border-0 glow-ring transition-all duration-500" data-testid="card-product-teaser">
             <CardContent className="p-0">
               {/* Offer banner - elegant accent strip */}
               <div className="bg-gradient-to-r from-accent via-accent to-amber-400 p-4">
@@ -48,7 +48,7 @@ export function ProductTeaserSection() {
                     <p className="text-5xl font-bold text-slate-900">£3,499</p>
                     <p className="text-sm text-slate-500 mt-2">One-time payment</p>
                   </div>
-                  <div className="text-center md:text-left p-6 rounded-xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/10">
+                  <div className="text-center md:text-left p-6 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 glow-ring-subtle">
                     <p className="text-sm font-medium text-slate-500 mb-2">Monthly</p>
                     <div className="flex items-baseline gap-1">
                       <p className="text-5xl font-bold text-primary">£199</p>

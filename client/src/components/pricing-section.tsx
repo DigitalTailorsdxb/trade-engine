@@ -97,7 +97,7 @@ export function PricingSection() {
           </Card>
 
           {/* Monthly */}
-          <Card className="border-2 border-primary shadow-xl shadow-primary/10" data-testid="card-pricing-monthly">
+          <Card className="border-2 border-amber-400/50 glow-ring" data-testid="card-pricing-monthly">
             <CardContent className="p-8">
               <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-6">
                 Monthly
