@@ -37,6 +37,7 @@ import {
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import gardenDesignImage from "@assets/design_(2)_1769642158706.png";
+import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
 
 const coreFeatures = [
   {
@@ -287,6 +288,11 @@ export default function Features() {
       <section className="pt-32 pb-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
+            <img 
+              src={logoImage} 
+              alt="Trade Engine" 
+              className="h-20 md:h-28 w-auto mx-auto mb-6"
+            />
             <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-3">Complete Feature Set</p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Everything Your Landscaping Business Needs

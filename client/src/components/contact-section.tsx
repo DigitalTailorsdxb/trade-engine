@@ -17,6 +17,7 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { contactFormSchema, type InsertContact } from "@shared/schema";
 import { Mail, Phone, MapPin, Send, CheckCircle2, Loader2, Clock, Calendar } from "lucide-react";
+import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
 
 export function ContactSection() {
   const { toast } = useToast();
@@ -63,6 +64,11 @@ export function ContactSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
+          <img 
+            src={logoImage} 
+            alt="Trade Engine" 
+            className="h-20 md:h-24 w-auto mx-auto mb-6"
+          />
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Contact</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
             Book Your Free Demo
