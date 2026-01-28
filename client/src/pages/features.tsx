@@ -208,7 +208,7 @@ const comparisonTable = [
   { feature: "White-Label Ready", benefit: "Your branding, your business - ready in days not weeks" },
 ];
 
-function FeatureTab({
+function FeatureAccordion({
   feature,
   isActive,
   onClick,
@@ -220,38 +220,56 @@ function FeatureTab({
   const Icon = feature.icon;
 
   return (
-    <button
-      onClick={onClick}
-      className={`w-full text-left p-5 rounded-xl transition-all duration-300 ${
-        isActive 
-          ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/20" 
-          : "bg-white hover:bg-slate-50 text-slate-900 border border-slate-200"
-      }`}
-      data-testid={`button-feature-${feature.title.toLowerCase().replace(/\s+/g, "-")}`}
-    >
-      <div className="flex items-start gap-4">
-        <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
-          isActive ? "bg-white/20" : "bg-amber-50"
-        }`}>
-          <Icon size={20} className={isActive ? "text-white" : "text-amber-600"} />
+    <div className="rounded-xl overflow-hidden border border-slate-200 bg-white">
+      <button
+        onClick={onClick}
+        className={`w-full text-left p-5 transition-all duration-300 ${
+          isActive 
+            ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white" 
+            : "hover:bg-slate-50 text-slate-900"
+        }`}
+        data-testid={`button-feature-${feature.title.toLowerCase().replace(/\s+/g, "-")}`}
+      >
+        <div className="flex items-start gap-4">
+          <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
+            isActive ? "bg-white/20" : "bg-amber-50"
+          }`}>
+            <Icon size={20} className={isActive ? "text-white" : "text-amber-600"} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="font-semibold mb-1">{feature.title}</h3>
+            <p className={`text-sm ${isActive ? "text-white/80" : "text-slate-500"}`}>
+              {feature.tagline}
+            </p>
+          </div>
+          <ChevronRight size={20} className={`flex-shrink-0 transition-transform duration-300 ${
+            isActive ? "text-white rotate-90" : "text-slate-400"
+          }`} />
         </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="font-semibold mb-1">{feature.title}</h3>
-          <p className={`text-sm ${isActive ? "text-white/80" : "text-slate-500"}`}>
-            {feature.tagline}
-          </p>
+      </button>
+      
+      {/* Expandable content directly below the button */}
+      <div className={`overflow-hidden transition-all duration-300 ${
+        isActive ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+      }`}>
+        <div className="p-6 bg-slate-50 border-t border-slate-100">
+          <p className="text-slate-600 mb-5">{feature.description}</p>
+          <ul className="grid sm:grid-cols-2 gap-3">
+            {feature.highlights.map((highlight, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
+                <span className="text-slate-700 text-sm">{highlight}</span>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ChevronRight size={20} className={`flex-shrink-0 transition-transform ${
-          isActive ? "text-white rotate-90" : "text-slate-400"
-        }`} />
       </div>
-    </button>
+    </div>
   );
 }
 
 export default function Features() {
   const [activeFeature, setActiveFeature] = useState(0);
-  const currentFeature = coreFeatures[activeFeature];
 
   const handleDemoClick = () => {
     window.open("https://www.premium-landscapes.co.uk", "_blank", "noopener,noreferrer");
@@ -343,10 +361,10 @@ export default function Features() {
           </div>
 
           <div className="max-w-3xl mx-auto">
-            {/* Feature tabs */}
-            <div className="space-y-3 mb-8">
+            {/* Feature accordions - content expands directly under each item */}
+            <div className="space-y-3">
               {coreFeatures.map((feature, index) => (
-                <FeatureTab
+                <FeatureAccordion
                   key={index}
                   feature={feature}
                   isActive={activeFeature === index}
@@ -354,33 +372,6 @@ export default function Features() {
                 />
               ))}
             </div>
-
-            {/* Feature detail - appears below the selected tab */}
-            <Card className="border-0 shadow-xl shadow-slate-200/50">
-              <CardContent className="p-8">
-                <div className="flex flex-col sm:flex-row gap-6">
-                  <div className="w-14 h-14 rounded-xl bg-amber-100 glow-ring-subtle flex items-center justify-center flex-shrink-0">
-                    <currentFeature.icon size={28} className="text-amber-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                      {currentFeature.title}
-                    </h3>
-                    <p className="text-amber-600 font-medium mb-4">{currentFeature.tagline}</p>
-                    <p className="text-slate-600 mb-6">{currentFeature.description}</p>
-                    
-                    <ul className="grid sm:grid-cols-2 gap-3">
-                      {currentFeature.highlights.map((highlight, index) => (
-                        <li key={index} className="flex items-start gap-3">
-                          <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
-                          <span className="text-slate-700">{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
