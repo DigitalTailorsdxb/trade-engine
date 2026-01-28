@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { SiLinkedin, SiX, SiFacebook, SiInstagram } from "react-icons/si";
+import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
 
 const footerLinks = {
   product: [
@@ -38,11 +39,12 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-lg">T</span>
-              </div>
-              <span className="text-xl font-bold">Trade Engine</span>
+            <div className="mb-4">
+              <img 
+                src={logoImage} 
+                alt="Trade Engine" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-slate-400 mb-6 max-w-sm leading-relaxed">
               AI-powered websites that convert leads into customers. Built specifically
