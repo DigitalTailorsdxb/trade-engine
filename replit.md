@@ -2,9 +2,27 @@
 
 ## Overview
 
-Trade Engine is a marketing website designed to sell AI-powered white-label websites to trade businesses, starting with landscaping. The site promotes a SaaS product that offers instant quotes, AI design visualization, and automated follow-ups for trade businesses. Pricing is £4,995 setup + £199/month.
+Trade Engine is a marketing website designed to sell AI-powered white-labelled websites to trade businesses, starting with landscaping. The site promotes a SaaS product that offers instant quotes (15 seconds), AI design visualisation (90 seconds), and automated follow-ups (24/7). Pricing is £3,499 setup + £199/month with first month AI free and £250 in free ad spend via Meta/Google Ads.
 
-The application follows a full-stack TypeScript architecture with a React frontend, Express backend, and PostgreSQL database. It's a single-page marketing site with multiple sections (Hero, Features, Pricing, Demo, Contact, FAQ) plus Privacy and Terms pages.
+The application follows a full-stack TypeScript architecture with a React frontend, Express backend, and PostgreSQL database. It's a single-page marketing site with multiple sections (Hero, Product Teaser, Features, Pricing, Testimonials, FAQ, Contact) plus Privacy and Terms pages.
+
+## Design System
+
+### Colour Palette
+- **Primary accent**: Warm amber/gold (hsl 25 95% 53%)
+- **CTA buttons**: Amber gradient (from-amber-500 to-orange-500)
+- **Checkmarks/bullets**: Amber (text-amber-500)
+- **Stats/highlights**: Amber (text-amber-600)
+- **Background**: Clean white with slate accents
+
+### UK English Spelling
+All content uses UK English: visualisation, white-labelled, optimisation, colours, customisable, personalised.
+
+### Key Features
+- Hero with Vanta.js animated birds background
+- Interactive tabbed features section
+- HubSpot CRM integration (no Airtable/Zoho)
+- Demo links to www.premium-landscapes.co.uk
 
 ## User Preferences
 
