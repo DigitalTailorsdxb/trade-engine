@@ -43,9 +43,9 @@ export function ProductTeaserSection() {
               <div className="p-10 md:p-12">
                 {/* Pricing - clean two-column layout */}
                 <div className="grid md:grid-cols-2 gap-8 mb-10">
-                  <div className="text-center md:text-left p-6 rounded-xl bg-slate-50">
+                  <div className="text-center md:text-left p-6 rounded-xl bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200">
                     <p className="text-sm font-medium text-slate-500 mb-2">Setup Fee</p>
-                    <p className="text-5xl font-bold text-slate-900">£3,499</p>
+                    <p className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£3,499</p>
                     <p className="text-sm text-slate-500 mt-2">One-time payment</p>
                   </div>
                   <div className="text-center md:text-left p-6 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 glow-ring-subtle">
