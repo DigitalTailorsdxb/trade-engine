@@ -67,7 +67,7 @@ export function ContactSection() {
           <img 
             src={logoImage} 
             alt="Trade Engine" 
-            className="h-20 md:h-24 w-auto mx-auto mb-6"
+            className="h-40 md:h-48 w-auto mx-auto mb-6"
           />
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Contact</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">

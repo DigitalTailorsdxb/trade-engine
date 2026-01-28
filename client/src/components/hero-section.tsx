@@ -99,13 +99,6 @@ export function HeroSection() {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="max-w-3xl">
-          {/* Logo */}
-          <img 
-            src={logoImage} 
-            alt="Trade Engine" 
-            className="h-24 md:h-32 w-auto mb-8"
-          />
-
           {/* Subtle badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary mb-8">
             <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />

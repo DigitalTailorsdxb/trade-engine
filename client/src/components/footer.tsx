@@ -43,7 +43,7 @@ export function Footer() {
               <img 
                 src={logoImage} 
                 alt="Trade Engine" 
-                className="h-20 md:h-24 w-auto"
+                className="h-40 md:h-48 w-auto"
               />
             </div>
             <p className="text-slate-400 mb-6 max-w-sm leading-relaxed">

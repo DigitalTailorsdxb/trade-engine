@@ -291,7 +291,7 @@ export default function Features() {
             <img 
               src={logoImage} 
               alt="Trade Engine" 
-              className="h-20 md:h-28 w-auto mx-auto mb-6"
+              className="h-40 md:h-48 w-auto mx-auto mb-6"
             />
             <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-3">Complete Feature Set</p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
