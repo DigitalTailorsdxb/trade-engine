@@ -106,9 +106,9 @@ export function HeroSection() {
 
           {/* Main headline - clean and impactful */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="text-slate-900">AI-Powered</span>
+            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">AI-Powered</span>
             <br />
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
               Website Engine
             </span>
           </h1>
@@ -124,7 +124,7 @@ export function HeroSection() {
             <Button 
               size="lg" 
               onClick={handleDemoClick}
-              className="group text-base"
+              className="group text-base bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
               data-testid="button-hero-demo"
             >
               <Play size={18} className="mr-2" />
@@ -145,15 +145,15 @@ export function HeroSection() {
           {/* Stats - minimal and elegant */}
           <div className="flex gap-12 border-t border-slate-200 pt-8">
             <div>
-              <p className="text-3xl font-bold text-slate-900">15s</p>
+              <p className="text-3xl font-bold text-amber-600">15s</p>
               <p className="text-sm text-slate-500 mt-1">Quote generation</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-slate-900">90s</p>
+              <p className="text-3xl font-bold text-amber-600">90s</p>
               <p className="text-sm text-slate-500 mt-1">AI design delivery</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-slate-900">24/7</p>
+              <p className="text-3xl font-bold text-amber-600">24/7</p>
               <p className="text-sm text-slate-500 mt-1">Automated follow-up</p>
             </div>
           </div>

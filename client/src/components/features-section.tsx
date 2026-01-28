@@ -192,7 +192,7 @@ export function FeaturesSection() {
                 <ul className="space-y-3">
                   {currentFeature.details.map((detail, index) => (
                     <li key={index} className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
                       <span className="text-slate-700">{detail}</span>
                     </li>
                   ))}

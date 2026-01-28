@@ -201,7 +201,7 @@ export function ContactSection() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full"
+                      className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
                       disabled={mutation.isPending}
                       data-testid="button-contact-submit"
                     >

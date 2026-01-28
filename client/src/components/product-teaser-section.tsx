@@ -71,7 +71,7 @@ export function ProductTeaserSection() {
                     "24/7 Support"
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-2">
-                      <CheckCircle2 size={16} className="text-primary flex-shrink-0" />
+                      <CheckCircle2 size={16} className="text-amber-500 flex-shrink-0" />
                       <span className="text-sm text-slate-700">{item}</span>
                     </div>
                   ))}
@@ -79,7 +79,7 @@ export function ProductTeaserSection() {
 
                 {/* CTA */}
                 <div className="text-center">
-                  <Button size="lg" className="group/btn" onClick={handleLearnMore}>
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25" onClick={handleLearnMore}>
                     <Sparkles size={16} className="mr-2" />
                     Explore Features
                     <ArrowRight size={16} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />

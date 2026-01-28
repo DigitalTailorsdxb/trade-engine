@@ -82,7 +82,7 @@ export function PricingSection() {
               <ul className="space-y-3 mb-8">
                 {setupIncludes.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-700 text-sm">{item}</span>
                   </li>
                 ))}
@@ -113,7 +113,7 @@ export function PricingSection() {
               <ul className="space-y-3 mb-8">
                 {monthlyIncludes.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-700 text-sm">{item}</span>
                   </li>
                 ))}
@@ -138,7 +138,7 @@ export function PricingSection() {
               Most landscaping jobs are £2,000+. With our 40% average increase in leads, 
               the system pays for itself in the first month.
             </p>
-            <Button onClick={handleContactClick} data-testid="button-pricing-cta">
+            <Button className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25" onClick={handleContactClick} data-testid="button-pricing-cta">
               Get Started
               <ArrowRight size={18} className="ml-2" />
             </Button>
