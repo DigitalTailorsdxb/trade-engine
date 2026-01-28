@@ -58,11 +58,14 @@ export function HeroSection() {
             backgroundColor: 0xfafafa,
             color1: 0xe1ff,
             color2: 0x3b3b72,
-            birdSize: 1.7,
-            wingSpan: 40.0,
+            colorMode: "variance",
+            birdSize: 2.0,
+            wingSpan: 23.0,
+            speedLimit: 4.0,
             separation: 41.0,
-            alignment: 56.0,
-            cohesion: 32.0,
+            alignment: 32.0,
+            cohesion: 42.0,
+            quantity: 4.0,
           });
           setVantaEffect(effect);
         }
