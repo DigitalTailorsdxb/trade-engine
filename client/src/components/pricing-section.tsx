@@ -67,9 +67,9 @@ export function PricingSection() {
         {/* Pricing cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
           {/* Setup */}
-          <Card className="border-0 shadow-xl shadow-slate-200/50" data-testid="card-pricing-setup">
+          <Card className="border-2 border-amber-400/50 glow-ring" data-testid="card-pricing-setup">
             <CardContent className="p-8">
-              <div className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-medium mb-6">
+              <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-6">
                 Setup
               </div>
               <div className="mb-6">
