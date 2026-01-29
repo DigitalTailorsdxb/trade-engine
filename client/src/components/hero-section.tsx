@@ -1,87 +1,7 @@
-import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
-
-declare global {
-  interface Window {
-    VANTA: {
-      BIRDS: (options: Record<string, unknown>) => { destroy: () => void };
-    };
-  }
-}
 
 export function HeroSection() {
-  const vantaRef = useRef<HTMLDivElement>(null);
-  const [vantaEffect, setVantaEffect] = useState<{ destroy: () => void } | null>(null);
-
-  useEffect(() => {
-    const loadVanta = async () => {
-      if (vantaEffect) return;
-
-      const canvas = document.createElement("canvas");
-      const webglSupported = !!(
-        canvas.getContext("webgl") || canvas.getContext("webgl2")
-      );
-
-      if (!webglSupported) {
-        return;
-      }
-
-      const loadScript = (src: string): Promise<void> => {
-        return new Promise((resolve, reject) => {
-          if (document.querySelector(`script[src="${src}"]`)) {
-            resolve();
-            return;
-          }
-          const script = document.createElement("script");
-          script.src = src;
-          script.onload = () => resolve();
-          script.onerror = reject;
-          document.head.appendChild(script);
-        });
-      };
-
-      try {
-        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js");
-        await loadScript("https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js");
-
-        if (vantaRef.current && window.VANTA) {
-          const effect = window.VANTA.BIRDS({
-            el: vantaRef.current,
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 1.0,
-            scaleMobile: 1.0,
-            backgroundColor: 0xf8fafc,
-            color1: 0x475569,
-            color2: 0x94a3b8,
-            colorMode: "lerp",
-            birdSize: 1.5,
-            wingSpan: 20.0,
-            speedLimit: 3.0,
-            separation: 50.0,
-            alignment: 40.0,
-            cohesion: 40.0,
-            quantity: 3.0,
-          });
-          setVantaEffect(effect);
-        }
-      } catch {
-        // Silently fail - fallback background will show
-      }
-    };
-
-    loadVanta();
-
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
-
   const handleDemoClick = () => {
     window.open("https://www.premium-landscapes.co.uk", "_blank", "noopener,noreferrer");
   };
@@ -92,10 +12,8 @@ export function HeroSection() {
   };
 
   return (
-    <section ref={vantaRef} className="relative min-h-screen flex items-center overflow-hidden bg-slate-50">
-      {!vantaEffect && (
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-100" />
-      )}
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-50">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-100" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
