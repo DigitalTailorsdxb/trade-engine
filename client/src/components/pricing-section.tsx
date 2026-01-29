@@ -70,11 +70,13 @@ export function PricingSection() {
           <Card className="border-2 border-amber-400/50 glow-ring" data-testid="card-pricing-setup">
             <CardContent className="p-5 sm:p-6 md:p-8">
               <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-4 sm:mb-6">
-                Setup
+                Setup Fee
               </div>
               <div className="mb-4 sm:mb-6 sm:h-[88px]">
                 <span className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£3,499</span>
-                <p className="text-slate-500 mt-1">One-time setup fee</p>
+                <span className="text-slate-500">/once</span>
+                <p className="text-accent font-medium mt-1">One-time payment</p>
+                <p className="text-slate-500 text-sm mt-1">Build time: 7 days</p>
               </div>
               <p className="text-slate-600 mb-6">
                 Everything to get you up and running
