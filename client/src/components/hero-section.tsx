@@ -144,7 +144,7 @@ export function HeroSection() {
           </div>
 
           {/* Stats - minimal and elegant */}
-          <div className="flex gap-12 border-t border-slate-200 pt-8">
+          <div className="flex gap-12 border-t border-slate-200 pt-8 justify-center">
             <div>
               <p className="text-3xl font-bold text-amber-600">15s</p>
               <p className="text-sm text-slate-500 mt-1">Quote generation</p>
