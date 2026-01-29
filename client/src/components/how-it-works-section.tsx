@@ -14,7 +14,7 @@ const steps = [
     number: "02",
     title: "Setup & Configuration",
     description:
-      "We configure everything with your branding — logo, colors, contact details, pricing, and automation workflows.",
+      "We configure everything with your branding — logo, colours, contact details, pricing, and automation workflows.",
     duration: "1 week",
   },
   {

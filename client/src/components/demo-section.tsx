@@ -4,7 +4,7 @@ import { ExternalLink, Play, CheckCircle2 } from "lucide-react";
 const highlights = [
   "Interactive 6-step quote builder",
   "Real-time price calculations",
-  "AI garden visualization",
+  "AI garden visualisation",
   "Automated PDF generation",
   "Mobile-responsive design",
 ];
@@ -24,7 +24,7 @@ export function DemoSection() {
             <span className="text-primary">Your Customers Will Use</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience Premium Landscapes — a fully functional demo of what your white-labeled
+            Experience Premium Landscapes — a fully functional demo of what your white-labelled
             website will look and feel like.
           </p>
         </div>

@@ -123,7 +123,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-slate-800">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-slate-500">
-              © {new Date().getFullYear()} Trade Engine. All rights reserved.
+              © {new Date().getFullYear()} Trade Engine Ltd. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-slate-500">
               <Link href="/privacy" className="hover:text-white transition-colors">
