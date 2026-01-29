@@ -92,15 +92,15 @@ function FeatureCard({
       onClick={onClick}
       className={`w-full text-left p-5 rounded-xl transition-all duration-300 ${
         isActive 
-          ? "bg-primary text-white shadow-lg shadow-primary/20" 
+          ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/20" 
           : "bg-slate-50 hover:bg-slate-100 text-slate-900"
       }`}
     >
       <div className="flex items-start gap-4">
         <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
-          isActive ? "bg-white/20" : "bg-white shadow-sm"
+          isActive ? "bg-white/20" : "bg-amber-50"
         }`}>
-          <Icon size={20} className={isActive ? "text-white" : "text-primary"} />
+          <Icon size={20} className={isActive ? "text-white" : "text-amber-600"} />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-semibold mb-1">{feature.title}</h3>
@@ -129,7 +129,7 @@ export function FeaturesSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Features</p>
+          <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-3">Features</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
             Everything You Need
           </h2>
