@@ -269,9 +269,13 @@ export default function Pricing() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               What's Included in the £199/Month
             </h2>
+            <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-4">
+              <Check className="h-5 w-5" />
+              <span className="font-semibold">Rolling Monthly - Cancel Anytime</span>
+            </div>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Your website is never left behind. Continuous support, updates, and improvements 
-              to keep you ahead of competitors.
+              No long-term contracts. No tie-ins. Cancel whenever you want with 30 days notice. 
+              We keep you because you love the service, not because you're locked in.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -436,6 +440,16 @@ export default function Pricing() {
                 we'll refund your setup fee in full. We're confident you'll love the results.
               </p>
             </Card>
+            <Card className="p-6 border-2 border-green-200 bg-green-50/50">
+              <h3 className="text-lg font-bold text-slate-900 mb-2">
+                Can I cancel the monthly subscription?
+              </h3>
+              <p className="text-slate-600">
+                Absolutely! It's a rolling monthly contract with no tie-ins. Cancel anytime 
+                with just 30 days notice. No penalties, no questions asked. We earn your 
+                business every month.
+              </p>
+            </Card>
           </div>
         </div>
       </section>
@@ -446,9 +460,12 @@ export default function Pricing() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-amber-100 mb-4 max-w-2xl mx-auto">
             Join landscaping businesses already using Trade Engine to win more customers 
             and grow their revenue.
+          </p>
+          <p className="text-amber-200 mb-8">
+            Rolling monthly subscription - cancel anytime, no tie-ins
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

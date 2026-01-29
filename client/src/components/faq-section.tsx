@@ -68,9 +68,9 @@ const faqs = [
       "Your monthly subscription includes ongoing SEO optimisation. We regularly update your site's technical SEO, ensure fast loading times, maintain mobile responsiveness, and implement best practices as search engine algorithms evolve. We also provide properly structured content and metadata to help you rank for relevant landscaping searches in your area.",
   },
   {
-    question: "Can I cancel at any time?",
+    question: "Can I cancel at any time? Am I tied into a contract?",
     answer:
-      "Yes, you can cancel your monthly subscription with 30 days notice. However, we're confident you'll see the value — most clients report a positive ROI within the first month simply from the increased lead conversion. The system typically pays for itself with just 2-3 extra jobs per month.",
+      "Absolutely! It's a simple rolling monthly subscription with no tie-ins whatsoever. Cancel anytime with just 30 days notice — no penalties, no questions asked. We earn your business every single month. However, we're confident you'll see the value — most clients report a positive ROI within the first month simply from the increased lead conversion. The system typically pays for itself with just 2-3 extra jobs per month.",
   },
   {
     question: "Do you offer support after setup?",

@@ -106,9 +106,10 @@ export function PricingSection() {
                 <span className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£199</span>
                 <span className="text-slate-500">/month</span>
                 <p className="text-accent font-medium mt-1">First month FREE</p>
+                <p className="text-slate-500 text-sm mt-1">Cancel anytime - no tie-in</p>
               </div>
               <p className="text-slate-600 mb-6">
-                Ongoing support and maintenance
+                Rolling monthly - no long-term contract
               </p>
               <ul className="space-y-3 mb-8">
                 {monthlyIncludes.map((item, index) => (
