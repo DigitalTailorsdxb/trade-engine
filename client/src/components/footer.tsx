@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { SiLinkedin, SiX, SiFacebook, SiInstagram } from "react-icons/si";
-import logoImageDark from "@assets/transparent_logo_no.2_1769645361104.png";
+import logoImageDark from "@assets/ChatGPT_Image_Jan_29,_2026,_12_13_31_AM_1769645616203.png";
 
 const footerLinks = {
   product: [
