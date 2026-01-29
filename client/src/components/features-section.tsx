@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   Calculator,
@@ -76,7 +75,7 @@ const features = [
   },
 ];
 
-function FeatureCard({
+function FeatureAccordion({
   feature,
   isActive,
   onClick,
@@ -88,40 +87,62 @@ function FeatureCard({
   const Icon = feature.icon;
 
   return (
-    <button
-      onClick={onClick}
-      className={`w-full text-left p-5 rounded-xl transition-all duration-300 ${
-        isActive 
-          ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/20" 
-          : "bg-slate-50 hover:bg-slate-100 text-slate-900"
-      }`}
-    >
-      <div className="flex items-start gap-4">
-        <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
-          isActive ? "bg-white/20" : "bg-amber-50"
-        }`}>
-          <Icon size={20} className={isActive ? "text-white" : "text-amber-600"} />
+    <div className="rounded-xl overflow-hidden transition-all duration-300">
+      <button
+        onClick={onClick}
+        className={`w-full text-left p-5 transition-all duration-300 ${
+          isActive 
+            ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/20 rounded-t-xl" 
+            : "bg-white hover:bg-slate-50 text-slate-900 rounded-xl border border-slate-200"
+        }`}
+      >
+        <div className="flex items-start gap-4">
+          <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
+            isActive ? "bg-white/20" : "bg-amber-50"
+          }`}>
+            <Icon size={20} className={isActive ? "text-white" : "text-amber-600"} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="font-semibold mb-1">{feature.title}</h3>
+            <p className={`text-sm ${isActive ? "text-white/80" : "text-slate-500"}`}>
+              {feature.tagline}
+            </p>
+          </div>
+          <ChevronRight size={20} className={`flex-shrink-0 transition-transform duration-300 ${
+            isActive ? "text-white rotate-90" : "text-slate-400"
+          }`} />
         </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="font-semibold mb-1">{feature.title}</h3>
-          <p className={`text-sm ${isActive ? "text-white/80" : "text-slate-500"}`}>
-            {feature.tagline}
-          </p>
+      </button>
+      
+      {/* Expandable content underneath */}
+      <div className={`overflow-hidden transition-all duration-300 ${
+        isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+      }`}>
+        <div className="bg-white border border-t-0 border-slate-200 rounded-b-xl p-6">
+          <p className="text-slate-600 mb-4">{feature.description}</p>
+          <ul className="space-y-2">
+            {feature.details.map((detail, index) => (
+              <li key={index} className="flex items-center gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                <span className="text-slate-700 text-sm">{detail}</span>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ChevronRight size={20} className={`flex-shrink-0 transition-transform ${
-          isActive ? "text-white rotate-90" : "text-slate-400"
-        }`} />
       </div>
-    </button>
+    </div>
   );
 }
 
 export function FeaturesSection() {
   const [activeFeature, setActiveFeature] = useState(0);
-  const currentFeature = features[activeFeature];
 
   const handleDemoClick = () => {
     window.open("https://www.premium-landscapes.co.uk", "_blank", "noopener,noreferrer");
+  };
+
+  const handleToggle = (index: number) => {
+    setActiveFeature(activeFeature === index ? -1 : index);
   };
 
   return (
@@ -163,43 +184,16 @@ export function FeaturesSection() {
           </div>
         </div>
 
-        {/* Feature tabs */}
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Feature list */}
-          <div className="space-y-3">
-            {features.map((feature, index) => (
-              <FeatureCard
-                key={index}
-                feature={feature}
-                isActive={activeFeature === index}
-                onClick={() => setActiveFeature(index)}
-              />
-            ))}
-          </div>
-
-          {/* Feature detail */}
-          <div>
-            <Card className="sticky top-24 border-0 shadow-xl shadow-slate-200/50">
-              <CardContent className="p-8">
-                <div className="w-14 h-14 rounded-xl bg-amber-100 glow-ring-subtle flex items-center justify-center mb-6">
-                  <currentFeature.icon size={28} className="text-amber-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                  {currentFeature.title}
-                </h3>
-                <p className="text-accent font-medium mb-4">{currentFeature.tagline}</p>
-                <p className="text-slate-600 mb-6">{currentFeature.description}</p>
-                <ul className="space-y-3">
-                  {currentFeature.details.map((detail, index) => (
-                    <li key={index} className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                      <span className="text-slate-700">{detail}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
+        {/* Feature accordions */}
+        <div className="max-w-3xl mx-auto space-y-3">
+          {features.map((feature, index) => (
+            <FeatureAccordion
+              key={index}
+              feature={feature}
+              isActive={activeFeature === index}
+              onClick={() => handleToggle(index)}
+            />
+          ))}
         </div>
       </div>
     </section>
