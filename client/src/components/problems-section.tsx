@@ -69,7 +69,7 @@ export function ProblemsSection() {
               >
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0 glow-ring">
                       <Icon size={20} className="text-red-400" />
                     </div>
                     <div>
