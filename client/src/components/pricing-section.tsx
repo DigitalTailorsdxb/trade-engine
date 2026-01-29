@@ -72,7 +72,7 @@ export function PricingSection() {
               <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-6">
                 Setup
               </div>
-              <div className="mb-6">
+              <div className="mb-6 h-[88px]">
                 <span className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£3,499</span>
                 <p className="text-slate-500 mt-1">One-time setup fee</p>
               </div>
@@ -102,7 +102,7 @@ export function PricingSection() {
               <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-6">
                 Monthly
               </div>
-              <div className="mb-6">
+              <div className="mb-6 h-[88px]">
                 <span className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£199</span>
                 <span className="text-slate-500">/month</span>
                 <p className="text-accent font-medium mt-1">First month FREE</p>
