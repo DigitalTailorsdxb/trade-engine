@@ -523,24 +523,6 @@ export default function Features() {
               );
             })}
           </div>
-
-          <div className="mt-12 bg-slate-900 rounded-2xl p-8">
-            <div className="flex items-center gap-3 mb-4">
-              <MapPin size={24} className="text-amber-500" />
-              <h3 className="text-xl font-bold text-white">Local Business Schema</h3>
-            </div>
-            <p className="text-slate-400 mb-4">
-              Structured data that shows your business info directly in Google search results.
-            </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {["Business name & description", "Contact details", "Opening hours", "Service catalog"].map((item, index) => (
-                <div key={index} className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-amber-500" />
-                  <span className="text-sm text-white">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
