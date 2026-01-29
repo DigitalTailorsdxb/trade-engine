@@ -52,7 +52,7 @@ export function CTASection() {
                 asChild
                 data-testid="button-final-cta-call"
               >
-                <a href="tel:+441onal234567890">
+                <a href="tel:+447877934782">
                   <Phone size={18} className="mr-2" />
                   Or Call Us
                 </a>

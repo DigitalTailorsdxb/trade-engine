@@ -76,11 +76,11 @@ export function ContactSection() {
                   <div>
                     <p className="text-sm text-slate-500 mb-1">Email</p>
                     <a
-                      href="mailto:hello@tradeengine.io"
+                      href="mailto:hello@trade-engine.co.uk"
                       className="text-slate-900 hover:text-amber-600 transition-colors font-medium"
                       data-testid="link-contact-email"
                     >
-                      hello@tradeengine.io
+                      hello@trade-engine.co.uk
                     </a>
                   </div>
                 </div>
@@ -91,11 +91,11 @@ export function ContactSection() {
                   <div>
                     <p className="text-sm text-slate-500 mb-1">Phone</p>
                     <a
-                      href="tel:+441onal234567890"
+                      href="tel:+447877934782"
                       className="text-slate-900 hover:text-amber-600 transition-colors font-medium"
                       data-testid="link-contact-phone"
                     >
-                      +44 (0) 123 456 7890
+                      07877 934782
                     </a>
                   </div>
                 </div>
