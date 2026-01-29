@@ -68,11 +68,11 @@ export function ProblemsSection() {
                 data-testid={`card-problem-${index}`}
               >
                 <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-6">
                     <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0 glow-ring">
                       <Icon size={20} className="text-red-400" />
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 pl-2">
                       <p className="font-semibold text-white mb-3">{item.problem}</p>
                       <div className="flex items-start gap-3">
                         <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
