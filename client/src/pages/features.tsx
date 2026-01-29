@@ -308,11 +308,13 @@ export default function Features() {
               <Button 
                 size="lg" 
                 variant="outline"
-                onClick={handleContactClick}
+                asChild
                 data-testid="button-features-contact"
               >
-                Get Started
-                <ArrowRight size={16} className="ml-2" />
+                <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                  Get Started
+                  <ArrowRight size={16} className="ml-2" />
+                </a>
               </Button>
             </div>
           </div>
@@ -570,12 +572,14 @@ export default function Features() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              onClick={handleContactClick}
+              asChild
               className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
               data-testid="button-features-cta"
             >
-              Get Started Today
-              <ArrowRight size={18} className="ml-2" />
+              <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                Get Started Today
+                <ArrowRight size={18} className="ml-2" />
+              </a>
             </Button>
             <Link href="/pricing">
               <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800" data-testid="button-features-pricing">

@@ -39,11 +39,13 @@ export function CTASection() {
                 size="lg"
                 variant="secondary"
                 className="bg-white text-primary hover:bg-white/90"
-                onClick={handleContactClick}
+                asChild
                 data-testid="button-final-cta-demo"
               >
-                Book Your Demo
-                <ArrowRight size={18} className="ml-2" />
+                <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                  Book Your Demo
+                  <ArrowRight size={18} className="ml-2" />
+                </a>
               </Button>
               <Button
                 size="lg"

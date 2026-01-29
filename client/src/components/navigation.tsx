@@ -96,11 +96,13 @@ export function Navigation() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
-              onClick={handleContactClick}
+              asChild
               className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
-              data-testid="button-book-demo"
+              data-testid="button-test-demo"
             >
-              Book a Demo
+              <a href="https://www.premium-landscapes.co.uk" target="_blank" rel="noopener noreferrer">
+                Test the Demo
+              </a>
             </Button>
           </div>
 
@@ -143,14 +145,13 @@ export function Navigation() {
               ))}
               <div className="px-4 pt-2">
                 <Button
+                  asChild
                   className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
-                  onClick={() => {
-                    handleContactClick();
-                    setIsMobileMenuOpen(false);
-                  }}
-                  data-testid="button-mobile-book-demo"
+                  data-testid="button-mobile-test-demo"
                 >
-                  Book a Demo
+                  <a href="https://www.premium-landscapes.co.uk" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
+                    Test the Demo
+                  </a>
                 </Button>
               </div>
             </div>

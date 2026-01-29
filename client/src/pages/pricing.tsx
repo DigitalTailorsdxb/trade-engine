@@ -202,10 +202,12 @@ export default function Pricing() {
                   size="lg" 
                   className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-6 text-lg glow-ring-subtle"
                   data-testid="button-pricing-get-started"
-                  onClick={() => window.location.href = '/#contact'}
+                  asChild
                 >
-                  Get Started Today
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                    Get Started Today
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </Button>
               </div>
             </CardContent>

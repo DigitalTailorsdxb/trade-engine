@@ -112,9 +112,11 @@ export default function Products() {
                     See Live Demo
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" onClick={handleContactClick} data-testid="button-products-contact">
-                  Book a Call
-                  <ArrowRight size={18} className="ml-2" />
+                <Button size="lg" variant="outline" asChild data-testid="button-products-contact">
+                  <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                    Book a Call
+                    <ArrowRight size={18} className="ml-2" />
+                  </a>
                 </Button>
               </div>
             </div>
@@ -355,11 +357,13 @@ export default function Products() {
               <Button 
                 size="lg" 
                 variant="secondary"
-                onClick={handleContactClick}
+                asChild
                 data-testid="button-products-final-cta"
               >
-                Book Your Free Demo
-                <ArrowRight size={18} className="ml-2" />
+                <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                  Book Your Free Demo
+                  <ArrowRight size={18} className="ml-2" />
+                </a>
               </Button>
               <Button 
                 size="lg" 

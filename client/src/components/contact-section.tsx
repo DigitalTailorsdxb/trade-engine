@@ -53,11 +53,13 @@ export function ContactSection() {
               <Button
                 size="lg"
                 className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
-                onClick={handleBookCall}
+                asChild
                 data-testid="button-book-call"
               >
-                Book Your Free Call
-                <ArrowRight size={18} className="ml-2" />
+                <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                  Book Your Free Call
+                  <ArrowRight size={18} className="ml-2" />
+                </a>
               </Button>
             </CardContent>
           </Card>

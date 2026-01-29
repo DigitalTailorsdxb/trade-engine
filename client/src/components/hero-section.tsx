@@ -53,11 +53,13 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              onClick={handleContactClick}
+              asChild
               className="text-base"
               data-testid="button-hero-contact"
             >
-              Book a Call
+              <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                Book a Call
+              </a>
             </Button>
           </div>
 
