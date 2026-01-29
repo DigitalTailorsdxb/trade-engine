@@ -97,8 +97,8 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-100" />
       )}
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-        <div className="max-w-3xl">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Subtle badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary mb-8">
             <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
@@ -115,13 +115,13 @@ export function HeroSection() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl sm:text-2xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
+          <p className="text-xl sm:text-2xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
             Instant quotes. AI design visualisation. Automated follow-ups.
             <span className="text-slate-900 font-medium"> All white-labelled to your brand.</span>
           </p>
 
           {/* CTA Buttons - clean and prominent */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 mb-16 justify-center">
             <Button 
               size="lg" 
               onClick={handleDemoClick}
