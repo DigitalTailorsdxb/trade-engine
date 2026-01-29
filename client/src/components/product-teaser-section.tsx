@@ -57,6 +57,7 @@ export function ProductTeaserSection() {
                       <span className="text-slate-500">/mo</span>
                     </div>
                     <p className="text-sm text-accent font-medium mt-2">First month FREE</p>
+                    <p className="text-xs text-slate-500 mt-1">Cancel anytime - no tie-in</p>
                   </div>
                 </div>
 
