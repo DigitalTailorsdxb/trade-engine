@@ -7,7 +7,6 @@ import {
   Calculator,
   ImageIcon,
   FileText,
-  Palette,
   Smartphone,
   Search,
   Share2,
@@ -28,9 +27,6 @@ import {
   ChevronRight,
   MapPin,
   Building2,
-  Lightbulb,
-  Fence,
-  TreeDeciduous,
   LayoutGrid,
   Workflow,
   MessageSquare,
@@ -97,15 +93,6 @@ const coreFeatures = [
       "Captures leads competitors lose to slow response",
     ],
   },
-];
-
-const serviceCategories = [
-  { icon: LayoutGrid, title: "Patios & Paving", description: "Natural stone, porcelain, and block paving options" },
-  { icon: TreeDeciduous, title: "Decking", description: "Composite and timber decking solutions" },
-  { icon: TreeDeciduous, title: "Lawns", description: "Natural turf and artificial grass installation" },
-  { icon: Fence, title: "Fencing", description: "All styles of garden fencing and gates" },
-  { icon: Lightbulb, title: "Garden Lighting", description: "Ambient and feature lighting design" },
-  { icon: Palette, title: "Full Garden Redesigns", description: "Complete garden transformations" },
 ];
 
 const pagesIncluded = [
@@ -460,38 +447,6 @@ export default function Features() {
                         </li>
                       ))}
                     </ul>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Complete Service Showcase */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-3">Services Covered</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-              Complete Service Showcase
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Professional presentation of all your landscaping services with dedicated sections and quote paths.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {serviceCategories.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <Card key={index} className="border-slate-200 hover:shadow-lg transition-shadow" data-testid={`card-service-${index}`}>
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center mb-4">
-                      <Icon size={24} className="text-amber-600" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">{service.title}</h3>
-                    <p className="text-slate-600">{service.description}</p>
                   </CardContent>
                 </Card>
               );
