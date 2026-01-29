@@ -8,7 +8,7 @@ export default function Terms() {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Terms of Service | Trade Engine</title>
-        <meta name="description" content="Trade Engine Ltd terms of service. Important information about our AI-powered landscaping website platform, pricing, and service agreements." />
+        <meta name="description" content="Trade Engine terms of service. Important information about our AI-powered landscaping website platform, pricing, and service agreements." />
         <link rel="canonical" href="https://trade-engine.co.uk/terms" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
@@ -52,7 +52,7 @@ export default function Terms() {
             Registered office: East Midlands, United Kingdom
           </p>
           <p>
-            Trade Engine Ltd provides software-based tools for indicative landscaping pricing, design visualisations, and customer data capture.
+            Trade Engine provides software-based tools for indicative landscaping pricing, design visualisations, and customer data capture.
           </p>
           <p><strong>We are not a landscaping contractor.</strong></p>
 
@@ -86,7 +86,7 @@ export default function Terms() {
             Final pricing, timelines, and scope are determined solely by the appointed landscaping contractor.
           </p>
           <p>
-            Trade Engine Ltd takes no responsibility for final costs agreed between customers and contractors.
+            Trade Engine takes no responsibility for final costs agreed between customers and contractors.
           </p>
 
           <h2>5. Visualisations & AI-Generated Content</h2>
@@ -120,7 +120,7 @@ export default function Terms() {
           <h2>7. Contractors & Third Parties</h2>
           <p>Where we introduce or connect you to third-party landscapers:</p>
           <ul>
-            <li>Trade Engine Ltd is not a party to any contract</li>
+            <li>Trade Engine is not a party to any contract</li>
             <li>We do not supervise, control, or guarantee contractors</li>
             <li>Any agreement is strictly between you and the contractor</li>
           </ul>
@@ -146,7 +146,7 @@ export default function Terms() {
 
           <h2>9. Intellectual Property</h2>
           <p>
-            All content, software, workflows, visuals, and systems on this website are the intellectual property of Trade Engine Ltd or its licensors.
+            All content, software, workflows, visuals, and systems on this website are the intellectual property of Trade Engine or its licensors.
           </p>
           <p>You may not:</p>
           <ul>
@@ -168,7 +168,7 @@ export default function Terms() {
           <p>We may update, modify, suspend, or withdraw services at any time.</p>
 
           <h2>11. Limitation of Liability</h2>
-          <p>To the maximum extent permitted by law, Trade Engine Ltd shall not be liable for:</p>
+          <p>To the maximum extent permitted by law, Trade Engine shall not be liable for:</p>
           <ul>
             <li>Financial loss</li>
             <li>Loss of profit or opportunity</li>
@@ -181,7 +181,7 @@ export default function Terms() {
           </p>
 
           <h2>12. Indemnity</h2>
-          <p>You agree to indemnify Trade Engine Ltd against any claims, losses, or liabilities arising from:</p>
+          <p>You agree to indemnify Trade Engine against any claims, losses, or liabilities arising from:</p>
           <ul>
             <li>Your misuse of the platform</li>
             <li>Breach of these Terms</li>

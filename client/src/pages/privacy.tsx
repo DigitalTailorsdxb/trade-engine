@@ -8,7 +8,7 @@ export default function Privacy() {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Privacy Policy | Trade Engine</title>
-        <meta name="description" content="Trade Engine Ltd privacy policy. Learn how we collect, use, store and protect your personal data in accordance with UK GDPR." />
+        <meta name="description" content="Trade Engine privacy policy. Learn how we collect, use, store and protect your personal data in accordance with UK GDPR." />
         <link rel="canonical" href="https://trade-engine.co.uk/privacy" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
@@ -39,7 +39,7 @@ export default function Privacy() {
         <div className="prose prose-neutral dark:prose-invert max-w-none">
           <h2>1. Introduction</h2>
           <p>
-            Trade Engine Ltd ("we", "us", "our") is committed to protecting your privacy and personal data.
+            Trade Engine ("we", "us", "our") is committed to protecting your privacy and personal data.
             This Privacy Policy explains how we collect, use, store, and protect personal information when you use our website, software, and services.
             By using this website, you agree to the collection and use of information in accordance with this policy.
           </p>
