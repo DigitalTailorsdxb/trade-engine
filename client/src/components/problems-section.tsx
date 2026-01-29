@@ -72,7 +72,7 @@ export function ProblemsSection() {
                     <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0 glow-ring">
                       <Icon size={20} className="text-red-400" />
                     </div>
-                    <div className="flex-1 pl-2">
+                    <div className="flex-1 pl-4">
                       <p className="font-semibold text-white mb-3">{item.problem}</p>
                       <div className="flex items-start gap-3">
                         <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
