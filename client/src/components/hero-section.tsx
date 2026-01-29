@@ -34,7 +34,7 @@ export function HeroSection() {
 
           {/* Subheadline */}
           <div className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto px-2 text-center">
-            <p>Instant quotes. AI design. Automated follow-ups.</p>
+            <p>Instant quotes. AI design. Automated 24/7.</p>
             <p className="text-slate-900 font-medium">All white-labelled to your brand.</p>
           </div>
 
