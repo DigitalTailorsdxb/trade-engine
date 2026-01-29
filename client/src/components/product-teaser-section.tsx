@@ -1,11 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Gift, CheckCircle2 } from "lucide-react";
+import { useLocation } from "wouter";
 
 export function ProductTeaserSection() {
+  const [, setLocation] = useLocation();
+  
   const handleLearnMore = () => {
-    const element = document.querySelector("#features");
-    if (element) element.scrollIntoView({ behavior: "smooth" });
+    setLocation("/features");
   };
 
   return (
