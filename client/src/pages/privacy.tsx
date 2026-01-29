@@ -22,143 +22,150 @@ export default function Privacy() {
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
           Privacy Policy
         </h1>
+        <p className="text-muted-foreground mb-2">
+          Trade Engine
+        </p>
         <p className="text-muted-foreground mb-8">
-          Last updated: {new Date().toLocaleDateString("en-GB", { month: "long", day: "numeric", year: "numeric" })}
+          Last updated: 28 January 2026
         </p>
 
         <div className="prose prose-neutral dark:prose-invert max-w-none">
           <h2>1. Introduction</h2>
           <p>
-            Trade Engine ("we," "our," or "us") is committed to protecting your privacy.
-            This Privacy Policy explains how we collect, use, disclose, and safeguard your
-            information when you visit our website tradeengine.io and use our services.
+            Trade Engine Ltd ("we", "us", "our") is committed to protecting your privacy and personal data.
+            This Privacy Policy explains how we collect, use, store, and protect personal information when you use our website, software, and services.
+            By using this website, you agree to the collection and use of information in accordance with this policy.
           </p>
 
-          <h2>2. Information We Collect</h2>
-          <h3>Personal Information</h3>
-          <p>We may collect personal information that you voluntarily provide to us when you:</p>
-          <ul>
-            <li>Fill out contact forms or request a demo</li>
-            <li>Subscribe to our newsletter</li>
-            <li>Communicate with us via email, phone, or other channels</li>
-            <li>Use our services as a client</li>
-          </ul>
-          <p>This information may include:</p>
+          <h2>2. Who We Are</h2>
+          <p>
+            <strong>Trade Engine</strong><br />
+            Registered in England and Wales<br />
+            Registered office: Barwell Road, Leicester, United Kingdom
+          </p>
+          <p>
+            For the purposes of data protection law, Trade Engine is the Data Controller.
+          </p>
+
+          <h2>3. What Data We Collect</h2>
+          <p>We may collect and process the following categories of personal data:</p>
+          
+          <h3>Information you provide directly</h3>
           <ul>
             <li>Name</li>
             <li>Email address</li>
             <li>Phone number</li>
-            <li>Company name</li>
-            <li>Business address</li>
+            <li>Property address / postcode</li>
+            <li>Landscaping requirements and preferences</li>
+            <li>Budget information (where provided)</li>
           </ul>
 
-          <h3>Automatically Collected Information</h3>
-          <p>
-            When you visit our website, we may automatically collect certain information
-            about your device, including:
-          </p>
+          <h3>Automatically generated data</h3>
+          <ul>
+            <li>AI-generated designs and visualisations</li>
+            <li>Indicative quotes and pricing estimates</li>
+            <li>Uploaded files or images (if applicable)</li>
+          </ul>
+
+          <h3>Technical data</h3>
           <ul>
             <li>IP address</li>
-            <li>Browser type and version</li>
-            <li>Operating system</li>
-            <li>Referring website</li>
-            <li>Pages visited and time spent on each page</li>
-            <li>Date and time of access</li>
+            <li>Device and browser information</li>
+            <li>Website usage analytics</li>
           </ul>
 
-          <h2>3. How We Use Your Information</h2>
-          <p>We use the information we collect to:</p>
+          <h2>4. How We Use Your Data</h2>
+          <p>We use personal data to:</p>
           <ul>
-            <li>Respond to your enquiries and provide customer support</li>
-            <li>Process and manage your account</li>
-            <li>Send you marketing communications (with your consent)</li>
-            <li>Improve our website and services</li>
+            <li>Generate indicative landscaping quotes</li>
+            <li>Produce design concepts and visualisations</li>
+            <li>Store customer requirements and outputs</li>
+            <li>Share relevant information with approved landscaping contractors</li>
+            <li>Communicate regarding your enquiry</li>
+            <li>Improve platform functionality and performance</li>
             <li>Comply with legal obligations</li>
-            <li>Protect against fraudulent or illegal activity</li>
+          </ul>
+          <p><strong>We do not sell personal data.</strong></p>
+
+          <h2>5. Legal Basis for Processing</h2>
+          <p>We process personal data under one or more of the following legal bases:</p>
+          <ul>
+            <li><strong>Consent</strong> – where you submit information voluntarily</li>
+            <li><strong>Legitimate interest</strong> – to operate and improve our services</li>
+            <li><strong>Contractual necessity</strong> – where data is needed to deliver requested services</li>
+            <li><strong>Legal obligation</strong> – where required by law</li>
           </ul>
 
-          <h2>4. Data Sharing and Disclosure</h2>
-          <p>
-            We do not sell, trade, or otherwise transfer your personal information to
-            third parties without your consent, except in the following circumstances:
-          </p>
+          <h2>6. Sharing Your Data</h2>
+          <p>We may share your data with:</p>
           <ul>
-            <li>
-              <strong>Service Providers:</strong> We may share information with trusted
-              third-party service providers who assist us in operating our website and
-              services, subject to confidentiality agreements.
-            </li>
-            <li>
-              <strong>Legal Requirements:</strong> We may disclose information if required
-              by law or in response to valid legal processes.
-            </li>
-            <li>
-              <strong>Business Transfers:</strong> In the event of a merger, acquisition,
-              or sale of assets, your information may be transferred as part of that
-              transaction.
-            </li>
+            <li>Approved landscaping contractors relevant to your enquiry</li>
+            <li>Service providers supporting hosting, analytics, email, or storage</li>
+            <li>Legal or regulatory authorities if required</li>
           </ul>
+          <p>All third parties are required to process data securely and lawfully.</p>
 
-          <h2>5. Data Security</h2>
-          <p>
-            We implement appropriate technical and organisational measures to protect your
-            personal information against unauthorised access, alteration, disclosure, or
-            destruction. However, no method of transmission over the internet is 100%
-            secure, and we cannot guarantee absolute security.
-          </p>
-
-          <h2>6. Your Rights</h2>
-          <p>Under the UK GDPR and Data Protection Act 2018, you have the right to:</p>
+          <h2>7. Data Storage & Security</h2>
           <ul>
-            <li>Access the personal data we hold about you</li>
+            <li>Data is stored securely using industry-standard safeguards</li>
+            <li>Access is restricted to authorised personnel only</li>
+            <li>We take reasonable technical and organisational measures to prevent unauthorised access, loss, or misuse</li>
+          </ul>
+          <p>Despite this, no system can be guaranteed 100% secure.</p>
+
+          <h2>8. Data Retention</h2>
+          <p>We retain personal data only for as long as necessary to:</p>
+          <ul>
+            <li>Fulfil the purpose it was collected for</li>
+            <li>Meet legal, accounting, or regulatory requirements</li>
+          </ul>
+          <p>Data may be anonymised and retained for analytics and system improvement.</p>
+
+          <h2>9. Your Rights (UK GDPR)</h2>
+          <p>You have the right to:</p>
+          <ul>
+            <li>Access your personal data</li>
             <li>Request correction of inaccurate data</li>
-            <li>Request deletion of your data (right to be forgotten)</li>
-            <li>Object to processing of your data</li>
-            <li>Request restriction of processing</li>
-            <li>Request data portability</li>
+            <li>Request deletion of your data</li>
+            <li>Restrict or object to processing</li>
             <li>Withdraw consent at any time</li>
+            <li>Request data portability</li>
           </ul>
-          <p>
-            To exercise any of these rights, please contact us at{" "}
-            <a href="mailto:privacy@tradeengine.io">privacy@tradeengine.io</a>.
-          </p>
+          <p>Requests can be made by contacting us using the details below.</p>
 
-          <h2>7. Cookies</h2>
-          <p>
-            Our website uses cookies to enhance your browsing experience. Cookies are
-            small text files stored on your device that help us understand how you use
-            our website. You can control cookies through your browser settings.
-          </p>
-
-          <h2>8. Third-Party Links</h2>
-          <p>
-            Our website may contain links to third-party websites. We are not responsible
-            for the privacy practices of these external sites and encourage you to review
-            their privacy policies.
-          </p>
-
-          <h2>9. Children's Privacy</h2>
-          <p>
-            Our services are not directed to individuals under the age of 18. We do not
-            knowingly collect personal information from children.
-          </p>
-
-          <h2>10. Changes to This Policy</h2>
-          <p>
-            We may update this Privacy Policy from time to time. We will notify you of any
-            changes by posting the new Privacy Policy on this page and updating the "Last
-            updated" date.
-          </p>
-
-          <h2>11. Contact Us</h2>
-          <p>
-            If you have any questions about this Privacy Policy or our data practices,
-            please contact us:
-          </p>
+          <h2>10. Cookies & Tracking</h2>
+          <p>We may use cookies and similar technologies to:</p>
           <ul>
-            <li>Email: <a href="mailto:privacy@tradeengine.io">privacy@tradeengine.io</a></li>
-            <li>Website: <a href="https://tradeengine.io">tradeengine.io</a></li>
+            <li>Improve website functionality</li>
+            <li>Analyse site usage</li>
+            <li>Enhance user experience</li>
           </ul>
+          <p>You can manage cookie preferences via your browser settings.</p>
+
+          <h2>11. Children's Data</h2>
+          <p>
+            This website is not intended for use by individuals under the age of 18.
+            We do not knowingly collect data from children.
+          </p>
+
+          <h2>12. Third-Party Links</h2>
+          <p>
+            Our website may contain links to third-party websites.
+            We are not responsible for the privacy practices or content of external sites.
+          </p>
+
+          <h2>13. Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time.
+            Any changes will be posted on this page with a revised "Last updated" date.
+          </p>
+
+          <h2>14. Contact Us</h2>
+          <p>For data protection enquiries or to exercise your rights:</p>
+          <p>
+            <strong>Trade Engine</strong><br />
+            Email: <a href="mailto:hello@trade-engine.co.uk">hello@trade-engine.co.uk</a>
+          </p>
         </div>
       </main>
 
