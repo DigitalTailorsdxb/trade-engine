@@ -26,7 +26,7 @@ const testimonials = [
     quote:
       "Trade Engine completely transformed how we handle leads. We used to spend hours on quotes — now customers get pricing instantly and we close more deals.",
     author: "James Mitchell",
-    role: "Owner, Premium Landscapes",
+    role: "Owner, Mitchell Gardens",
     rating: 5,
   },
   {
@@ -90,8 +90,8 @@ export function TestimonialsSection() {
         {/* Testimonial Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-0 shadow-lg shadow-slate-200/50" data-testid={`testimonial-${index}`}>
-              <CardContent className="p-6">
+            <Card key={index} className="border-0 shadow-lg shadow-slate-200/50 h-full" data-testid={`testimonial-${index}`}>
+              <CardContent className="p-6 h-full flex flex-col">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Quote size={18} className="text-primary" />
                 </div>
@@ -106,11 +106,11 @@ export function TestimonialsSection() {
                   ))}
                 </div>
 
-                <p className="text-slate-700 mb-6 leading-relaxed">
+                <p className="text-slate-700 mb-6 leading-relaxed flex-1">
                   "{testimonial.quote}"
                 </p>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 mt-auto">
                   <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center">
                     <span className="text-slate-600 font-semibold text-sm">
                       {testimonial.author.charAt(0)}
