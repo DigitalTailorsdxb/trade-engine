@@ -119,7 +119,7 @@ export default function Pricing() {
     {
       value: "£250",
       title: "Free Ad Spend",
-      description: "Meta & Google Ads credit to kickstart your marketing. We'll help you set up your first campaigns."
+      description: "Meta & Google Ads credit to kickstart your marketing. We'll set up your first campaigns."
     },
     {
       value: "FREE",
