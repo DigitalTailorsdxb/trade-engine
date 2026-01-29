@@ -22,157 +22,182 @@ export default function Terms() {
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
           Terms of Service
         </h1>
+        <p className="text-muted-foreground mb-2">
+          Trade Engine
+        </p>
         <p className="text-muted-foreground mb-8">
-          Last updated: {new Date().toLocaleDateString("en-GB", { month: "long", day: "numeric", year: "numeric" })}
+          Last updated: 28 January 2026
         </p>
 
         <div className="prose prose-neutral dark:prose-invert max-w-none">
-          <h2>1. Agreement to Terms</h2>
+          <h2>1. Introduction</h2>
           <p>
-            By accessing or using the Trade Engine website and services, you agree to be
-            bound by these Terms of Service and all applicable laws and regulations. If
-            you do not agree with any of these terms, you are prohibited from using or
-            accessing this site.
+            These Terms of Service ("Terms") govern your use of this website, platform, and any related tools, services, or content provided by Trade Engine ("we", "us", "our").
+          </p>
+          <p>
+            By accessing or using this website, you agree to be bound by these Terms. If you do not agree, you must not use this website or any associated services.
           </p>
 
-          <h2>2. Services Description</h2>
+          <h2>2. Who We Are</h2>
           <p>
-            Trade Engine provides AI-powered website solutions for trade businesses,
-            including but not limited to:
+            <strong>Trade Engine</strong><br />
+            Company registered in England and Wales.<br />
+            Registered office: Barwell Road, Leicester, United Kingdom
           </p>
+          <p>
+            Trade Engine Ltd provides software-based tools for indicative landscaping pricing, design visualisations, and customer data capture.
+          </p>
+          <p><strong>We are not a landscaping contractor.</strong></p>
+
+          <h2>3. Nature of the Service (Important)</h2>
+          <p><strong>Our platform provides:</strong></p>
           <ul>
-            <li>Custom website design and development</li>
-            <li>AI-powered instant quote systems</li>
-            <li>AI garden/project visualization tools</li>
-            <li>CRM integration and automation workflows</li>
-            <li>White-label branding solutions</li>
-            <li>Ongoing hosting, maintenance, and support</li>
+            <li>Indicative landscaping cost estimates</li>
+            <li>AI-generated concept designs and visualisations</li>
+            <li>Data collection tools for customer requirements</li>
+            <li>Storage of submitted information, designs, and quotes</li>
           </ul>
-
-          <h2>3. Pricing and Payment</h2>
-          <h3>Setup Fee</h3>
-          <p>
-            A one-time setup fee of £4,995 is payable upon agreement to proceed with the
-            service. This fee covers all initial setup, configuration, and training as
-            outlined in our service agreement.
-          </p>
-          <h3>Monthly Subscription</h3>
-          <p>
-            A monthly subscription fee of £199 is payable in advance each month. This
-            covers hosting, maintenance, AI credits, support, and updates.
-          </p>
-          <h3>Payment Terms</h3>
+          <p><strong>What the service is NOT:</strong></p>
           <ul>
-            <li>Setup fee is due upon contract signing</li>
-            <li>Monthly fees are due on the same date each month</li>
-            <li>All prices are exclusive of VAT where applicable</li>
-            <li>Late payments may incur additional charges</li>
-          </ul>
-
-          <h2>4. Service Level Agreement</h2>
-          <p>We commit to providing:</p>
-          <ul>
-            <li>99.9% website uptime</li>
-            <li>Response to support requests within 24 hours</li>
-            <li>Regular security updates and maintenance</li>
-            <li>Ongoing feature improvements</li>
-          </ul>
-
-          <h2>5. Client Responsibilities</h2>
-          <p>As a client, you agree to:</p>
-          <ul>
-            <li>Provide accurate and complete information during setup</li>
-            <li>Maintain the confidentiality of any login credentials</li>
-            <li>Use the services in compliance with all applicable laws</li>
-            <li>Pay all fees when due</li>
-            <li>Not use the services for any unlawful purpose</li>
-          </ul>
-
-          <h2>6. Intellectual Property</h2>
-          <h3>Trade Engine Property</h3>
-          <p>
-            The Trade Engine platform, software, and underlying technology remain the
-            property of Trade Engine. You are granted a licence to use these components
-            as part of your subscription.
-          </p>
-          <h3>Client Content</h3>
-          <p>
-            You retain ownership of all content, logos, images, and materials you provide.
-            You grant us a licence to use this content solely for the purpose of
-            delivering our services.
-          </p>
-
-          <h2>7. Data and Privacy</h2>
-          <p>
-            Your use of our services is also governed by our Privacy Policy. We will
-            handle all personal data in accordance with the UK GDPR and Data Protection
-            Act 2018.
-          </p>
-
-          <h2>8. Limitation of Liability</h2>
-          <p>
-            To the maximum extent permitted by law, Trade Engine shall not be liable for
-            any indirect, incidental, special, consequential, or punitive damages,
-            including but not limited to:
-          </p>
-          <ul>
-            <li>Loss of profits or revenue</li>
-            <li>Loss of data</li>
-            <li>Business interruption</li>
-            <li>Loss of goodwill</li>
+            <li>A binding quotation</li>
+            <li>A final price</li>
+            <li>A professional architectural, engineering, or surveying service</li>
+            <li>A guarantee of works, materials, availability, or outcomes</li>
           </ul>
           <p>
-            Our total liability for any claims arising from or related to these terms or
-            our services shall not exceed the total fees paid by you in the 12 months
-            preceding the claim.
+            <strong>All figures and visuals are estimates and concepts only, intended for guidance and early decision-making.</strong>
           </p>
 
-          <h2>9. Termination</h2>
-          <h3>By Client</h3>
-          <p>
-            You may terminate your monthly subscription with 30 days written notice. The
-            setup fee is non-refundable.
-          </p>
-          <h3>By Trade Engine</h3>
-          <p>
-            We may terminate or suspend your access to our services immediately, without
-            prior notice, if you breach these terms or fail to pay fees when due.
-          </p>
-          <h3>Effect of Termination</h3>
-          <p>
-            Upon termination, your access to the platform will be revoked. We can provide
-            an export of your data upon request.
-          </p>
-
-          <h2>10. Modifications to Service</h2>
-          <p>
-            We reserve the right to modify or discontinue any part of our services at any
-            time. We will provide reasonable notice of any significant changes.
-          </p>
-
-          <h2>11. Governing Law</h2>
-          <p>
-            These terms shall be governed by and construed in accordance with the laws of
-            England and Wales. Any disputes shall be subject to the exclusive jurisdiction
-            of the courts of England and Wales.
-          </p>
-
-          <h2>12. Changes to Terms</h2>
-          <p>
-            We reserve the right to update these terms at any time. We will notify you of
-            any changes by posting the new terms on this page and updating the "Last
-            updated" date. Your continued use of the services after changes constitutes
-            acceptance of the new terms.
-          </p>
-
-          <h2>13. Contact Information</h2>
-          <p>
-            For any questions regarding these Terms of Service, please contact us:
-          </p>
+          <h2>4. No Binding Quotes</h2>
+          <p>Any prices shown:</p>
           <ul>
-            <li>Email: <a href="mailto:legal@tradeengine.io">legal@tradeengine.io</a></li>
-            <li>Website: <a href="https://tradeengine.io">tradeengine.io</a></li>
+            <li>Are indicative only</li>
+            <li>Are based solely on information provided by the user</li>
+            <li>May change following site surveys, design revisions, or contractor assessment</li>
           </ul>
+          <p>
+            Final pricing, timelines, and scope are determined solely by the appointed landscaping contractor.
+          </p>
+          <p>
+            Trade Engine Ltd takes no responsibility for final costs agreed between customers and contractors.
+          </p>
+
+          <h2>5. Visualisations & AI-Generated Content</h2>
+          <p>Designs, images, and layouts generated by the platform:</p>
+          <ul>
+            <li>Are conceptual representations</li>
+            <li>May not reflect real-world constraints</li>
+            <li>Are not construction drawings or technical plans</li>
+          </ul>
+          <p>You acknowledge that:</p>
+          <ul>
+            <li>Visual outputs are illustrative, not exact</li>
+            <li>Final results may differ materially from generated images</li>
+          </ul>
+
+          <h2>6. User Responsibilities</h2>
+          <p>By using this website, you confirm that:</p>
+          <ul>
+            <li>Information you provide is accurate to the best of your knowledge</li>
+            <li>You understand estimates are non-binding</li>
+            <li>You will not rely solely on outputs for financial or construction decisions</li>
+          </ul>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Misuse the platform</li>
+            <li>Provide false or misleading information</li>
+            <li>Attempt to reverse-engineer or exploit the software</li>
+            <li>Use the service for unlawful purposes</li>
+          </ul>
+
+          <h2>7. Contractors & Third Parties</h2>
+          <p>Where we introduce or connect you to third-party landscapers:</p>
+          <ul>
+            <li>Trade Engine Ltd is not a party to any contract</li>
+            <li>We do not supervise, control, or guarantee contractors</li>
+            <li>Any agreement is strictly between you and the contractor</li>
+          </ul>
+          <p>We are not liable for:</p>
+          <ul>
+            <li>Work quality</li>
+            <li>Delays</li>
+            <li>Disputes</li>
+            <li>Pricing changes</li>
+            <li>Contractor conduct</li>
+          </ul>
+
+          <h2>8. Data Storage & Use</h2>
+          <p>By submitting information, you agree that we may:</p>
+          <ul>
+            <li>Store your data securely</li>
+            <li>Share relevant information with approved contractors</li>
+            <li>Use anonymised data for analytics and platform improvement</li>
+          </ul>
+          <p>
+            Personal data is handled in accordance with our <Link href="/privacy" className="text-amber-600 hover:text-amber-700">Privacy Policy</Link>.
+          </p>
+
+          <h2>9. Intellectual Property</h2>
+          <p>
+            All content, software, workflows, visuals, and systems on this website are the intellectual property of Trade Engine Ltd or its licensors.
+          </p>
+          <p>You may not:</p>
+          <ul>
+            <li>Copy or replicate platform functionality</li>
+            <li>Redistribute designs or outputs for commercial use</li>
+            <li>Use content without permission</li>
+          </ul>
+          <p>
+            Customer-generated inputs remain the property of the customer. Generated outputs remain licensed for personal use only unless otherwise agreed.
+          </p>
+
+          <h2>10. Availability & Service Continuity</h2>
+          <p>We aim to provide continuous availability but do not guarantee:</p>
+          <ul>
+            <li>Uninterrupted service</li>
+            <li>Error-free operation</li>
+            <li>Permanent access to designs or quotes</li>
+          </ul>
+          <p>We may update, modify, suspend, or withdraw services at any time.</p>
+
+          <h2>11. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by law, Trade Engine Ltd shall not be liable for:</p>
+          <ul>
+            <li>Financial loss</li>
+            <li>Loss of profit or opportunity</li>
+            <li>Reliance on estimates or visuals</li>
+            <li>Errors arising from incorrect user input</li>
+            <li>Contractor disputes or outcomes</li>
+          </ul>
+          <p>
+            Our total liability shall not exceed the amount paid (if any) for use of the service.
+          </p>
+
+          <h2>12. Indemnity</h2>
+          <p>You agree to indemnify Trade Engine Ltd against any claims, losses, or liabilities arising from:</p>
+          <ul>
+            <li>Your misuse of the platform</li>
+            <li>Breach of these Terms</li>
+            <li>Disputes with contractors</li>
+          </ul>
+
+          <h2>13. Governing Law</h2>
+          <p>
+            These Terms are governed by the laws of England and Wales.
+            Any disputes shall be subject to the exclusive jurisdiction of the English courts.
+          </p>
+
+          <h2>14. Changes to These Terms</h2>
+          <p>
+            We may update these Terms at any time. Continued use of the website constitutes acceptance of the latest version.
+          </p>
+
+          <h2>15. Contact</h2>
+          <p>For legal or service enquiries:</p>
+          <p>
+            Email: <a href="mailto:hello@trade-engine.co.uk">hello@trade-engine.co.uk</a><br />
+            Company: Trade Engine
+          </p>
         </div>
       </main>
 
