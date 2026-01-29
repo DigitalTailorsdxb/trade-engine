@@ -8,7 +8,7 @@ import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_176964345
 const navLinks = [
   { href: "/features", label: "Features", isPage: true },
   { href: "/pricing", label: "Pricing", isPage: true },
-  { href: "#faq", label: "FAQ", isPage: false },
+  { href: "/faq", label: "FAQ", isPage: true },
   { href: "#contact", label: "Contact", isPage: false },
 ];
 
