@@ -68,11 +68,13 @@ export function ProblemsSection() {
                 data-testid={`card-problem-${index}`}
               >
                 <CardContent className="p-6">
-                  <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0 glow-ring mb-4">
-                    <Icon size={20} className="text-red-400" />
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0 glow-ring">
+                      <Icon size={20} className="text-red-400" />
+                    </div>
                   </div>
-                  <p className="font-semibold text-white mb-3">{item.problem}</p>
-                  <div className="flex items-start gap-3">
+                  <p className="font-semibold text-white mb-3 pl-[22px]">{item.problem}</p>
+                  <div className="flex items-start gap-3 pl-[22px]">
                     <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
                     <p className="text-slate-300 text-sm leading-relaxed">{item.solution}</p>
                   </div>
