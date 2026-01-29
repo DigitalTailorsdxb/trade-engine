@@ -113,7 +113,7 @@ const pagesIncluded = [
   { icon: LayoutGrid, title: "Services Page", description: "Detailed service descriptions" },
   { icon: Camera, title: "Project Gallery", description: "Filterable portfolio showcase" },
   { icon: Mail, title: "Contact Page", description: "Form and business details" },
-  { icon: Calculator, title: "AI Quote & Design", description: "Interactive quote and visualisation tool" },
+  { icon: Calculator, title: "AI Quote & Design", description: "Interactive quote and visualisation system" },
   { icon: FileText, title: "Blog", description: "10 professionally written articles" },
 ];
 

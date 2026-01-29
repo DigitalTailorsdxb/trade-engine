@@ -41,7 +41,7 @@ export default function Pricing() {
     },
     {
       icon: Image,
-      title: "AI Visualisation Tool",
+      title: "AI Visualisation System",
       description: "Photo-to-design AI technology integrated into your site. Customers upload a photo, receive a photorealistic preview in 90 seconds."
     },
     {
@@ -135,7 +135,7 @@ export default function Pricing() {
   const comparison = [
     { item: "Custom website design", traditional: "£5,000 - £15,000", tradeEngine: "Included" },
     { item: "AI quote system development", traditional: "£10,000 - £25,000", tradeEngine: "Included" },
-    { item: "AI visualisation tool", traditional: "£15,000 - £40,000", tradeEngine: "Included" },
+    { item: "AI visualisation system", traditional: "£15,000 - £40,000", tradeEngine: "Included" },
     { item: "CRM integration", traditional: "£2,000 - £5,000", tradeEngine: "Included" },
     { item: "Mobile optimisation", traditional: "£1,500 - £3,000", tradeEngine: "Included" },
     { item: "Content writing", traditional: "£1,000 - £3,000", tradeEngine: "Included" },
