@@ -445,14 +445,14 @@ export default function Features() {
             {workflowCapabilities.map((capability, index) => {
               const Icon = capability.icon;
               return (
-                <Card key={index} className="border-0 shadow-lg shadow-slate-200/50" data-testid={`card-workflow-${index}`}>
-                  <CardContent className="p-8">
+                <Card key={index} className="border-0 shadow-lg shadow-slate-200/50 h-full" data-testid={`card-workflow-${index}`}>
+                  <CardContent className="p-8 h-full flex flex-col">
                     <div className="w-14 h-14 rounded-xl bg-amber-100 flex items-center justify-center mb-6">
                       <Icon size={28} className="text-amber-600" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">{capability.title}</h3>
-                    <p className="text-slate-600 mb-6">{capability.description}</p>
-                    <ul className="space-y-2">
+                    <p className="text-slate-600 mb-6 min-h-[48px]">{capability.description}</p>
+                    <ul className="space-y-2 mt-auto">
                       {capability.features.map((feature, fIndex) => (
                         <li key={fIndex} className="flex items-start gap-2">
                           <CheckCircle2 size={16} className="text-amber-500 flex-shrink-0 mt-0.5" />
