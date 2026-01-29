@@ -278,7 +278,7 @@ export default function Pricing() {
             </div>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               No long-term contracts. No tie-ins. Cancel whenever you want with 30 days notice. 
-              We keep you because you love the service, not because you're locked in.
+              You stay because it works, not because you're locked in.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
