@@ -122,9 +122,9 @@ export default function Pricing() {
       description: "Meta & Google Ads credit to kickstart your marketing. We'll set up your first campaigns."
     },
     {
-      value: "FREE",
-      title: "First Month AI",
-      description: "Your first month of AI visualisation credits are completely free. See results before you pay."
+      value: "£199",
+      title: "First Month Free",
+      description: "Your first month of the complete AI system is on us. Start generating leads before you pay a penny."
     },
     {
       value: "FREE",
