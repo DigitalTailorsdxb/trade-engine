@@ -251,18 +251,18 @@ function FeatureAccordion({
       
       {/* Expandable content directly below the button */}
       <div className={`overflow-hidden transition-all duration-300 ${
-        isActive ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        isActive ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0"
       }`}>
         <div className="p-6 bg-slate-50 border-t border-slate-100">
           <p className="text-slate-600 mb-5">{feature.description}</p>
-          <ul className="grid sm:grid-cols-2 gap-3">
+          <div className="grid sm:grid-cols-2 gap-3">
             {feature.highlights.map((highlight, index) => (
-              <li key={index} className="flex items-start gap-3">
+              <div key={index} className="flex items-start gap-3 bg-white border border-slate-200 rounded-lg p-4">
                 <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
                 <span className="text-slate-700 text-sm">{highlight}</span>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
