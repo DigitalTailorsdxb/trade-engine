@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { SiLinkedin, SiX, SiFacebook, SiInstagram } from "react-icons/si";
-import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
+import logoImageDark from "@assets/transparent_logo_no.2_1769645361104.png";
 
 const footerLinks = {
   product: [
@@ -41,7 +41,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="mb-4">
               <img 
-                src={logoImage} 
+                src={logoImageDark} 
                 alt="Trade Engine" 
                 className="h-40 md:h-48 w-auto"
               />
