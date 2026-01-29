@@ -133,11 +133,11 @@ export function PricingSection() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-slate-50 rounded-xl p-8 text-center">
             <h3 className="text-xl font-semibold text-slate-900 mb-2">
-              ROI After Just 2-3 Extra Jobs
+              Pays for Itself in 2-3 Extra Jobs
             </h3>
             <p className="text-slate-600 mb-6">
-              Most landscaping jobs are £2,000+. With our 40% average increase in leads, 
-              the system pays for itself in the first month.
+              Stop losing jobs to tyre-kickers and slow follow-ups. The system filters unqualified leads, 
+              sets price expectations, and works 24/7 - so you close more jobs without working more hours.
             </p>
             <Button className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25" onClick={handleContactClick} data-testid="button-pricing-cta">
               Get Started
