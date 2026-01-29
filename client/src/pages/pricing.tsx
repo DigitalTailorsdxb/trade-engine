@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -145,6 +146,11 @@ export default function Pricing() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Pricing | £3,499 Setup + £199/Month | Trade Engine</title>
+        <meta name="description" content="Trade Engine pricing: £3,499 one-time setup includes AI quote system, garden visualisation, and HubSpot CRM. £199/month covers hosting, support, and AI credits. Rolling monthly, no tie-ins." />
+        <link rel="canonical" href="https://trade-engine.co.uk/pricing" />
+      </Helmet>
       <Navigation />
       
       {/* Hero Section */}

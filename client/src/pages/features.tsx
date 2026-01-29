@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -282,6 +283,11 @@ export default function Features() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Features | AI Quotes, Garden Visualisation & CRM | Trade Engine</title>
+        <meta name="description" content="Explore Trade Engine's powerful features: AI instant quotes in 15 seconds, AI garden visualisation in 90 seconds, HubSpot CRM integration, white-labelled branding, and 24/7 automated follow-ups." />
+        <link rel="canonical" href="https://trade-engine.co.uk/features" />
+      </Helmet>
       <Navigation />
 
       {/* Hero */}

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -5,6 +6,12 @@ import { Button } from "@/components/ui/button";
 export default function Terms() {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Terms of Service | Trade Engine</title>
+        <meta name="description" content="Trade Engine Ltd terms of service. Important information about our AI-powered landscaping website platform, pricing, and service agreements." />
+        <link rel="canonical" href="https://trade-engine.co.uk/terms" />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       {/* Header */}
       <header className="border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">

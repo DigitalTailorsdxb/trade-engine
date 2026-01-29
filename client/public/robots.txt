@@ -1,0 +1,9 @@
+# robots.txt for Trade Engine
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://trade-engine.co.uk/sitemap.xml
+
+# Disallow admin/API paths
+Disallow: /api/

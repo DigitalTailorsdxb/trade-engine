@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -225,6 +226,11 @@ export default function FAQ() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>FAQ | Common Questions About Trade Engine for Landscapers</title>
+        <meta name="description" content="Find answers to frequently asked questions about Trade Engine. Learn about pricing, setup time, AI features, CRM integration, and how our system helps landscaping businesses grow." />
+        <link rel="canonical" href="https://trade-engine.co.uk/faq" />
+      </Helmet>
       <Navigation />
       
       {/* Hero Section */}
