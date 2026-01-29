@@ -12,7 +12,7 @@ const faqCategories = [
     faqs: [
       {
         question: "How long does it take to get my website live?",
-        answer: "Most websites are live within 2-3 weeks from our initial kickoff call. We start by gathering your requirements, branding assets, and pricing structure. Then we build your complete website, configure the AI systems, set up your CRM integration, and run thorough testing. Once you're happy with everything, we go live. We work efficiently but never rush quality."
+        answer: "Once we have your company information, product pricing, logos, and design specifications, your website will be built within 7 days. We configure the AI systems, set up your CRM integration, and run thorough testing. Once you're happy with everything, we go live."
       },
       {
         question: "Do I need any technical knowledge to use the system?",
@@ -20,7 +20,7 @@ const faqCategories = [
       },
       {
         question: "What do I need to provide to get started?",
-        answer: "We'll need your logo, brand colours (or we can suggest some), photos of your previous work (if you have them - we can source professional stock images if needed), your pricing structure for different services, and basic business information. We handle everything else including professional copywriting and all technical setup."
+        answer: "We'll need access to your website domain (or we can help you purchase one), your logo and any brand assets, your pricing structure for different services, and any specific design preferences. Photos of your previous work are helpful if you have them - otherwise we can source professional stock images. We handle everything else including copywriting and all technical setup."
       },
       {
         question: "Can I see a working example before I commit?",
