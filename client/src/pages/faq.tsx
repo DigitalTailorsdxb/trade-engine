@@ -52,10 +52,6 @@ const faqCategories = [
         question: "What payment methods do you accept?",
         answer: "We accept bank transfer, credit/debit cards, and direct debit for monthly payments. The setup fee is paid upfront to begin work, and the monthly subscription starts once your website goes live. We can discuss payment arrangements if needed."
       },
-      {
-        question: "Is there a money-back guarantee?",
-        answer: "Yes. If you're not satisfied with your website within 30 days of launch, we'll refund your setup fee in full. We're that confident you'll love the results. This gives you complete peace of mind when getting started."
-      },
     ]
   },
   {

@@ -207,9 +207,6 @@ export default function Pricing() {
                   Get Started Today
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <p className="text-slate-500 mt-4 text-sm">
-                  30-day money-back guarantee on setup fee
-                </p>
               </div>
             </CardContent>
           </Card>
@@ -435,15 +432,6 @@ export default function Pricing() {
                 We'll need your logo, brand colours, photos of your work (we can help source 
                 stock images if needed), and your pricing structure. We handle everything else 
                 including copywriting and technical setup.
-              </p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="text-lg font-bold text-slate-900 mb-2">
-                Is there a money-back guarantee?
-              </h3>
-              <p className="text-slate-600">
-                Yes. If you're not satisfied with your website within 30 days of launch, 
-                we'll refund your setup fee in full. We're confident you'll love the results.
               </p>
             </Card>
             <Card className="p-6 border-2 border-green-200 bg-green-50/50">
