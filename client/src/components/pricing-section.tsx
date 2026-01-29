@@ -36,7 +36,7 @@ export function PricingSection() {
         {/* Header */}
         <div className="text-center mb-8">
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Pricing</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Simple, Transparent
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -68,12 +68,12 @@ export function PricingSection() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
           {/* Setup */}
           <Card className="border-2 border-amber-400/50 glow-ring" data-testid="card-pricing-setup">
-            <CardContent className="p-8">
-              <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-6">
+            <CardContent className="p-5 sm:p-6 md:p-8">
+              <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-4 sm:mb-6">
                 Setup
               </div>
-              <div className="mb-6 h-[88px]">
-                <span className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£3,499</span>
+              <div className="mb-4 sm:mb-6 sm:h-[88px]">
+                <span className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£3,499</span>
                 <p className="text-slate-500 mt-1">One-time setup fee</p>
               </div>
               <p className="text-slate-600 mb-6">
@@ -98,12 +98,12 @@ export function PricingSection() {
 
           {/* Monthly */}
           <Card className="border-2 border-amber-400/50 glow-ring" data-testid="card-pricing-monthly">
-            <CardContent className="p-8">
-              <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-6">
+            <CardContent className="p-5 sm:p-6 md:p-8">
+              <div className="inline-block px-3 py-1 rounded-full bg-primary text-white text-xs font-medium mb-4 sm:mb-6">
                 Monthly
               </div>
-              <div className="mb-6 h-[88px]">
-                <span className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£199</span>
+              <div className="mb-4 sm:mb-6 sm:h-[88px]">
+                <span className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£199</span>
                 <span className="text-slate-500">/month</span>
                 <p className="text-accent font-medium mt-1">First month FREE</p>
                 <p className="text-slate-500 text-sm mt-1">Cancel anytime - no tie-in</p>

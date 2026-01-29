@@ -50,7 +50,7 @@ export function ProblemsSection() {
           <p className="text-sm font-medium text-amber-400 tracking-wide uppercase mb-3">
             Sound Familiar?
           </p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Problems We Solve
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
@@ -58,7 +58,7 @@ export function ProblemsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {problems.map((item, index) => {
             const Icon = item.icon;
             return (

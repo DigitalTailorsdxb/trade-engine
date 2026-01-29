@@ -56,20 +56,21 @@ export function TestimonialsSection() {
     <section className="py-24 md:py-32 bg-slate-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Stats */}
-        <div className="grid sm:grid-cols-3 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
               <div
                 key={index}
-                className="text-center p-8 bg-white rounded-xl shadow-sm"
+                className="text-center p-6 sm:p-8 bg-white rounded-xl shadow-sm"
                 data-testid={`stat-${index}`}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Icon size={24} className="text-primary" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <Icon size={20} className="text-primary sm:hidden" />
+                  <Icon size={24} className="text-primary hidden sm:block" />
                 </div>
-                <p className="text-4xl font-bold text-slate-900 mb-1">{stat.value}</p>
-                <p className="text-sm text-slate-500">{stat.label}</p>
+                <p className="text-3xl sm:text-4xl font-bold text-slate-900 mb-1">{stat.value}</p>
+                <p className="text-xs sm:text-sm text-slate-500">{stat.label}</p>
               </div>
             );
           })}
@@ -78,7 +79,7 @@ export function TestimonialsSection() {
         {/* Testimonials Header */}
         <div className="text-center mb-12">
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Testimonials</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Trusted by Trade Businesses
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -87,7 +88,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Testimonial Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border-0 shadow-lg shadow-slate-200/50" data-testid={`testimonial-${index}`}>
               <CardContent className="p-6">

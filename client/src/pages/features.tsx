@@ -300,7 +300,7 @@ export default function Features() {
               className="h-40 md:h-48 w-auto mx-auto mb-6"
             />
             <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-3">Complete Feature Set</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Everything Your Landscaping Business Needs
             </h1>
             <p className="text-xl text-slate-600 mb-8">

@@ -36,14 +36,14 @@ export function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="mb-4">
               <img 
                 src={logoImageDark} 
                 alt="Trade Engine" 
-                className="h-40 md:h-48 w-auto"
+                className="h-24 sm:h-32 md:h-40 w-auto"
               />
             </div>
             <p className="text-slate-400 mb-6 max-w-sm leading-relaxed">

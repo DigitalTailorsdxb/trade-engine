@@ -106,7 +106,7 @@ export function HeroSection() {
           </div>
 
           {/* Main headline - clean and impactful */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
             <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">AI-Powered</span>
             <br />
             <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
@@ -115,7 +115,7 @@ export function HeroSection() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl sm:text-2xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto px-2">
             Instant quotes. AI design visualisation. Automated follow-ups.
             <span className="text-slate-900 font-medium"> All white-labelled to your brand.</span>
           </p>
@@ -144,18 +144,18 @@ export function HeroSection() {
           </div>
 
           {/* Stats - minimal and elegant */}
-          <div className="flex gap-12 border-t border-slate-200 pt-8 justify-center">
-            <div>
-              <p className="text-3xl font-bold text-amber-600">15s</p>
-              <p className="text-sm text-slate-500 mt-1">Quote generation</p>
+          <div className="flex flex-wrap gap-6 sm:gap-8 md:gap-12 border-t border-slate-200 pt-8 justify-center">
+            <div className="text-center">
+              <p className="text-2xl sm:text-3xl font-bold text-amber-600">15s</p>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">Quote generation</p>
             </div>
-            <div>
-              <p className="text-3xl font-bold text-amber-600">90s</p>
-              <p className="text-sm text-slate-500 mt-1">AI design delivery</p>
+            <div className="text-center">
+              <p className="text-2xl sm:text-3xl font-bold text-amber-600">90s</p>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">AI design delivery</p>
             </div>
-            <div>
-              <p className="text-3xl font-bold text-amber-600">24/7</p>
-              <p className="text-sm text-slate-500 mt-1">Automation</p>
+            <div className="text-center">
+              <p className="text-2xl sm:text-3xl font-bold text-amber-600">24/7</p>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">Automation</p>
             </div>
           </div>
         </div>

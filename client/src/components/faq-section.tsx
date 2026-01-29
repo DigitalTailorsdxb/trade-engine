@@ -126,7 +126,7 @@ export function FAQSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">FAQ</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-slate-600">

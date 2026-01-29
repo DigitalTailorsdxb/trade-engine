@@ -16,10 +16,10 @@ export function ContactSection() {
           <img 
             src={logoImage} 
             alt="Trade Engine" 
-            className="h-40 md:h-48 w-auto mx-auto mb-6"
+            className="h-24 sm:h-32 md:h-40 w-auto mx-auto mb-6"
           />
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Get In Touch</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Ready to Get Started?
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -27,7 +27,7 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Book a Call Card */}
           <Card className="border-2 border-amber-400/50 glow-ring" data-testid="card-contact-book">
             <CardContent className="p-8 text-center">

@@ -151,7 +151,7 @@ export function FeaturesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-3">Features</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Everything You Need
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">

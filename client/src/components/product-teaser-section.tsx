@@ -16,7 +16,7 @@ export function ProductTeaserSection() {
         {/* Section header */}
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Our Flagship Product</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Landscaping AI Engine
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -42,18 +42,18 @@ export function ProductTeaserSection() {
                 </div>
               </div>
 
-              <div className="p-10 md:p-12">
+              <div className="p-6 sm:p-8 md:p-12">
                 {/* Pricing - clean two-column layout */}
-                <div className="grid md:grid-cols-2 gap-8 mb-10">
-                  <div className="text-center md:text-left p-6 rounded-xl bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-10">
+                  <div className="text-center sm:text-left p-4 sm:p-6 rounded-xl bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200">
                     <p className="text-sm font-medium text-slate-500 mb-2">Setup Fee</p>
-                    <p className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£3,499</p>
+                    <p className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">£3,499</p>
                     <p className="text-sm text-slate-500 mt-2">One-time payment</p>
                   </div>
-                  <div className="text-center md:text-left p-6 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 glow-ring-subtle">
+                  <div className="text-center sm:text-left p-4 sm:p-6 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 glow-ring-subtle">
                     <p className="text-sm font-medium text-slate-500 mb-2">Monthly</p>
-                    <div className="flex items-baseline gap-1">
-                      <p className="text-5xl font-bold text-primary">£199</p>
+                    <div className="flex items-baseline gap-1 justify-center sm:justify-start">
+                      <p className="text-4xl sm:text-5xl font-bold text-primary">£199</p>
                       <span className="text-slate-500">/mo</span>
                     </div>
                     <p className="text-sm text-accent font-medium mt-2">First month FREE</p>
@@ -62,7 +62,7 @@ export function ProductTeaserSection() {
                 </div>
 
                 {/* Features grid - clean checkmarks */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-10">
                   {[
                     "New Website",
                     "AI Quote System",
