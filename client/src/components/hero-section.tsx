@@ -34,7 +34,7 @@ export function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto px-2">
-            Instant quotes. AI design visualisation. Automated follow-ups.
+            Instant quotes. AI design. Automated follow-ups.
             <span className="text-slate-900 font-medium"> All white-labelled to your brand.</span>
           </p>
 
