@@ -133,14 +133,14 @@ export default function Pricing() {
   ];
 
   const comparison = [
-    { item: "Custom website design", traditional: "£5,000 - £15,000", tradeEngine: "Included" },
-    { item: "AI quote system development", traditional: "£10,000 - £25,000", tradeEngine: "Included" },
-    { item: "AI visualisation system", traditional: "£15,000 - £40,000", tradeEngine: "Included" },
-    { item: "CRM integration", traditional: "£2,000 - £5,000", tradeEngine: "Included" },
-    { item: "Mobile optimisation", traditional: "£1,500 - £3,000", tradeEngine: "Included" },
-    { item: "Content writing", traditional: "£1,000 - £3,000", tradeEngine: "Included" },
-    { item: "Hosting (per year)", traditional: "£500 - £1,500", tradeEngine: "Included" },
-    { item: "Ongoing support (per year)", traditional: "£2,000 - £5,000", tradeEngine: "Included" },
+    { item: "Custom website design", traditional: "£2,000 - £5,000", tradeEngine: "Included" },
+    { item: "AI quote system development", traditional: "£3,000 - £8,000", tradeEngine: "Included" },
+    { item: "AI visualisation system", traditional: "£5,000 - £10,000", tradeEngine: "Included" },
+    { item: "CRM integration", traditional: "£500 - £1,500", tradeEngine: "Included" },
+    { item: "Mobile optimisation", traditional: "£500 - £1,000", tradeEngine: "Included" },
+    { item: "Content writing", traditional: "£300 - £800", tradeEngine: "Included" },
+    { item: "Hosting (per year)", traditional: "£200 - £500", tradeEngine: "Included" },
+    { item: "Ongoing support (per year)", traditional: "£500 - £1,500", tradeEngine: "Included" },
   ];
 
   return (
@@ -296,7 +296,7 @@ export default function Pricing() {
               Compare the Value
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Building these features separately would cost £35,000 - £100,000 with traditional agencies. 
+              Building these features separately would cost £12,000 - £28,000 with traditional agencies. 
               Here's the breakdown.
             </p>
           </div>
@@ -327,7 +327,7 @@ export default function Pricing() {
                 <tfoot>
                   <tr className="border-t-2 border-slate-300 bg-slate-50">
                     <td className="p-4 font-bold text-slate-900">Total Investment</td>
-                    <td className="p-4 text-center font-bold text-slate-700">£35,000 - £100,000+</td>
+                    <td className="p-4 text-center font-bold text-slate-700">£12,000 - £28,000+</td>
                     <td className="p-4 text-center bg-amber-100">
                       <span className="font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent text-lg">
                         £3,499 + £199/mo
