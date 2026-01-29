@@ -160,21 +160,21 @@ export function FeaturesSection() {
         </div>
 
         {/* AI Visualisation showcase */}
-        <div className="mb-20">
-          <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden glow-ring-intense">
+        <div className="mb-12 sm:mb-20 -mx-4 sm:mx-0">
+          <div className="relative sm:max-w-4xl sm:mx-auto sm:rounded-2xl overflow-hidden glow-ring-intense">
             <img 
               src={gardenDesignImage} 
               alt="AI-generated garden design" 
-              className="w-full h-auto"
+              className="w-full h-auto min-h-[400px] sm:min-h-0 object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-8">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-8">
+              <div className="flex flex-col items-center text-center sm:text-left sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
                   <p className="text-white/60 text-sm mb-1">AI Garden Visualisation</p>
-                  <p className="text-white text-xl font-semibold">Delivered in 90 seconds</p>
+                  <p className="text-white text-xl sm:text-2xl font-semibold">Delivered in 90 seconds</p>
                 </div>
-                <Button variant="secondary" onClick={handleDemoClick}>
+                <Button variant="secondary" onClick={handleDemoClick} className="w-full sm:w-auto">
                   <Play size={16} className="mr-2" />
                   Try Live Demo
                   <ExternalLink size={14} className="ml-2" />
