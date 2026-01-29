@@ -38,7 +38,7 @@ const problems = [
   {
     icon: Shield,
     problem: '"That seems expensive" objections',
-    solution: "Educates clients on why landscaping costs what it costs with visual proof",
+    solution: "Educates clients landscaping costs with visual proof",
   },
 ];
 
