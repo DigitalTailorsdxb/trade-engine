@@ -155,7 +155,7 @@ export function HeroSection() {
             </div>
             <div>
               <p className="text-3xl font-bold text-amber-600">24/7</p>
-              <p className="text-sm text-slate-500 mt-1">Automated follow-up</p>
+              <p className="text-sm text-slate-500 mt-1">Automation</p>
             </div>
           </div>
         </div>
