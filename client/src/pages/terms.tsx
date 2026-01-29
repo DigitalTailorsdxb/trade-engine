@@ -49,7 +49,7 @@ export default function Terms() {
           <p>
             <strong>Trade Engine</strong><br />
             Company registered in England and Wales.<br />
-            Registered office: Barwell Road, Leicester, United Kingdom
+            Registered office: East Midlands, United Kingdom
           </p>
           <p>
             Trade Engine Ltd provides software-based tools for indicative landscaping pricing, design visualisations, and customer data capture.

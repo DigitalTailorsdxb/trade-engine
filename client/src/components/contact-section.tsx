@@ -105,7 +105,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-500 mb-1">Location</p>
-                    <p className="text-slate-900 font-medium">United Kingdom</p>
+                    <p className="text-slate-900 font-medium">East Midlands, United Kingdom</p>
                   </div>
                 </div>
               </div>

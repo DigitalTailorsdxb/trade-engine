@@ -48,7 +48,7 @@ export default function Privacy() {
           <p>
             <strong>Trade Engine</strong><br />
             Registered in England and Wales<br />
-            Registered office: Barwell Road, Leicester, United Kingdom
+            Registered office: East Midlands, United Kingdom
           </p>
           <p>
             For the purposes of data protection law, Trade Engine is the Data Controller.
