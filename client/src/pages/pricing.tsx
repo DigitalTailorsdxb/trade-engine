@@ -150,6 +150,11 @@ export default function Pricing() {
         <title>Pricing | £3,499 Setup + £199/Month | Trade Engine</title>
         <meta name="description" content="Trade Engine pricing: £3,499 one-time setup includes AI quote system, garden visualisation, and HubSpot CRM. £199/month covers hosting, support, and AI credits. Rolling monthly, no tie-ins." />
         <link rel="canonical" href="https://trade-engine.co.uk/pricing" />
+        <meta property="og:title" content="Pricing | £3,499 Setup + £199/Month | Trade Engine" />
+        <meta property="og:description" content="£3,499 one-time setup includes AI quote system, garden visualisation, and HubSpot CRM. £199/month covers hosting, support, and AI credits." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trade-engine.co.uk/pricing" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Navigation />
       

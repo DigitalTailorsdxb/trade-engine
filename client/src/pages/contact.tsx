@@ -11,6 +11,12 @@ export default function Contact() {
       <Helmet>
         <title>Contact Us | Trade Engine</title>
         <meta name="description" content="Get in touch with Trade Engine. Book a free demo call, email us, call us, or message us on WhatsApp. We're here to help your landscaping business grow." />
+        <link rel="canonical" href="https://trade-engine.co.uk/contact" />
+        <meta property="og:title" content="Contact Us | Trade Engine" />
+        <meta property="og:description" content="Book a free demo call, email us, call us, or message us on WhatsApp. We're here to help your landscaping business grow." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trade-engine.co.uk/contact" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
       <Navigation />

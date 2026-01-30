@@ -17,6 +17,13 @@ export default function Home() {
         <title>Trade Engine | AI-Powered Websites for Landscaping Businesses</title>
         <meta name="description" content="Get an AI-powered website that qualifies leads, generates instant quotes in 15 seconds, and shows customers their finished garden in 90 seconds. White-labelled to your brand. £3,499 setup + £199/month." />
         <link rel="canonical" href="https://trade-engine.co.uk/" />
+        <meta property="og:title" content="Trade Engine | AI-Powered Websites for Landscaping Businesses" />
+        <meta property="og:description" content="Get an AI-powered website that qualifies leads, generates instant quotes in 15 seconds, and shows customers their finished garden in 90 seconds. White-labelled to your brand." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trade-engine.co.uk/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Trade Engine | AI-Powered Websites for Landscaping Businesses" />
+        <meta name="twitter:description" content="AI-powered websites for landscaping businesses. Instant quotes, garden visualisation, and automated follow-ups." />
       </Helmet>
       <Navigation />
       <main>
