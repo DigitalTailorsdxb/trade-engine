@@ -323,12 +323,12 @@ export default function Features() {
 
       {/* AI Visualisation Showcase */}
       <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden glow-ring-intense">
+        <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
+          <div className="relative sm:max-w-4xl sm:mx-auto sm:rounded-2xl overflow-hidden glow-ring-intense">
             <img 
               src={gardenDesignImage} 
               alt="AI-generated garden design visualisation" 
-              className="w-full h-auto"
+              className="w-full h-auto min-h-[500px] sm:min-h-0 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-8">
