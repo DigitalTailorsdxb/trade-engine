@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/features", label: "Features", isPage: true },
   { href: "/pricing", label: "Pricing", isPage: true },
   { href: "/faq", label: "FAQ", isPage: true },
-  { href: "#contact", label: "Contact", isPage: false },
+  { href: "/contact", label: "Contact", isPage: true },
 ];
 
 export function Navigation() {

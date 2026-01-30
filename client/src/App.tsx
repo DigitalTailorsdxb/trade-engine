@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import Features from "@/pages/features";
 import Pricing from "@/pages/pricing";
 import FAQ from "@/pages/faq";
+import Contact from "@/pages/contact";
 import Privacy from "@/pages/privacy";
 import Terms from "@/pages/terms";
 import NotFound from "@/pages/not-found";
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/features" component={Features} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/terms" component={Terms} />
       <Route component={NotFound} />
