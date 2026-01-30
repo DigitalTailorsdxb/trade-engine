@@ -39,7 +39,7 @@ export default function Terms() {
         <div className="prose prose-neutral dark:prose-invert max-w-none">
           <h2>1. Introduction</h2>
           <p>
-            These Terms of Service ("Terms") govern your use of this website, platform, and any related tools, services, or content provided by Trade Engine ("we", "us", "our").
+            These Terms of Service ("Terms") govern your use of this website, platform, and any related tools, services, or content provided by Trade Engine AI Ltd ("we", "us", "our").
           </p>
           <p>
             By accessing or using this website, you agree to be bound by these Terms. If you do not agree, you must not use this website or any associated services.
@@ -47,12 +47,12 @@ export default function Terms() {
 
           <h2>2. Who We Are</h2>
           <p>
-            <strong>Trade Engine</strong><br />
+            <strong>Trade Engine AI Ltd</strong><br />
             Company registered in England and Wales.<br />
             Registered office: East Midlands, United Kingdom
           </p>
           <p>
-            Trade Engine provides software-based tools for indicative landscaping pricing, design visualisations, and customer data capture.
+            Trade Engine AI Ltd provides software-based tools for indicative landscaping pricing, design visualisations, and customer data capture.
           </p>
           <p><strong>We are not a landscaping contractor.</strong></p>
 
@@ -203,7 +203,7 @@ export default function Terms() {
           <p>For legal or service enquiries:</p>
           <p>
             Email: <a href="mailto:hello@trade-engine.co.uk">hello@trade-engine.co.uk</a><br />
-            Company: Trade Engine
+            Company: Trade Engine AI Ltd
           </p>
         </div>
       </main>
@@ -212,7 +212,7 @@ export default function Terms() {
       <footer className="border-t mt-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} Trade Engine. All rights reserved.
+            © {new Date().getFullYear()} Trade Engine AI Ltd. All rights reserved.
           </p>
         </div>
       </footer>

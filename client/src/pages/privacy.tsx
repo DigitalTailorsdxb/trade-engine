@@ -39,19 +39,19 @@ export default function Privacy() {
         <div className="prose prose-neutral dark:prose-invert max-w-none">
           <h2>1. Introduction</h2>
           <p>
-            Trade Engine ("we", "us", "our") is committed to protecting your privacy and personal data.
+            Trade Engine AI Ltd ("we", "us", "our") is committed to protecting your privacy and personal data.
             This Privacy Policy explains how we collect, use, store, and protect personal information when you use our website, software, and services.
             By using this website, you agree to the collection and use of information in accordance with this policy.
           </p>
 
           <h2>2. Who We Are</h2>
           <p>
-            <strong>Trade Engine</strong><br />
+            <strong>Trade Engine AI Ltd</strong><br />
             Registered in England and Wales<br />
             Registered office: East Midlands, United Kingdom
           </p>
           <p>
-            For the purposes of data protection law, Trade Engine is the Data Controller.
+            For the purposes of data protection law, Trade Engine AI Ltd is the Data Controller.
           </p>
 
           <h2>3. What Data We Collect</h2>
@@ -170,7 +170,7 @@ export default function Privacy() {
           <h2>14. Contact Us</h2>
           <p>For data protection enquiries or to exercise your rights:</p>
           <p>
-            <strong>Trade Engine</strong><br />
+            <strong>Trade Engine AI Ltd</strong><br />
             Email: <a href="mailto:hello@trade-engine.co.uk">hello@trade-engine.co.uk</a>
           </p>
         </div>
@@ -180,7 +180,7 @@ export default function Privacy() {
       <footer className="border-t mt-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} Trade Engine. All rights reserved.
+            © {new Date().getFullYear()} Trade Engine AI Ltd. All rights reserved.
           </p>
         </div>
       </footer>
