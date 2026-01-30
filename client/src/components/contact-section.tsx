@@ -5,7 +5,7 @@ import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_176964345
 
 export function ContactSection() {
   const handleBookCall = () => {
-    window.open("https://calendly.com/your-link", "_blank", "noopener,noreferrer");
+    window.open("https://calendly.com/hello-trade-engine/30min", "_blank", "noopener,noreferrer");
   };
 
   return (
