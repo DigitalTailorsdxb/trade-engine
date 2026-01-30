@@ -1,46 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Calendar, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, Calendar, MapPin, Clock, ArrowRight } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
-import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
-
-const contactMethods = [
-  {
-    icon: Calendar,
-    title: "Book a Call",
-    description: "Schedule a free 30-minute video call to see Trade Engine in action",
-    action: "Book Now",
-    href: "https://calendly.com/hello-trade-engine/30min",
-    highlight: true,
-  },
-  {
-    icon: Mail,
-    title: "Email Us",
-    description: "Send us an email and we'll get back to you within a few hours",
-    action: "hello@trade-engine.co.uk",
-    href: "mailto:hello@trade-engine.co.uk",
-    highlight: false,
-  },
-  {
-    icon: Phone,
-    title: "Call Us",
-    description: "Give us a call during business hours (Mon-Fri, 9am-6pm)",
-    action: "07877 934782",
-    href: "tel:+447877934782",
-    highlight: false,
-  },
-  {
-    icon: SiWhatsapp,
-    title: "WhatsApp",
-    description: "Message us on WhatsApp for a quick response",
-    action: "Chat on WhatsApp",
-    href: "https://wa.me/447877934782",
-    highlight: false,
-  },
-];
 
 export default function Contact() {
   return (
@@ -54,78 +17,131 @@ export default function Contact() {
 
       <main className="min-h-screen bg-white pt-32 md:pt-40">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-amber-50 to-white">
+        <section className="py-16 md:py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <img 
-              src={logoImage} 
-              alt="Trade Engine" 
-              className="h-24 sm:h-32 md:h-40 w-auto mx-auto mb-8"
-            />
-            <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Get In Touch</p>
+            <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-4">Get In Touch</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 mb-6">
               Let's Talk
             </h1>
             <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
-              Ready to transform your landscaping business? Choose how you'd like to connect with us.
+              Ready to transform your landscaping business? We'd love to hear from you.
             </p>
           </div>
         </section>
 
-        {/* Contact Methods Grid */}
-        <section className="py-16 md:py-24 px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {contactMethods.map((method, index) => (
-                <Card 
-                  key={index}
-                  className={`border-2 ${method.highlight ? 'border-amber-400/50 glow-ring' : 'border-slate-200'}`}
-                  data-testid={`card-contact-${method.title.toLowerCase().replace(/\s+/g, '-')}`}
+        {/* Main CTA - Book a Call */}
+        <section className="pb-16 md:pb-20 px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 p-8 md:p-12 text-center text-white shadow-2xl shadow-amber-500/30">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_50%)]"></div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm mb-6">
+                  <Calendar size={36} className="text-white" />
+                </div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                  Book a Free Demo Call
+                </h2>
+                <p className="text-lg text-amber-100 max-w-xl mx-auto mb-8">
+                  Schedule a 30-minute video call to see Trade Engine in action. We'll walk you through everything and answer all your questions.
+                </p>
+                <Button
+                  size="lg"
+                  className="bg-white text-amber-600 hover:bg-amber-50 shadow-lg px-8 py-6 text-lg font-semibold"
+                  asChild
+                  data-testid="button-contact-calendly"
                 >
-                  <CardContent className="p-8">
-                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${method.highlight ? 'bg-gradient-to-br from-amber-100 to-orange-100' : 'bg-slate-100'}`}>
-                      <method.icon size={28} className={method.highlight ? 'text-amber-600' : 'text-slate-600'} />
-                    </div>
-                    <h3 className="text-xl font-semibold text-slate-900 mb-2">
-                      {method.title}
-                    </h3>
-                    <p className="text-slate-600 mb-6">
-                      {method.description}
-                    </p>
-                    <Button
-                      size="lg"
-                      className={`w-full ${method.highlight 
-                        ? 'bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25' 
-                        : 'bg-slate-900 hover:bg-slate-800'}`}
-                      asChild
-                      data-testid={`button-contact-${method.title.toLowerCase().replace(/\s+/g, '-')}`}
-                    >
-                      <a href={method.href} target={method.href.startsWith('http') ? '_blank' : undefined} rel={method.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
-                        {method.action}
-                        <ArrowRight size={18} className="ml-2" />
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+                  <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
+                    Book Your Call
+                    <ArrowRight size={20} className="ml-2" />
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Location Info */}
-        <section className="py-16 md:py-24 bg-slate-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-100 mb-6">
-              <MapPin size={28} className="text-amber-600" />
+        {/* Divider */}
+        <div className="max-w-xl mx-auto px-4">
+          <div className="flex items-center gap-4">
+            <div className="flex-1 h-px bg-slate-200"></div>
+            <span className="text-slate-400 text-sm font-medium">or reach us directly</span>
+            <div className="flex-1 h-px bg-slate-200"></div>
+          </div>
+        </div>
+
+        {/* Contact Options */}
+        <section className="py-16 md:py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {/* Email */}
+              <a 
+                href="mailto:hello@trade-engine.co.uk"
+                className="group flex flex-col items-center p-8 rounded-2xl border-2 border-slate-100 hover:border-amber-200 hover:bg-amber-50/50 transition-all duration-300"
+                data-testid="link-contact-email"
+              >
+                <div className="w-14 h-14 rounded-xl bg-slate-100 group-hover:bg-amber-100 flex items-center justify-center mb-4 transition-colors">
+                  <Mail size={24} className="text-slate-600 group-hover:text-amber-600 transition-colors" />
+                </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-1">Email</h3>
+                <p className="text-amber-600 font-medium text-center">hello@trade-engine.co.uk</p>
+              </a>
+
+              {/* Phone */}
+              <a 
+                href="tel:+447877934782"
+                className="group flex flex-col items-center p-8 rounded-2xl border-2 border-slate-100 hover:border-amber-200 hover:bg-amber-50/50 transition-all duration-300"
+                data-testid="link-contact-phone"
+              >
+                <div className="w-14 h-14 rounded-xl bg-slate-100 group-hover:bg-amber-100 flex items-center justify-center mb-4 transition-colors">
+                  <Phone size={24} className="text-slate-600 group-hover:text-amber-600 transition-colors" />
+                </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-1">Phone</h3>
+                <p className="text-amber-600 font-medium">07877 934782</p>
+              </a>
+
+              {/* WhatsApp */}
+              <a 
+                href="https://wa.me/447877934782"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center p-8 rounded-2xl border-2 border-slate-100 hover:border-green-200 hover:bg-green-50/50 transition-all duration-300"
+                data-testid="link-contact-whatsapp"
+              >
+                <div className="w-14 h-14 rounded-xl bg-slate-100 group-hover:bg-green-100 flex items-center justify-center mb-4 transition-colors">
+                  <SiWhatsapp size={24} className="text-slate-600 group-hover:text-green-600 transition-colors" />
+                </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-1">WhatsApp</h3>
+                <p className="text-green-600 font-medium">Message Us</p>
+              </a>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-              Based in the East Midlands
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-2">
-              We work with landscaping businesses across the United Kingdom.
-            </p>
-            <p className="text-slate-500">
-              Response time: Within a few hours during business hours (Mon-Fri, 9am-6pm GMT)
-            </p>
+          </div>
+        </section>
+
+        {/* Location & Hours */}
+        <section className="py-16 md:py-20 bg-slate-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+                  <MapPin size={22} className="text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-1">Location</h3>
+                  <p className="text-slate-600">East Midlands, United Kingdom</p>
+                  <p className="text-slate-500 text-sm mt-1">Serving landscaping businesses nationwide</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+                  <Clock size={22} className="text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-1">Response Time</h3>
+                  <p className="text-slate-600">Within a few hours</p>
+                  <p className="text-slate-500 text-sm mt-1">Monday - Friday, 9am - 6pm GMT</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
