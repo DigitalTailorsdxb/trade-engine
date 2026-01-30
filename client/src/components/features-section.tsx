@@ -165,7 +165,7 @@ export function FeaturesSection() {
             <img 
               src={gardenDesignImage} 
               alt="AI-generated garden design" 
-              className="w-full h-auto min-h-[400px] sm:min-h-0 object-cover"
+              className="w-full h-auto min-h-[500px] sm:min-h-0 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-8">
