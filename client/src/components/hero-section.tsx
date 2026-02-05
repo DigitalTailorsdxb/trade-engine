@@ -25,17 +25,17 @@ export function HeroSection() {
 
           {/* Main headline - clean and impactful */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">AI-Powered</span>
+            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">Quote-First</span>
             <br />
             <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
-              Website Engine
+              Website Engine for Trade Businesses
             </span>
           </h1>
 
           {/* Subheadline */}
           <div className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto px-2 text-center">
-            <p>Instant quotes. AI design. Automated 24/7.</p>
-            <p className="text-slate-900 font-medium">All white-labelled to your brand.</p>
+            <p>Instant quotes and pricing-led designs generated directly from real costs — fully automated, 24/7.</p>
+            <p className="text-slate-900 font-medium">Designs are created from the quote, so pricing, scope and customer expectations always align.</p>
           </div>
 
           {/* CTA Buttons - clean and prominent */}
