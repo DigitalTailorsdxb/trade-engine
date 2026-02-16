@@ -30,6 +30,19 @@ import {
   LayoutGrid,
   Workflow,
   MessageSquare,
+  Hammer,
+  TreePine,
+  Fence,
+  Lamp,
+  Droplets,
+  Flame,
+  Mountain,
+  Flower2,
+  Footprints,
+  Waves,
+  BrickWall,
+  ChefHat,
+  Armchair,
 } from "lucide-react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
@@ -185,6 +198,109 @@ const workflowCapabilities = [
       "Complete audit trail of all actions",
       "Enables structured lead scoring",
     ],
+  },
+];
+
+const productCategories = [
+  {
+    icon: Mountain,
+    title: "Natural Stone Paving",
+    items: ["Indian Sandstone", "Limestone", "Granite", "Slate", "York Stone", "Travertine", "Quartzite"],
+  },
+  {
+    icon: Hammer,
+    title: "Manufactured Paving",
+    items: ["Porcelain", "Concrete Paving", "Block Paving", "Resin Bound"],
+  },
+  {
+    icon: Mountain,
+    title: "Natural Stone Setts",
+    items: ["Granite Setts", "Sandstone Setts", "Cobblestones"],
+  },
+  {
+    icon: LayoutGrid,
+    title: "Decking",
+    items: ["Composite Deck", "Softwood Deck", "Hardwood Deck"],
+  },
+  {
+    icon: TreePine,
+    title: "Turf",
+    items: ["Artificial Turf", "Natural Turf"],
+  },
+  {
+    icon: Footprints,
+    title: "Aggregates & Pathways",
+    items: ["Gravel Path", "Decorative Gravel", "Bark Path", "Slate Chippings", "Pebbles", "Stepping Stones"],
+  },
+  {
+    icon: Flower2,
+    title: "Planting",
+    items: ["Planting Beds", "Rendered Planter", "Brick Planter", "Sleeper Planter", "Wooden Planter", "Raised Bed"],
+  },
+  {
+    icon: TreePine,
+    title: "Planting Items",
+    items: ["Feature Trees", "Large Shrubs", "Medium Shrubs", "Topsoil", "Mulch & Bark"],
+  },
+  {
+    icon: Home,
+    title: "Structures & Pergolas",
+    items: ["Timber Pergola (Roofed)", "Timber Pergola (Open)", "Aluminium Pergola", "Steel Pergola", "Attached Pergola", "Gazebo"],
+  },
+  {
+    icon: Waves,
+    title: "Ponds",
+    items: ["Small Pond", "Medium Pond", "Large Pond", "Wildlife Pond", "Koi Pond", "Pond Liner", "Pump", "Filter", "UV Clarifier"],
+  },
+  {
+    icon: Droplets,
+    title: "Water Features",
+    items: ["Water Feature", "Wall Mounted", "Fountain (Small/Large)", "Water Rill", "Cascade Waterfall", "Water Bowl", "Corten Steel Feature"],
+  },
+  {
+    icon: Flame,
+    title: "Fire Pits & Seating",
+    items: ["Fire Pit", "Sunken Firepit", "Sunken Firepit Seating Package", "Basic Seating Area", "Sunken Seating", "Rendered Seating", "Stone Seating"],
+  },
+  {
+    icon: ChefHat,
+    title: "Outdoor Cooking",
+    items: ["Outdoor Kitchen (Starter)", "Outdoor Kitchen (Standard)", "Outdoor Kitchen (Premium)", "BBQ Area", "Built-in BBQ"],
+  },
+  {
+    icon: Fence,
+    title: "Fencing",
+    items: ["Panel Fencing", "Closeboard Fencing", "Composite Fencing", "Trellis Panels"],
+  },
+  {
+    icon: BrickWall,
+    title: "Walls",
+    items: ["Brick Wall", "Stone Wall", "Rendered Wall", "Sandstone Wall", "Limestone Wall", "Granite Wall", "Dry Stone Wall", "Sleeper Wall (Single/Double/Triple)"],
+  },
+  {
+    icon: TreePine,
+    title: "Hedging",
+    items: ["Native Hedging", "Instant Screening"],
+  },
+  {
+    icon: Footprints,
+    title: "Steps",
+    items: ["Sandstone Step", "Granite Step", "Limestone Step", "Brick Step", "Sleeper Step"],
+  },
+  {
+    icon: Droplets,
+    title: "Drainage",
+    items: ["Channel Drain", "French Drain", "Soakaway"],
+  },
+  {
+    icon: Lamp,
+    title: "Lighting",
+    items: ["Lighting Fittings", "Transformer", "Cable", "Lighting Kit (10 fittings)"],
+  },
+  {
+    icon: Sparkles,
+    title: "Decorative & Structures",
+    items: ["Edging (Concrete/Steel/Aluminium/Plastic)", "Shed", "Shed (Large)", "Summer House", "Greenhouse (S/M/L)", "Garden Room", "Decorative Screen", "Feature Boulders", "Non-Slip Ramp"],
   },
 ];
 
@@ -559,6 +675,51 @@ export default function Features() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Product Categories - What Can Customers Quote For? */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-3">Quote System</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+              What Can Your Customers Quote For?
+            </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Over 120 individual products across 20 categories — all priced instantly through the AI quote system.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {productCategories.map((category, index) => {
+              const Icon = category.icon;
+              return (
+                <div key={index} className="bg-slate-50 rounded-xl p-5 border border-slate-200 hover:border-amber-300 hover:shadow-md transition-all" data-testid={`card-product-category-${index}`}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-9 h-9 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                      <Icon size={18} className="text-amber-600" />
+                    </div>
+                    <h3 className="font-semibold text-slate-900 text-sm">{category.title}</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {category.items.map((item, iIndex) => (
+                      <span key={iIndex} className="text-xs bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded-md">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-10 text-center">
+            <p className="text-slate-500 text-sm mb-4">
+              All prices include materials and labour. Groundworks calculated separately at £40/m² where required.
+              5% contingency and 20% VAT applied automatically.
+            </p>
           </div>
         </div>
       </section>

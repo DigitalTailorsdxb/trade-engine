@@ -63,7 +63,7 @@ const faqCategories = [
       },
       {
         question: "Can I customise the pricing and quote options?",
-        answer: "Completely. We configure the quote system with your exact pricing structure, service options, and business rules. You can offer different products (patios, decking, fencing, artificial grass, etc.), set pricing per square metre or fixed prices, add optional extras, and configure minimum order values. We'll work with you during setup to get it exactly right."
+        answer: "Completely. We configure the quote system with your exact pricing structure across over 120 products in 20 categories — including paving (natural stone and manufactured), decking, turf, aggregates, planting, structures and pergolas, ponds, water features, fire pits and seating, outdoor kitchens, fencing, walls, hedging, steps, drainage, lighting, and decorative features. You can set pricing per square metre, per linear metre, or as fixed prices, and configure minimum order values. We'll work with you during setup to get it exactly right."
       },
       {
         question: "What do customers receive after requesting a quote?",
