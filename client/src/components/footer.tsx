@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { SiLinkedin, SiX, SiFacebook, SiInstagram } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import logoImageDark from "@assets/ChatGPT_Image_Jan_29,_2026,_12_14_24_AM_1769645677011.png";
 
 const footerLinks = {
@@ -16,10 +16,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: SiLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: SiX, href: "https://x.com", label: "X" },
-  { icon: SiFacebook, href: "https://facebook.com", label: "Facebook" },
-  { icon: SiInstagram, href: "https://instagram.com", label: "Instagram" },
+  { icon: SiFacebook, href: "https://www.facebook.com/profile.php?id=61587082542110", label: "Facebook" },
+  { icon: SiInstagram, href: "https://www.instagram.com/trade_engine_uk", label: "Instagram" },
+  { icon: SiYoutube, href: "https://www.youtube.com/@Trade_Engine_UK", label: "YouTube" },
 ];
 
 export function Footer() {
