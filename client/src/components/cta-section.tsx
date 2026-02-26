@@ -29,7 +29,7 @@ export function CTASection() {
 
             {/* Subheadline */}
             <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-              Join the growing number of trade businesses using AI-powered websites to
+              Join the growing number of landscaping businesses using AI-powered websites to
               convert more leads and close more deals.
             </p>
 

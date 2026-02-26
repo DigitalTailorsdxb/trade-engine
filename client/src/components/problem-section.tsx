@@ -106,7 +106,7 @@ export function ProblemSection() {
                 Average <span className="text-accent">40% increase</span> in quote requests
               </p>
               <p className="text-sm text-muted-foreground mt-1">
-                Trade businesses see results within the first month
+                Landscaping businesses see results within the first month
               </p>
             </div>
           </div>

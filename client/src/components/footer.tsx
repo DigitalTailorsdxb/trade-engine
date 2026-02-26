@@ -47,7 +47,7 @@ export function Footer() {
             </div>
             <p className="text-slate-400 mb-6 max-w-sm leading-relaxed">
               AI-powered websites that convert leads into customers. Built specifically
-              for trade businesses.
+              for landscaping businesses.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => {

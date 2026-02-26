@@ -20,7 +20,7 @@ export function HeroSection() {
           {/* Subtle badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary mb-8">
             <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs font-medium tracking-wide uppercase">For Trade Businesses</span>
+            <span className="text-xs font-medium tracking-wide uppercase">For Landscaping Businesses</span>
           </div>
 
           {/* Main headline - clean and impactful */}
@@ -28,7 +28,7 @@ export function HeroSection() {
             <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">Quote-First</span>
             <br />
             <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
-              Website Engine for Trade Businesses
+              Website Engine for Landscaping Businesses
             </span>
           </h1>
 

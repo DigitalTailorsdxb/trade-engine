@@ -80,7 +80,7 @@ export function TestimonialsSection() {
         <div className="text-center mb-12">
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Testimonials</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Trusted by Trade Businesses
+            Trusted by Landscaping Businesses
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             See what our clients have to say about their experience

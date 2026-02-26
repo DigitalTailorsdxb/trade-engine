@@ -155,7 +155,7 @@ export function FeaturesSection() {
             Everything You Need
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            A complete system designed for trade businesses. No technical knowledge required.
+            A complete system designed for landscaping businesses. No technical knowledge required.
           </p>
         </div>
 
