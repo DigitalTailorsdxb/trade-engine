@@ -101,7 +101,7 @@ export function Navigation() {
               data-testid="button-test-demo"
             >
               <a href="https://www.premium-landscapes.co.uk" target="_blank" rel="noopener noreferrer">
-                Test the Demo
+                Try the Demo
               </a>
             </Button>
           </div>
@@ -150,7 +150,7 @@ export function Navigation() {
                   data-testid="button-mobile-test-demo"
                 >
                   <a href="https://www.premium-landscapes.co.uk" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
-                    Test the Demo
+                    Try the Demo
                   </a>
                 </Button>
               </div>

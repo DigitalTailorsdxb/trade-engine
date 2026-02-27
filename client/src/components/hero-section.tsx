@@ -46,7 +46,7 @@ export function HeroSection() {
               data-testid="button-hero-demo"
             >
               <Play size={18} className="mr-2" />
-              Test the Demo
+              Try the Demo
               <ArrowRight size={16} className="ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
             </Button>
             <Button
