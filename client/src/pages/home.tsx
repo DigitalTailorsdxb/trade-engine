@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
+import { VideoSection } from "@/components/video-section";
 import { ProblemsSection } from "@/components/problems-section";
 import { ProductTeaserSection } from "@/components/product-teaser-section";
 import { ExamplesSection } from "@/components/examples-section";
@@ -29,6 +30,7 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
+        <VideoSection />
         <ProblemsSection />
         <ProductTeaserSection />
         <ExamplesSection />
