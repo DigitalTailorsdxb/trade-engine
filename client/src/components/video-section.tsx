@@ -25,6 +25,16 @@ export function VideoSection() {
     }
   };
 
+  const handleTogglePause = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  };
+
   const handleVideoEnded = () => {
     setIsPlaying(false);
   };
@@ -53,7 +63,7 @@ export function VideoSection() {
         <div className="max-w-4xl mx-auto mb-12">
           <div
             className="relative rounded-2xl overflow-hidden cursor-pointer group"
-            onClick={!isPlaying ? handlePlay : undefined}
+            onClick={isPlaying ? handleTogglePause : handlePlay}
             data-testid="video-walkthrough"
           >
             {!isPlaying ? (
