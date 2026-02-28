@@ -5,8 +5,9 @@
 Trade Engine is a marketing website designed to sell AI-powered white-labelled websites to landscaping businesses. The site promotes a SaaS product that offers instant quotes (15 seconds), AI design visualisation (90 seconds), and automated follow-ups (24/7). Pricing is £3,499 setup + £199/month with first month AI free and £250 in free ad spend via Meta/Google Ads.
 
 The application follows a full-stack TypeScript architecture with a React frontend, Express backend, and PostgreSQL database. The site includes:
-- **Home page**: Hero, Product Teaser, Features preview, Pricing, Testimonials, FAQ, Contact sections
+- **Home page**: Hero, Video Walkthrough, Problems, Product Teaser, Examples (PDF/Design), Features preview, Pricing, Testimonials, FAQ, Contact sections
 - **Features page** (/features): Dedicated page with expanded feature details, interactive tabs, and additional features grid
+- **Blog** (/blog): SEO-focused blog with articles on landscaping business topics. Blog data stored in client/src/lib/blog-data.ts
 - **Privacy and Terms pages**: Legal pages
 
 ## Design System

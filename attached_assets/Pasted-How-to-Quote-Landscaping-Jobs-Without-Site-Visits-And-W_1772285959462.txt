@@ -1,0 +1,81 @@
+How to Quote Landscaping Jobs Without Site Visits (And Why You Should)
+I spent six years running a landscaping business before I built Trade Engine. During those years, I must have done over a thousand site visits. At least 600 of them went absolutely nowhere.
+I'd drive 30 minutes to look at someone's garden, spend an hour measuring and discussing what they wanted, drive home, spend another two hours creating a detailed quote with material breakdowns and labour costs, send it off, and then... nothing. Or worse, I'd get the "it's more than we thought" email three days later.
+The math was brutal. For every 10 site visits, maybe 4 turned into actual jobs. That meant 60% of my time was spent chasing leads who were never going to buy. Either they were just price shopping, had completely unrealistic budgets, or weren't actually serious about moving forward.
+There had to be a better way.
+The problem with the traditional quoting process
+The standard way landscapers quote jobs hasn't changed in decades. Customer rings you up or fills in a contact form. You schedule a site visit for sometime in the next few days. You drive out to their property, walk around with them for an hour, take measurements, discuss what they're after. Then you go home, create a quote, and send it over.
+The whole process takes about 3-4 hours of your time. And most of the time, you never hear from them again.
+I started tracking this properly in my fourth year of business. Out of every 100 enquiries I got, I'd do about 60 site visits. Of those 60, maybe 25 would turn into actual jobs. That's a 42% conversion rate, which sounds decent until you realise you've just spent 180 hours on work that didn't pay you a penny.
+The worst part? Half those leads were never going to buy from anyone. They just wanted to "see what it would cost" or were gathering quotes to show their partner why they couldn't afford it this year. The other half went with whoever got back to them fastest with a number they could work with.
+What if you could filter leads before wasting time on them?
+About two years ago, I started experimenting with something different. Instead of scheduling site visits with everyone who enquired, I started asking them to fill in a detailed form on my website first. Garden size, budget range, what they wanted done, style preferences - all of it.
+Then I'd use that information to generate a rough quote and send it back within 24 hours. Not a final number, just a ballpark based on what they'd told me. Something like "Based on a 50 square metre garden with porcelain paving and artificial grass, you're looking at £12,000-15,000."
+The response was interesting. About 40% of people never replied. Those were the ones with £5,000 budgets who wanted £20,000 gardens. I would have wasted hours on those site visits. Another 20% came back saying it was more than expected but asked if there were ways to bring the cost down. Actual conversation starters.
+And the remaining 40%? They said something like "that's in our budget, when can you come and look at it properly?"
+Suddenly I was only doing site visits with people who'd already seen realistic pricing and were still interested. My conversion rate went from 42% to 67%. Same amount of work, way more revenue.
+How instant quoting actually works
+The system I eventually built for Trade Engine automates what I was doing manually. Customer lands on your website, fills in a form with their garden details - size, budget, what they want done. The system uses your actual pricing (materials plus labour rates you've configured) to generate an itemised quote in about 90 seconds.
+But here's the bit that really changed things: it also creates a photorealistic AI render of what their garden could look like based on the quote. So they're not just seeing numbers, they're seeing what £10,000 actually gets them versus £20,000.
+The quote and the design land in their email inbox while they're still on your website. No waiting three days for you to get back to them. No playing phone tag to schedule a site visit just to get a rough number.
+The ones who see the quote and think "yeah, that's what we're prepared to spend" - those are the ones who book site visits. Everyone else has self-filtered out before you've lifted a finger.
+"But customers will just use my quote to negotiate with cheaper competitors"
+This is what every landscaper says when I explain this system. I said it myself before I tried it.
+Here's the reality: customers are already getting multiple quotes. They're already comparing you to three or four other landscapers. The question isn't whether they're shopping around - they definitely are. The question is whether you're even in that conversation.
+If you take three days to get back to someone while your competitor quotes them in 90 seconds, you've already lost. They've mentally moved on. They're already talking to the quick responder about site visit dates.
+The instant quote doesn't give away your pricing. It gets you in the game before everyone else has even responded.
+And here's the thing about the AI design: once customers see a photorealistic render of their garden, they stop shopping purely on price. They're buying the vision. They're emotionally invested in that image. The landscaper who just sends numbers can't compete with that.
+Real numbers from UK landscapers using this approach
+I'm working with a landscaper in Sussex right now who has 82,000 Instagram followers. He was getting hammered with enquiries but half of them were time-wasters. People wanting £3,000 patios when he specialises in £15,000+ full garden transformations.
+He set up an instant quoting system three months ago. Since then:
+
+82% of enquiries now get automatic quotes
+Site visits are down 40% (he's only meeting qualified leads)
+His close rate has gone from 40% to 63%
+He's spending way less time on unpaid work
+
+Another landscaper I'm talking to in Bristol has 1.75 million followers across TikTok and Instagram. Absolutely massive following. His problem was the opposite - too many enquiries, no way to filter them efficiently. The system lets him pre-qualify by budget automatically. If someone inputs a £5,000 budget, it politely explains his minimum project size. If they're at £20,000+, they get the full quote and design treatment.
+He's basically automated the first stage of his sales process. The leads hitting his phone now are pre-qualified and excited about the design they've already seen.
+The psychology behind why this works
+Modern customers expect instant responses. They're used to Amazon delivering tomorrow, Uber showing up in five minutes, Google answering their questions in half a second.
+When they fill in an enquiry form for landscaping and don't hear back for three days, they don't think "oh, they must be busy with important work." They think "maybe they're not interested" or "they're probably not very organised."
+The business that responds first - with an actual number, not just "thanks for your enquiry, I'll get back to you" - that business wins about 50% of the time. Regardless of whether they're the cheapest.
+Speed isn't about being desperate or pushy. It's about being there when the customer is ready to make a decision.
+What about complex projects that need a site visit?
+Fair question. Not every job can be quoted sight unseen. Access issues, ground conditions, existing drainage, levels - there's loads that can only be assessed in person.
+But here's the thing: the instant quote isn't supposed to be your final quote. It's the starting point.
+It shows customers what's realistic based on what they've told you. When you do the site visit, you refine it. Maybe access is tricky so you need to add a day for manual digging. Maybe the ground's solid clay and you need to factor in more hardcore. Maybe they want to upgrade from the porcelain they specified to natural stone.
+The site visit is where you fine-tune the number. But they already know they're in the right ballpark. You're not showing up to someone with a £7,000 budget when your average job is £18,000. That's the time-waster eliminated before you've left the house.
+How I'd set this up if I was still running my landscaping business
+If I was starting fresh today with what I know now, here's exactly what I'd do:
+First, I'd put a detailed quote form on my website. Garden size, budget, what they want done, style preferences, photos if they have them. Make it easy to fill in - maybe 2 minutes maximum.
+Then I'd connect that to an automated system that uses my actual pricing - what I charge for materials, what my labour rates are, how long different jobs typically take. I'd configure it once with real numbers, not guesses.
+The system would generate an itemised quote based on the customer's input. Supply and fit costs broken down. Then it would create a photorealistic design showing what their garden could look like with those specifications. Both would go to their email in about 90 seconds.
+Every enquiry would also feed into my CRM automatically. Name, email, phone number, what they're after, budget range, the quote they received, the design image - everything in one place.
+Then on Monday morning, I'd review the weekend enquiries. I'd call the ones that match my ideal project profile. "Hi, you got a quote from us on Saturday for the porcelain patio - that's in our sweet spot. When works for you for a site visit?"
+The customer's already seen realistic pricing. They've already got a design they're excited about. The site visit becomes a refinement conversation, not a "let me tell you how much this actually costs" negotiation.
+Conversion rate goes up. Time wasted goes down. Everyone's happier.
+The tools you need to make this work
+You've got two options really.
+Option one: build it yourself. Set up a pricing calculator on your website, integrate it with a CRM, configure automated emails with the quote attached. If you're technically minded and have 40-60 hours to spare, you can cobble something together for free.
+Option two: use a purpose-built system. There are a few out there now specifically for landscapers. They come with AI design generation, CRM integration, automated email delivery, the works. Setup takes about a week instead of two months. Cost varies but you're typically looking at a few thousand quid for setup plus a couple hundred a month ongoing.
+Either way, the ROI is pretty clear. Let's say you currently do 10 site visits a week at 3 hours each - that's 30 hours. If you can cut that to 6 site visits (the pre-qualified ones) at 3 hours each, you've saved 12 hours a week. That's nearly two full working days you can spend actually doing paid work instead of chasing maybes.
+Over a year, that's about 600 hours saved. If you bill at even £40 an hour, that's £24,000 worth of your time back.
+Why most landscapers haven't figured this out yet
+The landscaping industry moves slowly when it comes to technology. Most landscapers I know still do quotes in Excel or on the back of an envelope. Half of them don't even have a proper website, just a Facebook page.
+That's actually good news if you're reading this. It means your competitors probably aren't doing this yet. The ones who move first on instant quoting are going to absolutely dominate their local market.
+Customers are already shopping online. They're already comparing multiple landscapers before they make a decision. The ones who can give them information instantly - actual numbers, actual visuals - those are the ones who'll win.
+The technology exists. It works. The question is just whether you'll use it before your competitors figure it out.
+My honest take after six years in the industry
+I wasted so much time in my early years doing site visits for people who were never going to buy. Driving all over the place, measuring gardens, writing up detailed quotes, sending them off into the void.
+If I'd had instant quoting from day one, I reckon I could have done 30% more actual jobs with the same amount of working hours. Maybe more.
+The landscapers I'm working with now who've switched to this model - they all say the same thing. "Why didn't I do this three years ago?"
+It's not about being impersonal or cutting corners. It's about respecting your time and only spending it on leads who are actually serious. The customers who are ready to move forward don't mind filling in a form to get instant pricing. The ones who just want to "have a look" - well, they've filtered themselves out, and you haven't wasted an afternoon on them.
+If you're still doing it the old way - showing up to every enquiry, quoting everyone, hoping enough of them convert - I'd seriously consider trying something different. Even just for a month. See what happens when you make people tell you their budget upfront before you agree to a site visit.
+Worst case, you go back to the old method. Best case, you get 12 hours a week back and close more jobs with less effort.
+Worth a try, isn't it?
+
+Want to see what instant quoting looks like in action?
+I built a demo at premium-landscapes.co.uk - try it as if you're a customer enquiring about landscaping. You'll get a quote and an AI design in about 90 seconds. That's what your customers would experience.
+
+Lewis Reid ran a landscaping business in the UK for six years before building Trade Engine, an AI-powered quoting and design system for landscaping companies. He spent way too many hours doing site visits for people with £5,000 budgets who wanted £20,000 gardens.
