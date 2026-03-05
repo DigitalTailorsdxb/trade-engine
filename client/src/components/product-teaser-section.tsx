@@ -32,7 +32,7 @@ export function ProductTeaserSection() {
                 <div className="flex items-center justify-center gap-3">
                   <Gift size={18} className="text-white" />
                   <p className="text-sm font-medium text-white">
-                    First 10 customers: 50% off setup fee
+                    Limited time offer: 50% off setup fee
                   </p>
                 </div>
               </div>

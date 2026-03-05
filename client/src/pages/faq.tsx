@@ -34,7 +34,7 @@ const faqCategories = [
     faqs: [
       {
         question: "How much does Trade Engine cost?",
-        answer: "We offer three plans: Quoting System at £149/month (setup £249), Quoting + AI Design at £199/month (setup £249), and Full System at £249/month (setup £499). First 10 customers get 50% off setup fees. All plans include unlimited quotes, unlimited AI designs, and free updates. No contracts — cancel anytime with 30 days notice."
+        answer: "We offer three plans: Quoting System at £149/month (setup £249), Quoting + AI Design at £199/month (setup £249), and Full System at £249/month (setup £499). 50% off setup fees for a limited time. All plans include unlimited quotes, unlimited AI designs, and free updates. No contracts — cancel anytime with 30 days notice."
       },
       {
         question: "What's the difference between the three plans?",

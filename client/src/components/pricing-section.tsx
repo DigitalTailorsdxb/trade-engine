@@ -101,7 +101,7 @@ export function PricingSection() {
                   <div className="mb-6">
                     <span className="text-slate-400 line-through text-sm">{tier.originalSetup}</span>{" "}
                     <span className="text-amber-600 font-bold">{tier.discountedSetup}</span>{" "}
-                    <span className="text-slate-500 text-xs">setup (first 10 customers)</span>
+                    <span className="text-slate-500 text-xs">setup (limited time offer)</span>
                   </div>
 
                   <ul className="space-y-3 mb-8 flex-grow">

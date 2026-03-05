@@ -75,10 +75,10 @@ export default function Pricing() {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Pricing | From £149/Month | Trade Engine</title>
-        <meta name="description" content="Trade Engine pricing from £149/month. Three plans: Quoting System, Quoting + AI Design, and Full System. 50% off setup for first 10 customers. No contracts, cancel anytime." />
+        <meta name="description" content="Trade Engine pricing from £149/month. Three plans: Quoting System, Quoting + AI Design, and Full System. 50% off setup — limited time offer. No contracts, cancel anytime." />
         <link rel="canonical" href="https://trade-engine.co.uk/pricing" />
         <meta property="og:title" content="Pricing | From £149/Month | Trade Engine" />
-        <meta property="og:description" content="Three plans from £149/month. 50% off setup for first 10 customers. No contracts, cancel anytime." />
+        <meta property="og:description" content="Three plans from £149/month. 50% off setup — limited time offer. No contracts, cancel anytime." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/pricing" />
       </Helmet>
@@ -129,7 +129,7 @@ export default function Pricing() {
                     <div className="mb-6">
                       <span className="text-slate-400 line-through text-sm">{tier.originalSetup}</span>{" "}
                       <span className="text-amber-600 font-bold">{tier.discountedSetup}</span>{" "}
-                      <span className="text-slate-500 text-xs">setup (first 10 customers)</span>
+                      <span className="text-slate-500 text-xs">setup (limited time offer)</span>
                     </div>
 
                     <ul className="space-y-3 mb-8 flex-grow">

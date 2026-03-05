@@ -2,7 +2,7 @@
 
 ## Overview
 
-Trade Engine is a marketing website designed to sell AI-powered white-labelled websites to landscaping businesses. The site promotes a SaaS product that offers instant quotes (15 seconds), AI design visualisation (90 seconds), and automated follow-ups (24/7). Three pricing tiers: Quoting System (£149/mo, setup £249), Quoting + AI Design (£199/mo, setup £249), and Full System (£249/mo, setup £499). Launch offer: 50% off setup for first 10 customers. No contracts, cancel anytime.
+Trade Engine is a marketing website designed to sell AI-powered white-labelled websites to landscaping businesses. The site promotes a SaaS product that offers instant quotes (15 seconds), AI design visualisation (90 seconds), and automated follow-ups (24/7). Three pricing tiers: Quoting System (£149/mo, setup £249), Quoting + AI Design (£199/mo, setup £249), and Full System (£249/mo, setup £499). Launch offer: 50% off setup — limited time offer. No contracts, cancel anytime.
 
 The application follows a full-stack TypeScript architecture with a React frontend, Express backend, and PostgreSQL database. The site includes:
 - **Home page**: Hero, Video Walkthrough, Problems, Product Teaser, Examples (PDF/Design), Features preview, Pricing, Testimonials, FAQ, Contact sections
