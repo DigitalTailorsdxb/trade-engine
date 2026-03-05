@@ -4,7 +4,6 @@ import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
 import { VideoSection } from "@/components/video-section";
 import { ProblemsSection } from "@/components/problems-section";
-import { ProductTeaserSection } from "@/components/product-teaser-section";
 import { ExamplesSection } from "@/components/examples-section";
 import { FeaturesSection } from "@/components/features-section";
 import { PricingSection } from "@/components/pricing-section";
@@ -34,10 +33,9 @@ export default function Home() {
         <HeroSection />
         <VideoSection />
         <ProblemsSection />
-        <ProductTeaserSection />
+        <PricingSection />
         <ExamplesSection />
         <FeaturesSection />
-        <PricingSection />
         <TestimonialsSection />
         <FAQSection />
         <ContactSection />
