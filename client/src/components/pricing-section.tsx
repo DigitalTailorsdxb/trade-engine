@@ -39,7 +39,7 @@ const tiers = [
     originalSetup: "£999",
     discountedSetup: "£499",
     bestFor: "Best for: Complete digital presence",
-    paymentLink: "https://buy.stripe.com/dRmdRab6edPQcR3bnB6g802",
+    paymentLink: "https://buy.stripe.com/00waEYgqy5jk4kxgHV6g803",
     features: [
       "Everything in Quoting + Design tier",
       "Custom white-label website built for you",
