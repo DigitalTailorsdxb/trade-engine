@@ -9,7 +9,6 @@ const tiers = [
     originalSetup: "£499",
     discountedSetup: "£249",
     bestFor: "Best for: Landscapers with existing websites",
-    popular: false,
     features: [
       "Automated quote generation",
       "Embed into existing website",
@@ -24,13 +23,12 @@ const tiers = [
     originalSetup: "£499",
     discountedSetup: "£249",
     bestFor: "Best for: Maximum conversion from enquiries",
-    popular: true,
     features: [
       "Everything in Quoting tier",
       "AI photorealistic garden designs",
       "Premium email templates",
       "Full HubSpot CRM integration",
-      "10-day deployment",
+      "7-day deployment",
     ],
   },
   {
@@ -39,14 +37,13 @@ const tiers = [
     originalSetup: "£999",
     discountedSetup: "£499",
     bestFor: "Best for: Complete digital presence",
-    popular: false,
     features: [
       "Everything in Quoting + Design tier",
       "Custom white-label website built for you",
       "Your branding throughout",
       "Premium positioning",
       "Priority support",
-      "14-day deployment",
+      "7-day deployment",
     ],
   },
 ];
@@ -72,20 +69,9 @@ export function PricingSection() {
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto mb-12">
           {tiers.map((tier, index) => (
-            <div key={index} className={`relative ${tier.popular ? "md:-mt-4 md:mb-[-16px]" : ""}`}>
-              {tier.popular && (
-                <div className="absolute -top-4 right-6 z-10">
-                  <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg" data-testid="badge-most-popular">
-                    Most Popular
-                  </span>
-                </div>
-              )}
+            <div key={index}>
               <Card
-                className={`h-full border-2 transition-all duration-300 hover:-translate-y-1 ${
-                  tier.popular
-                    ? "border-amber-400 shadow-xl shadow-amber-500/10"
-                    : "border-slate-200 hover:border-amber-200 hover:shadow-lg"
-                }`}
+                className="h-full border-2 border-amber-400 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 data-testid={`card-pricing-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
               >
                 <CardContent className="p-6 sm:p-8 flex flex-col h-full">
@@ -115,11 +101,7 @@ export function PricingSection() {
 
                   <Button
                     onClick={handleContactClick}
-                    className={`w-full ${
-                      tier.popular
-                        ? "bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
-                        : "bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
-                    }`}
+                    className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
                     data-testid={`button-pricing-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
                   >
                     Get Started

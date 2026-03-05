@@ -38,7 +38,7 @@ const faqCategories = [
       },
       {
         question: "What's the difference between the three plans?",
-        answer: "The Quoting System embeds automated quote generation into your existing website with email delivery and basic HubSpot CRM capture (7-day deployment). Quoting + AI Design adds photorealistic AI garden designs, premium email templates, and full HubSpot CRM integration (10-day deployment). The Full System includes everything plus a custom white-label website built for you with your branding throughout, premium positioning, and priority support (14-day deployment)."
+        answer: "The Quoting System embeds automated quote generation into your existing website with email delivery and basic HubSpot CRM capture. Quoting + AI Design adds photorealistic AI garden designs, premium email templates, and full HubSpot CRM integration. The Full System includes everything plus a custom white-label website built for you with your branding throughout, premium positioning, and priority support. All plans deploy within 7 days."
       },
       {
         question: "Are there any hidden fees or extra costs?",
