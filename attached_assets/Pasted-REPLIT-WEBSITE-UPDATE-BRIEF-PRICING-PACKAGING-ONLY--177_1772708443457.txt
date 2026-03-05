@@ -1,0 +1,456 @@
+REPLIT WEBSITE UPDATE BRIEF - PRICING & PACKAGING ONLY
+
+================================================================================
+OBJECTIVE:
+================================================================================
+Update pricing section and add launch offer banner on trade-engine.co.uk. 
+Everything else stays as is.
+
+================================================================================
+1. LAUNCH OFFER BANNER (ADD TO TOP OF PAGE)
+================================================================================
+
+Location: Above hero section, full-width sticky banner
+
+Design:
+- Background: Orange (#FF9800)
+- Text: White, bold
+- Center-aligned
+
+Text:
+"🚀 First 10 customers: 50% off setup fee"
+
+Technical:
+- Sticky (stays visible on scroll)
+- 60-80px height
+- Mobile responsive (text stays readable, doesn't break onto 3 lines)
+
+================================================================================
+2. PRICING SECTION (COMPLETE REPLACEMENT)
+================================================================================
+
+Section headline:
+"Simple, Transparent Pricing"
+
+Subheadline:
+"No contracts. Cancel anytime with 30 days notice."
+
+--------------------------------------------------------------------------------
+TIER 1 CARD:
+--------------------------------------------------------------------------------
+
+Title: Quoting System
+
+Price display: £149/month
+
+Setup fee: ~~£499~~ £249 (first 10 customers)
+
+What's included: (bullet points)
+- Automated quote generation
+- Embed into existing website
+- Email delivery to customers
+- Basic CRM capture (HubSpot)
+- 7-day deployment
+
+CTA Button: "Get Started"
+
+Small text below: "Best for: Landscapers with existing websites"
+
+--------------------------------------------------------------------------------
+TIER 2 CARD: ⭐ MOST POPULAR
+--------------------------------------------------------------------------------
+
+Badge: "MOST POPULAR" (orange badge, top-right corner of card)
+
+Title: Quoting + AI Design
+
+Price display: £199/month
+
+Setup fee: ~~£499~~ £249 (first 10 customers)
+
+What's included: (bullet points)
+- Everything in Quoting tier
+- AI photorealistic garden designs
+- Premium email templates
+- Full HubSpot CRM integration
+- 10-day deployment
+
+CTA Button: "Get Started"
+
+Small text below: "Best for: Maximum conversion from enquiries"
+
+--------------------------------------------------------------------------------
+TIER 3 CARD:
+--------------------------------------------------------------------------------
+
+Title: Full System
+
+Price display: £249/month
+
+Setup fee: ~~£999~~ £499 (first 10 customers)
+
+What's included: (bullet points)
+- Everything in Quoting + Design tier
+- Custom white-label website built for you
+- Your branding throughout
+- Premium positioning
+- Priority support
+- 14-day deployment
+
+CTA Button: "Get Started"
+
+Small text below: "Best for: Complete digital presence"
+
+--------------------------------------------------------------------------------
+PRICING SECTION FOOTER:
+--------------------------------------------------------------------------------
+
+Text below all cards:
+"All plans include unlimited quotes, unlimited AI designs, and free updates. No hidden fees."
+
+--------------------------------------------------------------------------------
+VISUAL LAYOUT:
+--------------------------------------------------------------------------------
+
+Desktop: 3 cards side-by-side, equal width, Tier 2 slightly elevated or highlighted
+
+Mobile: Cards stack vertically, Tier 2 still has "Most Popular" badge
+
+Card styling:
+- White background
+- Subtle shadow/border
+- Orange CTA buttons
+- Strikethrough on old setup price (use <del> or text-decoration: line-through)
+- New setup price in orange or bold
+
+================================================================================
+3. HTML CODE TO IMPLEMENT:
+================================================================================
+
+<!-- Launch Offer Banner -->
+<div class="launch-banner" style="background: #FF9800; color: white; text-align: center; padding: 20px; position: sticky; top: 0; z-index: 1000; font-weight: bold; font-size: 18px;">
+  🚀 First 10 customers: 50% off setup fee
+</div>
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing-section">
+  <h2>Simple, Transparent Pricing</h2>
+  <p class="pricing-subtitle">No contracts. Cancel anytime with 30 days notice.</p>
+  
+  <div class="pricing-cards">
+    
+    <!-- Tier 1 -->
+    <div class="pricing-card">
+      <h3>Quoting System</h3>
+      <div class="price">£149/month</div>
+      <div class="setup">
+        <span style="text-decoration: line-through;">£499</span> 
+        <span style="color: #FF9800; font-weight: bold;">£249</span>
+        <span style="font-size: 14px;">(first 10 customers)</span>
+      </div>
+      <ul>
+        <li>Automated quote generation</li>
+        <li>Embed into existing website</li>
+        <li>Email delivery to customers</li>
+        <li>Basic CRM capture (HubSpot)</li>
+        <li>7-day deployment</li>
+      </ul>
+      <button class="cta-button">Get Started</button>
+      <p class="best-for">Best for: Landscapers with existing websites</p>
+    </div>
+    
+    <!-- Tier 2 (Most Popular) -->
+    <div class="pricing-card popular">
+      <div class="badge">MOST POPULAR</div>
+      <h3>Quoting + AI Design</h3>
+      <div class="price">£199/month</div>
+      <div class="setup">
+        <span style="text-decoration: line-through;">£499</span> 
+        <span style="color: #FF9800; font-weight: bold;">£249</span>
+        <span style="font-size: 14px;">(first 10 customers)</span>
+      </div>
+      <ul>
+        <li>Everything in Quoting tier</li>
+        <li>AI photorealistic garden designs</li>
+        <li>Premium email templates</li>
+        <li>Full HubSpot CRM integration</li>
+        <li>10-day deployment</li>
+      </ul>
+      <button class="cta-button">Get Started</button>
+      <p class="best-for">Best for: Maximum conversion from enquiries</p>
+    </div>
+    
+    <!-- Tier 3 -->
+    <div class="pricing-card">
+      <h3>Full System</h3>
+      <div class="price">£249/month</div>
+      <div class="setup">
+        <span style="text-decoration: line-through;">£999</span> 
+        <span style="color: #FF9800; font-weight: bold;">£499</span>
+        <span style="font-size: 14px;">(first 10 customers)</span>
+      </div>
+      <ul>
+        <li>Everything in Quoting + Design tier</li>
+        <li>Custom white-label website built for you</li>
+        <li>Your branding throughout</li>
+        <li>Premium positioning</li>
+        <li>Priority support</li>
+        <li>14-day deployment</li>
+      </ul>
+      <button class="cta-button">Get Started</button>
+      <p class="best-for">Best for: Complete digital presence</p>
+    </div>
+    
+  </div>
+  
+  <p class="pricing-footer">All plans include unlimited quotes, unlimited AI designs, and free updates. No hidden fees.</p>
+</section>
+
+================================================================================
+4. CSS CODE TO IMPLEMENT:
+================================================================================
+
+.launch-banner {
+  background: #FF9800;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pricing-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.pricing-card {
+  background: white;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card.popular {
+  border-color: #FF9800;
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255,152,0,0.2);
+}
+
+.pricing-card.popular:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: #FF9800;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FF9800;
+  margin: 20px 0 10px 0;
+}
+
+.setup {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.pricing-card ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+}
+
+.pricing-card li:last-child {
+  border-bottom: none;
+}
+
+.pricing-card li:before {
+  content: "✓ ";
+  color: #FF9800;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.cta-button {
+  background: #FF9800;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin: 20px 0;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #F57C00;
+}
+
+.best-for {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.pricing-footer {
+  margin-top: 40px;
+  color: #666;
+  font-size: 14px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-card.popular {
+    transform: none;
+  }
+  
+  .pricing-card.popular:hover {
+    transform: translateY(-5px);
+  }
+  
+  .launch-banner {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .pricing-section h2 {
+    font-size: 28px;
+  }
+  
+  .price {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .launch-banner {
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .pricing-section {
+    padding: 40px 15px;
+  }
+  
+  .pricing-card {
+    padding: 20px;
+  }
+}
+
+================================================================================
+5. JAVASCRIPT (IF NEEDED FOR CTA BUTTONS):
+================================================================================
+
+If CTA buttons should link to contact form:
+
+document.querySelectorAll('.cta-button').forEach(button => {
+  button.addEventListener('click', function() {
+    // Option 1: Scroll to contact form
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    
+    // Option 2: Open mailto
+    // window.location.href = 'mailto:hello@trade-engine.co.uk?subject=Interest in Trade Engine';
+    
+    // Option 3: Open Calendly or external link
+    // window.open('YOUR_CALENDLY_LINK', '_blank');
+  });
+});
+
+Choose one option above and uncomment it.
+
+================================================================================
+6. DEPLOYMENT INSTRUCTIONS:
+================================================================================
+
+Step 1: Find your existing pricing section in the HTML file
+
+Step 2: Replace the entire pricing section with the HTML code above
+
+Step 3: Add the CSS code to your stylesheet (style.css or in <style> tags)
+
+Step 4: Add the launch banner HTML at the very top of your <body> tag (before hero section)
+
+Step 5: If needed, add the JavaScript for CTA button functionality
+
+Step 6: Test on desktop and mobile
+
+Step 7: Deploy to production
+
+================================================================================
+7. PRE-DEPLOYMENT CHECKLIST:
+================================================================================
+
+- [ ] Launch banner appears at top of page
+- [ ] Launch banner is sticky (stays visible when scrolling)
+- [ ] All 3 pricing cards display side-by-side on desktop
+- [ ] Cards stack vertically on mobile
+- [ ] "Most Popular" badge shows on Tier 2
+- [ ] Strikethrough shows on old setup prices (£499, £999)
+- [ ] New setup prices are highlighted in orange (£249, £499)
+- [ ] All CTA buttons are clickable
+- [ ] Mobile text doesn't overflow or break
+- [ ] Test on: Chrome, Safari, Firefox, Mobile Safari, Mobile Chrome
+- [ ] Page loads in under 3 seconds

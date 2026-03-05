@@ -13,14 +13,14 @@ const faqs = [
       "Not at all! We handle all the technical aspects — from setup to ongoing maintenance. You'll receive comprehensive onboarding training on how to use the system, but it's designed to be intuitive and user-friendly. If you can use a smartphone, you can manage your Trade Engine website.",
   },
   {
-    question: "What's included in the £3,499 setup fee?",
+    question: "How much does it cost?",
     answer:
-      "The setup fee covers everything needed to get you up and running: full website design and development, AI-powered quote system configuration, AI garden design generator setup, HubSpot CRM integration, n8n automation workflows, complete white-labelling to your brand, your own domain setup, and comprehensive onboarding training. Plus, you get £250 in free ad spend to kickstart your marketing on Meta and Google Ads.",
+      "We offer three plans: Quoting System at £149/month (setup £249), Quoting + AI Design at £199/month (setup £249), and Full System at £249/month (setup £499). First 10 customers get 50% off setup fees. All plans include unlimited quotes, unlimited AI designs, and free updates. No contracts — cancel anytime with 30 days notice.",
   },
   {
-    question: "What's included in the £199 monthly fee?",
+    question: "What's the difference between the plans?",
     answer:
-      "Your monthly subscription covers: premium hosting and SSL certificates, 24/7 error monitoring and handling (we fix issues before you even notice them), AI credits for design generation, continuous feature upgrades as we release new capabilities, SEO optimisation and regular updates, priority support, ongoing performance optimisation, and security updates with automatic backups. Essentially, we handle all the technical maintenance so you can focus on running your business.",
+      "The Quoting System lets you embed automated quote generation into your existing website with email delivery and basic HubSpot CRM capture. Quoting + AI Design adds photorealistic AI garden designs, premium email templates, and full HubSpot CRM integration. The Full System includes everything plus a custom white-label website built for you with your branding throughout, premium positioning, and priority support.",
   },
   {
     question: "How does the AI design visualisation work?",

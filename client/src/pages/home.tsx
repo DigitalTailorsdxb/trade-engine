@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { LaunchBanner } from "@/components/launch-banner";
 import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
 import { VideoSection } from "@/components/video-section";
@@ -17,7 +18,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Trade Engine | AI-Powered Websites for Landscaping Businesses</title>
-        <meta name="description" content="Get an AI-powered website that qualifies leads, generates instant quotes in 15 seconds, and shows customers their finished garden in 90 seconds. White-labelled to your brand. £3,499 setup + £199/month." />
+        <meta name="description" content="Get an AI-powered website that qualifies leads, generates instant quotes in 15 seconds, and shows customers their finished garden in 90 seconds. White-labelled to your brand. Plans from £149/month. 50% off setup for first 10 customers." />
         <link rel="canonical" href="https://trade-engine.co.uk/" />
         <meta property="og:title" content="Trade Engine | AI-Powered Websites for Landscaping Businesses" />
         <meta property="og:description" content="Get an AI-powered website that qualifies leads, generates instant quotes in 15 seconds, and shows customers their finished garden in 90 seconds. White-labelled to your brand." />
@@ -27,6 +28,7 @@ export default function Home() {
         <meta name="twitter:title" content="Trade Engine | AI-Powered Websites for Landscaping Businesses" />
         <meta name="twitter:description" content="AI-powered websites for landscaping businesses. Instant quotes, garden visualisation, and automated follow-ups." />
       </Helmet>
+      <LaunchBanner />
       <Navigation />
       <main>
         <HeroSection />

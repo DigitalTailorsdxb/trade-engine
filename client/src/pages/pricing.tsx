@@ -1,308 +1,168 @@
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/navigation";
+import { LaunchBanner } from "@/components/launch-banner";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Check, 
-  Zap, 
-  Palette, 
-  Globe, 
-  Headphones, 
-  RefreshCw, 
-  Shield, 
-  TrendingUp,
-  Calculator,
-  Image,
-  Users,
-  Smartphone,
-  Clock,
-  Mail,
-  MessageSquare,
-  FileText,
-  Settings,
-  BarChart3,
-  Rocket,
-  Gift,
-  ArrowRight
-} from "lucide-react";
-import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
+import { Check, Rocket, ArrowRight, CheckCircle2 } from "lucide-react";
+
+const tiers = [
+  {
+    name: "Quoting System",
+    price: "£149",
+    originalSetup: "£499",
+    discountedSetup: "£249",
+    bestFor: "Best for: Landscapers with existing websites",
+    popular: false,
+    features: [
+      "Automated quote generation",
+      "Embed into existing website",
+      "Email delivery to customers",
+      "Basic CRM capture (HubSpot)",
+      "7-day deployment",
+    ],
+  },
+  {
+    name: "Quoting + AI Design",
+    price: "£199",
+    originalSetup: "£499",
+    discountedSetup: "£249",
+    bestFor: "Best for: Maximum conversion from enquiries",
+    popular: true,
+    features: [
+      "Everything in Quoting tier",
+      "AI photorealistic garden designs",
+      "Premium email templates",
+      "Full HubSpot CRM integration",
+      "10-day deployment",
+    ],
+  },
+  {
+    name: "Full System",
+    price: "£249",
+    originalSetup: "£999",
+    discountedSetup: "£499",
+    bestFor: "Best for: Complete digital presence",
+    popular: false,
+    features: [
+      "Everything in Quoting + Design tier",
+      "Custom white-label website built for you",
+      "Your branding throughout",
+      "Premium positioning",
+      "Priority support",
+      "14-day deployment",
+    ],
+  },
+];
+
+const comparison = [
+  { item: "Custom website design", traditional: "£3,500", tradeEngine: "Included" },
+  { item: "AI quote system development", traditional: "£5,500", tradeEngine: "Included" },
+  { item: "AI visualisation system", traditional: "£6,000", tradeEngine: "Included" },
+  { item: "CRM integration", traditional: "£1,500", tradeEngine: "Included" },
+  { item: "Mobile optimisation", traditional: "£1,000", tradeEngine: "Included" },
+  { item: "Content writing", traditional: "£500", tradeEngine: "Included" },
+  { item: "Hosting (per year)", traditional: "£500", tradeEngine: "Included" },
+  { item: "Ongoing support (per year)", traditional: "£1,500", tradeEngine: "Included" },
+];
 
 export default function Pricing() {
-  const setupIncludes = [
-    {
-      icon: Globe,
-      title: "Fully Custom Website",
-      description: "A complete, professionally designed website built specifically for your landscaping business. White-labelled with your branding, colours, and logo throughout."
-    },
-    {
-      icon: Calculator,
-      title: "AI Quote System",
-      description: "The complete instant quoting engine with both Full Garden Makeover and Individual Product paths. Customised with your pricing, services, and business logic."
-    },
-    {
-      icon: Image,
-      title: "AI Visualisation System",
-      description: "Photo-to-design AI technology integrated into your site. Customers upload a photo, receive a photorealistic preview in 90 seconds."
-    },
-    {
-      icon: Users,
-      title: "HubSpot CRM Setup",
-      description: "Full HubSpot CRM integration configured and ready to use. All leads automatically captured and synced in real-time."
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile-First Design",
-      description: "Responsive design optimised for phones, tablets, and desktops. Lightning-fast loading under 3 seconds on any device."
-    },
-    {
-      icon: Palette,
-      title: "Brand Customisation",
-      description: "Your logo, colours, fonts, and imagery throughout. Looks like you spent £15,000+ on a premium agency build."
-    },
-    {
-      icon: FileText,
-      title: "Content Writing",
-      description: "Professional copywriting for all pages including your homepage, services, about page, and contact information."
-    },
-    {
-      icon: Settings,
-      title: "Technical Setup",
-      description: "Domain configuration, SSL certificates, email integration, and all technical infrastructure handled for you."
-    },
-  ];
-
-  const monthlyIncludes = [
-    {
-      icon: Headphones,
-      title: "Priority Support",
-      description: "Direct access to our support team for any questions, changes, or issues. Typical response time under 2 hours."
-    },
-    {
-      icon: RefreshCw,
-      title: "Unlimited Updates",
-      description: "Need to change pricing, add services, or update content? We handle all updates at no extra cost."
-    },
-    {
-      icon: Shield,
-      title: "Hosting & Security",
-      description: "Enterprise-grade hosting with 99.9% uptime, SSL certificates, daily backups, and security monitoring."
-    },
-    {
-      icon: Zap,
-      title: "AI Credits Included",
-      description: "Monthly AI visualisation credits included. Your customers can generate garden previews without any additional cost to you."
-    },
-    {
-      icon: BarChart3,
-      title: "Analytics Dashboard",
-      description: "Track visitors, quote requests, and conversions. Understand what's working and optimise your results."
-    },
-    {
-      icon: Mail,
-      title: "Email Automation",
-      description: "Automated follow-up sequences to nurture leads. Quote reminders, thank you emails, and review requests."
-    },
-    {
-      icon: MessageSquare,
-      title: "WhatsApp Integration",
-      description: "Connect your WhatsApp Business for instant lead notifications. Never miss a hot prospect again."
-    },
-    {
-      icon: TrendingUp,
-      title: "Ongoing Optimisation",
-      description: "Regular improvements to conversion rates, loading speed, and user experience based on real data."
-    },
-  ];
-
-  const bonuses = [
-    {
-      value: "£250",
-      title: "Free Ad Spend",
-      description: "Meta & Google Ads credit to kickstart your marketing. We'll set up your first campaigns."
-    },
-    {
-      value: "£199",
-      title: "First Month Free",
-      description: "Your first month of the complete AI system is on us. Start generating leads before you pay a penny."
-    },
-    {
-      value: "FREE",
-      title: "Onboarding Call",
-      description: "1-hour kickoff call to gather your requirements, branding, and ensure we build exactly what you need."
-    },
-  ];
-
-  const comparison = [
-    { item: "Custom website design", traditional: "£3,500", tradeEngine: "Included" },
-    { item: "AI quote system development", traditional: "£5,500", tradeEngine: "Included" },
-    { item: "AI visualisation system", traditional: "£6,000", tradeEngine: "Included" },
-    { item: "CRM integration", traditional: "£1,500", tradeEngine: "Included" },
-    { item: "Mobile optimisation", traditional: "£1,000", tradeEngine: "Included" },
-    { item: "Content writing", traditional: "£500", tradeEngine: "Included" },
-    { item: "Hosting (per year)", traditional: "£500", tradeEngine: "Included" },
-    { item: "Ongoing support (per year)", traditional: "£1,500", tradeEngine: "Included" },
-  ];
+  const handleContactClick = () => {
+    window.location.href = "/#contact";
+  };
 
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Pricing | £3,499 Setup + £199/Month | Trade Engine</title>
-        <meta name="description" content="Trade Engine pricing: £3,499 one-time setup includes AI quote system, garden visualisation, and HubSpot CRM. £199/month covers hosting, support, and AI credits. Rolling monthly, no tie-ins." />
+        <title>Pricing | From £149/Month | Trade Engine</title>
+        <meta name="description" content="Trade Engine pricing from £149/month. Three plans: Quoting System, Quoting + AI Design, and Full System. 50% off setup for first 10 customers. No contracts, cancel anytime." />
         <link rel="canonical" href="https://trade-engine.co.uk/pricing" />
-        <meta property="og:title" content="Pricing | £3,499 Setup + £199/Month | Trade Engine" />
-        <meta property="og:description" content="£3,499 one-time setup includes AI quote system, garden visualisation, and HubSpot CRM. £199/month covers hosting, support, and AI credits." />
+        <meta property="og:title" content="Pricing | From £149/Month | Trade Engine" />
+        <meta property="og:description" content="Three plans from £149/month. 50% off setup for first 10 customers. No contracts, cancel anytime." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/pricing" />
-        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
+      <LaunchBanner />
       <Navigation />
-      
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-b from-slate-50 to-white">
+
+      <section className="pt-40 pb-16 px-4 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto max-w-6xl text-center">
-          <img 
-            src={logoImage} 
-            alt="Trade Engine Logo" 
-            className="h-32 md:h-40 mx-auto mb-8"
-            data-testid="img-pricing-logo"
-          />
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             Simple, Transparent Pricing
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
-            Everything you need to transform your landscaping business online. 
-            One setup fee, one monthly subscription, no hidden costs.
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            No contracts. Cancel anytime with 30 days notice.
           </p>
         </div>
       </section>
 
-      {/* Main Pricing Card */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <Card className="overflow-hidden border-2 border-amber-200 glow-ring">
-            <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-8 text-center text-white">
-              <h2 className="text-2xl font-bold mb-2">The Complete Package</h2>
-              <p className="text-amber-100">Everything included. No surprises.</p>
-            </div>
-            <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="text-center p-6 bg-slate-50 rounded-lg">
-                  <p className="text-slate-600 mb-2">One-Time Setup</p>
-                  <p className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
-                    £3,499
-                  </p>
-                  <p className="text-slate-500 mt-2">Paid once to get started</p>
-                </div>
-                <div className="text-center p-6 bg-slate-50 rounded-lg">
-                  <p className="text-slate-600 mb-2">Monthly Subscription</p>
-                  <p className="text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
-                    £199
-                  </p>
-                  <p className="text-slate-500 mt-2">Per month, cancel anytime</p>
-                </div>
-              </div>
-              <div className="text-center">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-6 text-lg glow-ring-subtle"
-                  data-testid="button-pricing-get-started"
-                  asChild
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+            {tiers.map((tier, index) => (
+              <div key={index} className={`relative ${tier.popular ? "md:-mt-4 md:mb-[-16px]" : ""}`}>
+                {tier.popular && (
+                  <div className="absolute -top-4 right-6 z-10">
+                    <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg">
+                      Most Popular
+                    </span>
+                  </div>
+                )}
+                <Card
+                  className={`h-full border-2 transition-all duration-300 hover:-translate-y-1 ${
+                    tier.popular
+                      ? "border-amber-400 shadow-xl shadow-amber-500/10"
+                      : "border-slate-200 hover:border-amber-200 hover:shadow-lg"
+                  }`}
+                  data-testid={`card-pricing-page-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
                 >
-                  <a href="https://calendly.com/hello-trade-engine/30min" target="_blank" rel="noopener noreferrer">
-                    Get Started Today
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
+                  <CardContent className="p-6 sm:p-8 flex flex-col h-full">
+                    <h3 className="text-xl font-bold text-slate-900 mb-4">{tier.name}</h3>
+
+                    <div className="mb-2">
+                      <span className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
+                        {tier.price}
+                      </span>
+                      <span className="text-slate-500">/month</span>
+                    </div>
+
+                    <div className="mb-6">
+                      <span className="text-slate-400 line-through text-sm">{tier.originalSetup}</span>{" "}
+                      <span className="text-amber-600 font-bold">{tier.discountedSetup}</span>{" "}
+                      <span className="text-slate-500 text-xs">setup (first 10 customers)</span>
+                    </div>
+
+                    <ul className="space-y-3 mb-8 flex-grow">
+                      {tier.features.map((feature, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <CheckCircle2 size={16} className="text-amber-500 flex-shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <Button
+                      onClick={handleContactClick}
+                      className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
+                      data-testid={`button-pricing-page-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
+                    >
+                      Get Started
+                      <ArrowRight size={16} className="ml-2" />
+                    </Button>
+
+                    <p className="text-xs text-slate-500 italic text-center mt-4">{tier.bestFor}</p>
+                  </CardContent>
+                </Card>
               </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Bonuses Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-amber-50 to-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full mb-4">
-              <Gift className="h-5 w-5" />
-              <span className="font-semibold">Launch Bonuses</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Plus These Bonuses Worth Over £500
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {bonuses.map((bonus, index) => (
-              <Card key={index} className="text-center p-6 border-amber-200">
-                <p className="text-3xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent mb-2">
-                  {bonus.value}
-                </p>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{bonus.title}</h3>
-                <p className="text-slate-600">{bonus.description}</p>
-              </Card>
             ))}
           </div>
+
+          <p className="text-center text-slate-500 text-sm max-w-2xl mx-auto">
+            All plans include unlimited quotes, unlimited AI designs, and free updates. No hidden fees.
+          </p>
         </div>
       </section>
 
-      {/* Setup Fee Breakdown */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              What's Included in the £3,499 Setup
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              This is a complete done-for-you build. You provide your branding and requirements, 
-              we handle everything else.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {setupIncludes.map((item, index) => (
-              <Card key={index} className="p-6 hover-elevate">
-                <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center mb-4">
-                  <item.icon className="h-6 w-6 text-amber-600" />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                <p className="text-slate-600 text-sm">{item.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Monthly Subscription Breakdown */}
-      <section className="py-16 px-4 bg-slate-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              What's Included in the £199/Month
-            </h2>
-            <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-4">
-              <Check className="h-5 w-5" />
-              <span className="font-semibold">Rolling Monthly - Cancel Anytime</span>
-            </div>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              No long-term contracts. No tie-ins. Cancel whenever you want with 30 days notice. 
-              You stay because it works, not because you're locked in.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {monthlyIncludes.map((item, index) => (
-              <Card key={index} className="p-6 hover-elevate">
-                <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center mb-4">
-                  <item.icon className="h-6 w-6 text-amber-600" />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                <p className="text-slate-600 text-sm">{item.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Comparison Table */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
@@ -310,8 +170,7 @@ export default function Pricing() {
               Compare the Value
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Building these features separately would cost £20,000 with traditional agencies. 
-              Here's the breakdown.
+              Building these features separately would cost £20,000+ with traditional agencies.
             </p>
           </div>
           <Card className="overflow-hidden">
@@ -344,7 +203,7 @@ export default function Pricing() {
                     <td className="p-4 text-center font-bold text-slate-700">£20,000+</td>
                     <td className="p-4 text-center bg-amber-100">
                       <span className="font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent text-lg">
-                        £3,499 + £199/mo
+                        From £249 + £149/mo
                       </span>
                     </td>
                   </tr>
@@ -355,7 +214,6 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* ROI Section */}
       <section className="py-16 px-4 bg-gradient-to-b from-slate-900 to-slate-800">
         <div className="container mx-auto max-w-4xl text-center">
           <Rocket className="h-16 w-16 text-amber-500 mx-auto mb-6" />
@@ -363,8 +221,8 @@ export default function Pricing() {
             The Real Question: What's Your ROI?
           </h2>
           <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-            If the average landscaping job is worth £5,000 - £15,000, you only need 
-            <span className="text-amber-400 font-bold"> one extra customer per month</span> to 
+            If the average landscaping job is worth £5,000 - £15,000, you only need
+            <span className="text-amber-400 font-bold"> one extra customer per month</span> to
             see a massive return on your investment.
           </p>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -381,11 +239,11 @@ export default function Pricing() {
               <p className="text-slate-300">Instant quotes vs days of waiting</p>
             </div>
           </div>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-6 text-lg"
             data-testid="button-pricing-cta-bottom"
-            onClick={() => window.location.href = '/#contact'}
+            onClick={handleContactClick}
           >
             Start Winning More Customers
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -393,7 +251,6 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-12">
@@ -405,9 +262,8 @@ export default function Pricing() {
                 What happens if I want to cancel?
               </h3>
               <p className="text-slate-600">
-                You can cancel your monthly subscription at any time with 30 days notice. 
-                Your website remains yours - we'll help you transfer it to your own hosting 
-                if you wish to continue independently.
+                You can cancel your monthly subscription at any time with 30 days notice.
+                No penalties, no questions asked. We earn your business every month.
               </p>
             </Card>
             <Card className="p-6">
@@ -415,10 +271,8 @@ export default function Pricing() {
                 Are there any hidden fees?
               </h3>
               <p className="text-slate-600">
-                No. The £3,499 setup and £199/month covers everything listed above. 
-                The only additional cost would be if you exceed the included AI visualisation 
-                credits (most businesses never do), or request custom development work beyond 
-                standard updates.
+                No. Your plan covers everything listed. The only additional cost would be if you
+                exceed the included AI visualisation credits (most businesses never do).
               </p>
             </Card>
             <Card className="p-6">
@@ -426,65 +280,51 @@ export default function Pricing() {
                 How long does setup take?
               </h3>
               <p className="text-slate-600">
-                Most websites are live within 2-3 weeks from kickoff. We start with a 
-                1-hour onboarding call to gather your requirements, then build and refine 
-                until you're 100% happy.
+                Depends on your plan: 7 days for Quoting System, 10 days for Quoting + AI Design,
+                and 14 days for Full System. We start with a kickoff call to gather your requirements.
               </p>
             </Card>
             <Card className="p-6">
               <h3 className="text-lg font-bold text-slate-900 mb-2">
-                Do I need to provide anything?
+                Can I upgrade my plan later?
               </h3>
               <p className="text-slate-600">
-                We'll need your logo, brand colours, photos of your work (we can help source 
-                stock images if needed), and your pricing structure. We handle everything else 
-                including copywriting and technical setup.
-              </p>
-            </Card>
-            <Card className="p-6 border-2 border-green-200 bg-green-50/50">
-              <h3 className="text-lg font-bold text-slate-900 mb-2">
-                Can I cancel the monthly subscription?
-              </h3>
-              <p className="text-slate-600">
-                Absolutely! It's a rolling monthly contract with no tie-ins. Cancel anytime 
-                with just 30 days notice. No penalties, no questions asked. We earn your 
-                business every month.
+                Absolutely. You can upgrade from any tier to a higher one at any time. We'll
+                handle the migration and only charge the difference in setup fees.
               </p>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
       <section className="py-16 px-4 bg-gradient-to-r from-amber-500 to-orange-500">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-amber-100 mb-4 max-w-2xl mx-auto">
-            Join landscaping businesses already using Trade Engine to win more customers 
-            and grow their revenue.
+            Join landscaping businesses already using Trade Engine to win more customers.
           </p>
           <p className="text-amber-200 mb-8">
-            Rolling monthly subscription - cancel anytime, no tie-ins
+            No contracts - cancel anytime with 30 days notice
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               variant="outline"
               className="bg-white text-amber-600 border-white hover:bg-amber-50 px-8 py-6 text-lg"
               data-testid="button-pricing-contact"
-              onClick={() => window.location.href = '/#contact'}
+              onClick={handleContactClick}
             >
               Contact Us
             </Button>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-6 text-lg"
               data-testid="button-pricing-demo"
-              onClick={() => window.open('https://www.premium-landscapes.co.uk', '_blank')}
+              onClick={() => window.open("https://www.premium-landscapes.co.uk", "_blank")}
             >
-              See Live Demo
+              Try the Demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>

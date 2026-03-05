@@ -33,16 +33,16 @@ const faqCategories = [
     title: "Pricing & Payments",
     faqs: [
       {
-        question: "What's included in the £3,499 setup fee?",
-        answer: "Everything needed for a complete professional website: custom design and development, AI-powered instant quote system with your pricing, AI garden visualisation system, HubSpot CRM integration with automation workflows, complete white-labelling with your branding, domain configuration, SSL certificates, professional copywriting for all pages, and comprehensive onboarding training. Plus £250 in free advertising credit to kickstart your lead generation."
+        question: "How much does Trade Engine cost?",
+        answer: "We offer three plans: Quoting System at £149/month (setup £249), Quoting + AI Design at £199/month (setup £249), and Full System at £249/month (setup £499). First 10 customers get 50% off setup fees. All plans include unlimited quotes, unlimited AI designs, and free updates. No contracts — cancel anytime with 30 days notice."
       },
       {
-        question: "What does the £199 monthly subscription cover?",
-        answer: "Your monthly fee includes: premium hosting with 99.9% uptime, SSL security certificates, 24/7 monitoring and error handling (we fix issues before you notice them), AI visualisation credits for your customers, continuous feature upgrades, SEO optimisation, priority support, performance optimisation, and automatic security updates and backups. It's comprehensive - you won't pay for hosting, maintenance, or support separately."
+        question: "What's the difference between the three plans?",
+        answer: "The Quoting System embeds automated quote generation into your existing website with email delivery and basic HubSpot CRM capture (7-day deployment). Quoting + AI Design adds photorealistic AI garden designs, premium email templates, and full HubSpot CRM integration (10-day deployment). The Full System includes everything plus a custom white-label website built for you with your branding throughout, premium positioning, and priority support (14-day deployment)."
       },
       {
         question: "Are there any hidden fees or extra costs?",
-        answer: "No hidden fees. The £3,499 setup and £199/month covers everything listed. The only additional costs would be if you exceed the generous included AI visualisation credits (most businesses never do), or if you request custom development work beyond standard updates and changes."
+        answer: "No hidden fees. Your plan covers everything listed. All plans include unlimited quotes, unlimited AI designs, and free updates. The only additional costs would be if you exceed the included AI visualisation credits (most businesses never do)."
       },
       {
         question: "Can I cancel at any time? Am I tied into a contract?",
