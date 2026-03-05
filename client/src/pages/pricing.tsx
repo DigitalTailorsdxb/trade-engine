@@ -13,6 +13,7 @@ const tiers = [
     originalSetup: "£499",
     discountedSetup: "£249",
     bestFor: "Best for: Landscapers with existing websites",
+    paymentLink: "https://buy.stripe.com/dRmeVea2a5jk9ER9ft6g800",
     features: [
       "Automated quote generation",
       "Embed into existing website",
@@ -27,6 +28,7 @@ const tiers = [
     originalSetup: "£499",
     discountedSetup: "£249",
     bestFor: "Best for: Maximum conversion from enquiries",
+    paymentLink: "https://buy.stripe.com/5kQ8wQgqy4fg6sF3V96g801",
     features: [
       "Everything in Quoting tier",
       "AI photorealistic garden designs",
@@ -41,6 +43,7 @@ const tiers = [
     originalSetup: "£999",
     discountedSetup: "£499",
     bestFor: "Best for: Complete digital presence",
+    paymentLink: "",
     features: [
       "Everything in Quoting + Design tier",
       "Custom white-label website built for you",
@@ -127,14 +130,26 @@ export default function Pricing() {
                       ))}
                     </ul>
 
-                    <Button
-                      onClick={handleContactClick}
-                      className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
-                      data-testid={`button-pricing-page-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
-                    >
-                      Get Started
-                      <ArrowRight size={16} className="ml-2" />
-                    </Button>
+                    {tier.paymentLink ? (
+                      <a href={tier.paymentLink} target="_blank" rel="noopener noreferrer">
+                        <Button
+                          className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
+                          data-testid={`button-pricing-page-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
+                        >
+                          Buy Now
+                          <ArrowRight size={16} className="ml-2" />
+                        </Button>
+                      </a>
+                    ) : (
+                      <Button
+                        onClick={handleContactClick}
+                        className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
+                        data-testid={`button-pricing-page-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
+                      >
+                        Buy Now
+                        <ArrowRight size={16} className="ml-2" />
+                      </Button>
+                    )}
 
                     <p className="text-xs text-slate-500 italic text-center mt-4">{tier.bestFor}</p>
                   </CardContent>
