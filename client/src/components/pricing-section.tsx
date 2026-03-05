@@ -102,7 +102,7 @@ export function PricingSection() {
                     ))}
                   </ul>
 
-                  {tier.paymentLink ? (
+                  <div className="mt-auto">
                     <a href={tier.paymentLink} target="_blank" rel="noopener noreferrer">
                       <Button
                         className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
@@ -112,18 +112,8 @@ export function PricingSection() {
                         <ArrowRight size={16} className="ml-2" />
                       </Button>
                     </a>
-                  ) : (
-                    <Button
-                      onClick={handleContactClick}
-                      className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
-                      data-testid={`button-pricing-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
-                    >
-                      Buy Now
-                      <ArrowRight size={16} className="ml-2" />
-                    </Button>
-                  )}
-
-                  <p className="text-xs text-slate-500 italic text-center mt-4">{tier.bestFor}</p>
+                    <p className="text-xs text-slate-500 italic text-center mt-4">{tier.bestFor}</p>
+                  </div>
                 </CardContent>
               </Card>
             </div>
