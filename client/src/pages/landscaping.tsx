@@ -60,7 +60,7 @@ const setupIncludes = [
   "n8n automation workflows",
   "Complete white-labelling",
   "Your own domain setup",
-  "Complete onboarding",
+  "Comprehensive training",
 ];
 
 const monthlyIncludes = [
@@ -241,7 +241,7 @@ export default function Products() {
                       Limited Time Offer
                     </h3>
                     <p className="text-muted-foreground">
-                      First month AI included FREE + £250 in free ad spend via Meta & Google Ads
+                      50% off setup fee — limited time offer
                     </p>
                   </div>
                 </div>
@@ -275,12 +275,6 @@ export default function Products() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-6 p-4 bg-accent/10 rounded-md border border-accent/20">
-                    <p className="text-sm font-medium text-foreground flex items-center gap-2">
-                      <Gift size={16} className="text-accent" />
-                      Bonus: £250 free ad spend
-                    </p>
-                  </div>
                 </CardContent>
               </Card>
 

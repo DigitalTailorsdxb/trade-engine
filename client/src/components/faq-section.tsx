@@ -5,12 +5,12 @@ const faqs = [
   {
     question: "How long does setup take?",
     answer:
-      "The entire setup process takes approximately one week from our initial discovery call to going live. This includes configuring your website, setting up HubSpot CRM integration, importing your pricing, creating your automation workflows, and conducting your complete onboarding session. We work efficiently while ensuring everything is perfect before launch.",
+      "The entire setup process takes approximately one to two weeks from our initial discovery call to going live. This includes configuring your website, setting up HubSpot CRM integration, importing your pricing, and creating your automation workflows. We work efficiently while ensuring everything is perfect before launch.",
   },
   {
     question: "Do I need any technical knowledge?",
     answer:
-      "Not at all! We handle all the technical aspects — from setup to ongoing maintenance. You'll receive comprehensive onboarding training on how to use the system, but it's designed to be intuitive and user-friendly. If you can use a smartphone, you can manage your Trade Engine website.",
+      "Not at all! We handle all the technical aspects — from setup to ongoing maintenance. The system is designed to be intuitive and user-friendly. If you can use a smartphone, you can manage your Trade Engine website.",
   },
   {
     question: "How much does it cost?",
@@ -51,11 +51,6 @@ const faqs = [
     question: "What happens if something goes wrong?",
     answer:
       "Our team monitors your website 24/7 with automated error detection. In most cases, we identify and resolve issues before you even notice them. If you do notice anything unusual, simply contact our priority support team and we'll resolve it quickly. Your monthly subscription includes comprehensive error handling and support, so you're never left waiting or dealing with technical problems on your own.",
-  },
-  {
-    question: "What's included in the £250 free ad spend?",
-    answer:
-      "When you sign up, we provide £250 in advertising credit that you can use on Meta (Facebook/Instagram) or Google Ads. This helps you start generating leads immediately while your organic presence grows. We can also provide guidance on how to set up effective campaigns targeting landscaping customers in your area.",
   },
   {
     question: "Is my website really white-labelled?",
