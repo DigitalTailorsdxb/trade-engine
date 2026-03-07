@@ -27,6 +27,7 @@ const tiers = [
     paymentLink: "https://buy.stripe.com/5kQ8wQgqy4fg6sF3V96g801",
     features: [
       "Everything in Quoting tier",
+      "Embed into existing website",
       "AI photorealistic garden designs",
       "Premium email templates",
       "Full HubSpot CRM integration",
