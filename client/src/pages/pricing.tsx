@@ -105,7 +105,7 @@ export default function Pricing() {
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12">
             {tiers.map((tier, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative h-full">
                 {tier.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                     <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg">
