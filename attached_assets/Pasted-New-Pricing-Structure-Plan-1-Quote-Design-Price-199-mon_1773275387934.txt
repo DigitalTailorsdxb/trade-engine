@@ -1,0 +1,89 @@
+New Pricing Structure
+
+Plan 1 — Quote & Design
+
+Price
+£199 / month
+£249 setup
+
+Includes
+	•	AI instant quote generation
+	•	AI photorealistic garden design images
+	•	Email delivery to customers
+	•	Lead capture via CRM (HubSpot integration)
+	•	Embed system into existing website
+	•	7-day deployment
+
+Label under plan
+
+Best for landscapers who want to qualify enquiries faster.
+
+⸻
+
+Plan 2 — Full System (Most Popular)
+
+Price
+£299 / month
+£499 setup
+
+Includes
+	•	Everything in Quote & Design plan
+	•	Brand new fully white-labelled website built for your landscaping business
+	•	AI quoting and design system integrated into the website
+	•	Conversion-optimised enquiry flow
+	•	Your branding throughout the entire system
+	•	CRM integration
+	•	Priority deployment
+	•	Unlimited quotes and AI designs
+
+Label under plan
+
+Best for landscapers who want the system running their entire enquiry process.
+
+UI requirement
+
+This plan should be visually highlighted as “Most Popular”.
+
+⸻
+
+Plan 3 — Premium Package
+
+Price
+£499 / month
+£499 / setup
+
+Includes
+	•	Everything in Full System
+	•	Social media content creation
+	•	Ads manager setup
+	•	Lead generation strategy support
+	•	Priority support
+	•	Early access to new features
+	•	Ongoing optimisation and updates
+
+Label under plan
+
+The full system plus ongoing marketing, content creation, and businesses development to help grow your business.
+
+⸻
+
+UI Changes Required
+	1.	Replace the current pricing cards with the new three plan structure.
+	2.	Ensure the Full System plan is visually highlighted as the “Most Popular” option.
+	3.	Maintain the existing Trade Engine colour scheme and button styles.
+	4.	Keep Buy Now / Get Started buttons under each plan.
+        5. Keep the set up fee’s as the price I just did but they are inclusive of the current 50% discount. 
+	6.	Display setup price under the monthly price.
+
+Example format:
+
+£299 / month
+£499 setup
+
+⸻
+
+Additional Note Under Pricing Section
+
+Add a short note under the plans:
+
+All plans include unlimited quotes, unlimited AI designs, and free system updates. No hidden fees

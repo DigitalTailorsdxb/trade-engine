@@ -15,12 +15,12 @@ const faqs = [
   {
     question: "How much does it cost?",
     answer:
-      "We offer three plans: Quoting System at £149/month (setup £249), Quoting + AI Design at £199/month (setup £249), and Full System at £249/month (setup £499). 50% off setup fees for a limited time. All plans include unlimited quotes, unlimited AI designs, and free updates. No contracts — cancel anytime with 30 days notice.",
+      "We offer three plans: Quote & Design at £199/month (setup £249), Full System at £299/month (setup £499), and Premium Package at £499/month (setup £499). Setup fees are discounted for a limited time. All plans include unlimited quotes, unlimited AI designs, and free updates. No contracts — cancel anytime with 30 days notice.",
   },
   {
     question: "What's the difference between the plans?",
     answer:
-      "The Quoting System lets you embed automated quote generation into your existing website with email delivery and basic HubSpot CRM capture. Quoting + AI Design adds photorealistic AI garden designs, premium email templates, and full HubSpot CRM integration. The Full System includes everything plus a custom white-label website built for you with your branding throughout, premium positioning, and priority support.",
+      "Quote & Design gives you AI instant quotes, photorealistic garden design images, email delivery, and HubSpot CRM capture — embedded into your existing website in 7 days. Full System adds a brand new white-labelled website with your branding and conversion-optimised enquiry flow. Premium Package adds social media content, ads management, and ongoing optimisation.",
   },
   {
     question: "How does the AI design visualisation work?",
