@@ -9,6 +9,8 @@ The application follows a full-stack TypeScript architecture with a React fronte
 - **Features page** (/features): Dedicated page with expanded feature details, interactive tabs, and additional features grid
 - **Blog** (/blog): SEO-focused blog with articles on landscaping business topics. Blog data stored in client/src/lib/blog-data.ts
 - **Privacy and Terms pages**: Legal pages
+- **Location pages** (/landscaping-estimating-software-[city]): 100 city-specific landing pages targeting "landscaping estimating software [city]" keywords. Data in client/src/lib/location-data.ts, template in client/src/pages/location-page.tsx
+- **Locations index** (/locations): Directory page listing all 100 cities organised by region. Links from footer.
 
 ## Design System
 

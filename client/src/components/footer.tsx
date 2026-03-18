@@ -16,6 +16,14 @@ const footerLinks = {
   ],
 };
 
+const featuredLocations = [
+  { label: "London", slug: "london" },
+  { label: "Manchester", slug: "manchester" },
+  { label: "Birmingham", slug: "birmingham" },
+  { label: "Leeds", slug: "leeds" },
+  { label: "Glasgow", slug: "glasgow" },
+];
+
 const socialLinks = [
   { icon: SiFacebook, href: "https://www.facebook.com/profile.php?id=61587082542110", label: "Facebook" },
   { icon: SiInstagram, href: "https://www.instagram.com/trade_engine_uk", label: "Instagram" },
@@ -36,9 +44,9 @@ export function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 md:gap-10">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 sm:col-span-2">
             <div className="mb-4">
               <img 
                 src={logoImageDark} 
@@ -115,6 +123,33 @@ export function Footer() {
                   )}
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Locations */}
+          <div>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-slate-300">Locations</h4>
+            <ul className="space-y-3">
+              {featuredLocations.map((loc) => (
+                <li key={loc.slug}>
+                  <Link
+                    href={`/landscaping-estimating-software-${loc.slug}`}
+                    className="text-slate-400 hover:text-white transition-colors"
+                    data-testid={`link-footer-location-${loc.slug}`}
+                  >
+                    {loc.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  href="/locations"
+                  className="text-amber-400 hover:text-amber-300 transition-colors text-sm font-medium"
+                  data-testid="link-footer-all-locations"
+                >
+                  View all 100 cities →
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
