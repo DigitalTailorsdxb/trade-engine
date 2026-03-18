@@ -147,7 +147,7 @@ export function Footer() {
                   className="text-amber-400 hover:text-amber-300 transition-colors text-sm font-medium"
                   data-testid="link-footer-all-locations"
                 >
-                  View all 100 cities →
+                  View all 99 cities →
                 </Link>
               </li>
             </ul>

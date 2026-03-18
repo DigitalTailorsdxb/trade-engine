@@ -17,7 +17,7 @@ export default function LocationsIndex() {
         <title>Landscaping Estimating Software — All UK Locations | Trade Engine</title>
         <meta
           name="description"
-          content="Trade Engine serves landscaping businesses across the UK. AI-powered quoting, garden visualisation, and automated follow-ups — available in 100 cities and towns. Find your location."
+          content="Trade Engine serves landscaping businesses across the UK. AI-powered quoting, garden visualisation, and automated follow-ups — available in 99 cities and towns. Find your location."
         />
         <link rel="canonical" href="https://trade-engine.co.uk/locations" />
         <meta property="og:title" content="Landscaping Estimating Software — All UK Locations | Trade Engine" />
@@ -26,7 +26,7 @@ export default function LocationsIndex() {
         <meta property="og:url" content="https://trade-engine.co.uk/locations" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Landscaping Estimating Software — All UK Locations | Trade Engine" />
-        <meta name="twitter:description" content="AI-powered landscaping estimating software available across the UK in 100 cities and towns." />
+        <meta name="twitter:description" content="AI-powered landscaping estimating software available across the UK in 99 cities and towns." />
       </Helmet>
 
       <Navigation />
