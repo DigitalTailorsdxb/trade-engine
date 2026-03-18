@@ -80,9 +80,14 @@ export default function BlogPost() {
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://trade-engine.co.uk/blog/${post.slug}`} />
         <meta property="og:image" content={post.image} />
         <meta property="article:published_time" content="2026-02-28" />
         <meta property="article:author" content={post.author} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${post.title} | Trade Engine Blog`} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content={post.image} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -90,6 +95,7 @@ export default function BlogPost() {
             headline: post.title,
             description: post.excerpt,
             image: post.image,
+            url: `https://trade-engine.co.uk/blog/${post.slug}`,
             datePublished: "2026-02-28",
             author: {
               "@type": "Person",
@@ -98,6 +104,10 @@ export default function BlogPost() {
             publisher: {
               "@type": "Organization",
               name: "Trade Engine AI Ltd",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://trade-engine.co.uk/favicon.png",
+              },
             },
           })}
         </script>

@@ -86,6 +86,9 @@ export default function Pricing() {
         <meta property="og:description" content="Three plans from £199/month. Limited time offer on setup. No contracts, cancel anytime." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/pricing" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pricing | From £199/Month | Trade Engine" />
+        <meta name="twitter:description" content="Three plans from £199/month. Quote & Design, Full System, and Premium Package. Limited time offer on setup fees. No contracts, cancel anytime." />
       </Helmet>
       <LaunchBanner />
       <Navigation />

@@ -224,13 +224,15 @@ export default function FAQ() {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>FAQ | Common Questions About Trade Engine for Landscapers</title>
-        <meta name="description" content="Find answers to frequently asked questions about Trade Engine. Learn about pricing, setup time, AI features, CRM integration, and how our system helps landscaping businesses grow." />
+        <meta name="description" content="Answers to common questions about Trade Engine. Pricing, setup time, AI features, CRM integration, and how our system helps landscaping businesses grow." />
         <link rel="canonical" href="https://trade-engine.co.uk/faq" />
         <meta property="og:title" content="FAQ | Common Questions About Trade Engine for Landscapers" />
         <meta property="og:description" content="Learn about pricing, setup time, AI features, CRM integration, and how our system helps landscaping businesses grow." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/faq" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FAQ | Common Questions About Trade Engine for Landscapers" />
+        <meta name="twitter:description" content="Find answers about Trade Engine pricing, setup time, AI features, CRM integration, and how our system helps landscaping businesses grow." />
       </Helmet>
       <Navigation />
       

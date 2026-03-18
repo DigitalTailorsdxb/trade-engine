@@ -12,9 +12,13 @@ export default function Blog() {
         <title>Blog | Trade Engine - Insights for Landscaping Businesses</title>
         <meta name="description" content="Expert insights on growing your landscaping business with AI-powered quoting, design visualisation, and automation. Written by industry professionals." />
         <link rel="canonical" href="https://trade-engine.co.uk/blog" />
-        <meta property="og:title" content="Blog | Trade Engine" />
+        <meta property="og:title" content="Blog | Trade Engine - Insights for Landscaping Businesses" />
         <meta property="og:description" content="Expert insights on growing your landscaping business with AI-powered quoting, design visualisation, and automation." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trade-engine.co.uk/blog" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Blog | Trade Engine - Insights for Landscaping Businesses" />
+        <meta name="twitter:description" content="Expert insights on growing your landscaping business with AI-powered quoting, design visualisation, and automation." />
       </Helmet>
       <Navigation />
       <main>

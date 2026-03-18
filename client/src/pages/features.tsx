@@ -387,14 +387,16 @@ export default function Features() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Features | AI Quotes, Garden Visualisation & CRM | Trade Engine</title>
-        <meta name="description" content="Explore Trade Engine's powerful features: AI instant quotes in 15 seconds, AI garden visualisation in 90 seconds, HubSpot CRM integration, white-labelled branding, and 24/7 automated follow-ups." />
+        <title>Features | AI Quotes, Garden Designs & CRM | Trade Engine</title>
+        <meta name="description" content="AI instant quotes in 15 seconds, photorealistic garden designs in 90 seconds, HubSpot CRM integration, and 24/7 automated follow-ups for landscaping businesses." />
         <link rel="canonical" href="https://trade-engine.co.uk/features" />
-        <meta property="og:title" content="Features | AI Quotes, Garden Visualisation & CRM | Trade Engine" />
-        <meta property="og:description" content="AI instant quotes in 15 seconds, garden visualisation in 90 seconds, HubSpot CRM integration, and 24/7 automated follow-ups." />
+        <meta property="og:title" content="Features | AI Quotes, Garden Designs & CRM | Trade Engine" />
+        <meta property="og:description" content="AI instant quotes in 15 seconds, photorealistic garden designs in 90 seconds, HubSpot CRM integration, and 24/7 automated follow-ups for landscaping businesses." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/features" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Features | AI Quotes, Garden Designs & CRM | Trade Engine" />
+        <meta name="twitter:description" content="AI instant quotes in 15 seconds, photorealistic garden designs in 90 seconds, HubSpot CRM integration, and 24/7 automated follow-ups." />
       </Helmet>
       <Navigation />
 

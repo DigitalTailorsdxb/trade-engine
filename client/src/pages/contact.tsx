@@ -17,6 +17,8 @@ export default function Contact() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/contact" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | Trade Engine" />
+        <meta name="twitter:description" content="Book a free demo call, email us, call us, or message us on WhatsApp. We're here to help your landscaping business grow." />
       </Helmet>
 
       <Navigation />
