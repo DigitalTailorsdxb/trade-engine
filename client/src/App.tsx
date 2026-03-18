@@ -25,6 +25,8 @@ declare global {
   }
 }
 
+const LOCATION_PREFIX = "/landscaping-estimating-software-";
+
 function usePageTracking() {
   const [location] = useLocation();
   useEffect(() => {
@@ -38,6 +40,13 @@ function usePageTracking() {
 
 function Router() {
   usePageTracking();
+  const [location] = useLocation();
+
+  if (location.startsWith(LOCATION_PREFIX)) {
+    const citySlug = location.slice(LOCATION_PREFIX.length).split("?")[0];
+    return <LocationPage citySlug={citySlug} />;
+  }
+
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -50,7 +59,6 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/locations" component={LocationsIndex} />
-      <Route path="/landscaping-estimating-software-:city" component={LocationPage} />
       <Route component={NotFound} />
     </Switch>
   );
