@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Trade Engine | AI-Powered Websites for Landscaping Businesses</title>
-        <meta name="description" content="Get an AI-powered website that qualifies leads, generates instant quotes in 15 seconds, and shows customers their finished garden in 90 seconds. White-labelled to your brand. Plans from £199/month. Limited time offer on setup fees." />
+        <title>Trade Engine | AI Websites for Landscaping Businesses</title>
+        <meta name="description" content="AI-powered white-label websites for landscaping businesses. Instant quotes in 15 seconds, photorealistic garden designs, and 24/7 automated follow-ups. Plans from £199/month." />
         <link rel="canonical" href="https://trade-engine.co.uk/" />
         <meta property="og:title" content="Trade Engine | AI-Powered Websites for Landscaping Businesses" />
         <meta property="og:description" content="Get an AI-powered website that qualifies leads, generates instant quotes in 15 seconds, and shows customers their finished garden in 90 seconds. White-labelled to your brand." />
