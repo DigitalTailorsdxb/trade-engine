@@ -9,7 +9,7 @@ const tiers = [
     setup: "£249",
     bestFor: "Best for landscapers who want to qualify enquiries faster.",
     popular: false,
-    paymentLink: "https://buy.stripe.com/5kQ8wQgqy4fg6sF3V96g801",
+    paymentLink: "https://buy.stripe.com/dRmeVea2a5jk9ER9ft6g800",
     features: [
       "AI instant quote generation",
       "AI photorealistic garden design images",

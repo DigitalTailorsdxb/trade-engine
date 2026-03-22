@@ -58,7 +58,7 @@ const tiers = [
       "Branded to your business",
     ],
     cta: "Buy Now",
-    ctaHref: "https://buy.stripe.com/5kQ8wQgqy4fg6sF3V96g801",
+    ctaHref: "https://buy.stripe.com/dRmeVea2a5jk9ER9ft6g800",
     highlight: false,
   },
   {
