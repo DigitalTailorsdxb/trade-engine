@@ -49,7 +49,7 @@ const tiers = [
     slug: "/plans/quote-and-design",
     price: "£199",
     setup: "£249",
-    originalSetup: "£498",
+    originalSetup: "£499",
     desc: "AI quoting and garden visualisation embedded into your existing website.",
     features: [
       "AI instant quote system",
@@ -67,7 +67,7 @@ const tiers = [
     slug: "/plans/full-system",
     price: "£299",
     setup: "£499",
-    originalSetup: "£998",
+    originalSetup: "£999",
     desc: "A brand new white-labelled website built for your landscaping business — with everything included.",
     features: [
       "Everything in Quote & Design",
@@ -86,7 +86,7 @@ const tiers = [
     slug: "/plans/premium-package",
     price: "£499",
     setup: "£499",
-    originalSetup: "£998",
+    originalSetup: "£999",
     desc: "The full system plus social media, ads management, and ongoing strategy.",
     features: [
       "Everything in Full System",

@@ -191,7 +191,7 @@ export default function PlanPremiumPackage() {
             <span className="text-slate-500 text-lg">/month</span>
           </div>
           <p className="text-slate-500 text-sm mb-6">
-            Setup from <span className="line-through text-slate-400">£998</span>{" "}
+            Setup from <span className="line-through text-slate-400">£999</span>{" "}
             <span className="text-amber-600 font-semibold">£499</span> — limited time offer
           </p>
           <p className="text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
