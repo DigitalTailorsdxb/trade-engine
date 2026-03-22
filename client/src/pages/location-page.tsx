@@ -93,7 +93,7 @@ const tiers = [
       "Priority support & optimisation",
     ],
     cta: "Get Started",
-    ctaHref: "#contact",
+    ctaHref: "https://buy.stripe.com/dRm14o6PY9zA9ER9ft6g806",
     highlight: false,
   },
 ];

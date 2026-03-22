@@ -47,7 +47,7 @@ const tiers = [
     setup: "£499",
     bestFor: "The full system plus ongoing marketing, content creation, and business development.",
     popular: false,
-    paymentLink: "",
+    paymentLink: "https://buy.stripe.com/dRm14o6PY9zA9ER9ft6g806",
     features: [
       "Everything in Full System",
       "Social media content creation",
