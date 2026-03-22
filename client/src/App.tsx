@@ -17,6 +17,9 @@ import BlogPost from "@/pages/blog-post";
 import NotFound from "@/pages/not-found";
 import LocationPage from "@/pages/location-page";
 import LocationsIndex from "@/pages/locations-index";
+import PlanQuoteAndDesign from "@/pages/plan-quote-and-design";
+import PlanFullSystem from "@/pages/plan-full-system";
+import PlanPremiumPackage from "@/pages/plan-premium-package";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 
 declare global {
@@ -59,6 +62,9 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/locations" component={LocationsIndex} />
+      <Route path="/plans/quote-and-design" component={PlanQuoteAndDesign} />
+      <Route path="/plans/full-system" component={PlanFullSystem} />
+      <Route path="/plans/premium-package" component={PlanPremiumPackage} />
       <Route component={NotFound} />
     </Switch>
   );

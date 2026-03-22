@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "wouter";
 import { Navigation } from "@/components/navigation";
 import { LaunchBanner } from "@/components/launch-banner";
 import { Footer } from "@/components/footer";
@@ -9,6 +10,7 @@ import { Check, Rocket, ArrowRight, CheckCircle2 } from "lucide-react";
 const tiers = [
   {
     name: "Quote & Design",
+    slug: "/plans/quote-and-design",
     price: "£199",
     setup: "£249",
     bestFor: "Best for landscapers who want to qualify enquiries faster.",
@@ -25,6 +27,7 @@ const tiers = [
   },
   {
     name: "Full System",
+    slug: "/plans/full-system",
     price: "£299",
     setup: "£499",
     bestFor: "Best for landscapers who want the system running their entire enquiry process.",
@@ -43,6 +46,7 @@ const tiers = [
   },
   {
     name: "Premium Package",
+    slug: "/plans/premium-package",
     price: "£499",
     setup: "£499",
     bestFor: "The full system plus ongoing marketing, content creation, and business development.",
@@ -72,10 +76,6 @@ const comparison = [
 ];
 
 export default function Pricing() {
-  const handleContactClick = () => {
-    window.location.href = "/#contact";
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -149,27 +149,21 @@ export default function Pricing() {
                     </ul>
 
                     <div className="mt-auto">
-                      {tier.paymentLink ? (
-                        <a href={tier.paymentLink} target="_blank" rel="noopener noreferrer">
-                          <Button
-                            className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
-                            data-testid={`button-pricing-page-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
-                          >
-                            Buy Now
-                            <ArrowRight size={16} className="ml-2" />
-                          </Button>
-                        </a>
-                      ) : (
+                      <a href={tier.paymentLink} target="_blank" rel="noopener noreferrer">
                         <Button
-                          onClick={handleContactClick}
                           className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0 shadow-lg shadow-amber-500/25"
                           data-testid={`button-pricing-page-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
                         >
-                          Get Started
+                          Buy Now
                           <ArrowRight size={16} className="ml-2" />
                         </Button>
-                      )}
-                      <p className="text-xs text-slate-500 italic text-center mt-4">{tier.bestFor}</p>
+                      </a>
+                      <Link href={tier.slug}>
+                        <button className="w-full text-center text-sm text-amber-600 hover:text-amber-700 font-medium mt-3 transition-colors">
+                          Learn More →
+                        </button>
+                      </Link>
+                      <p className="text-xs text-slate-500 italic text-center mt-3">{tier.bestFor}</p>
                     </div>
                   </CardContent>
                 </Card>

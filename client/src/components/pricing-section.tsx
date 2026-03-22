@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight } from "lucide-react";
@@ -5,6 +6,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 const tiers = [
   {
     name: "Quote & Design",
+    slug: "/plans/quote-and-design",
     price: "£199",
     setup: "£249",
     bestFor: "Best for landscapers who want to qualify enquiries faster.",
@@ -21,6 +23,7 @@ const tiers = [
   },
   {
     name: "Full System",
+    slug: "/plans/full-system",
     price: "£299",
     setup: "£499",
     bestFor: "Best for landscapers who want the system running their entire enquiry process.",
@@ -39,6 +42,7 @@ const tiers = [
   },
   {
     name: "Premium Package",
+    slug: "/plans/premium-package",
     price: "£499",
     setup: "£499",
     bestFor: "The full system plus ongoing marketing, content creation, and business development.",
@@ -57,11 +61,6 @@ const tiers = [
 ];
 
 export function PricingSection() {
-  const handleContactClick = () => {
-    const element = document.querySelector("#contact");
-    if (element) element.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section id="pricing" className="py-24 md:py-32 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -118,27 +117,21 @@ export function PricingSection() {
                   </ul>
 
                   <div className="mt-auto">
-                    {tier.paymentLink ? (
-                      <a href={tier.paymentLink} target="_blank" rel="noopener noreferrer">
-                        <Button
-                          className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
-                          data-testid={`button-pricing-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
-                        >
-                          Buy Now
-                          <ArrowRight size={16} className="ml-2" />
-                        </Button>
-                      </a>
-                    ) : (
+                    <a href={tier.paymentLink} target="_blank" rel="noopener noreferrer">
                       <Button
-                        onClick={handleContactClick}
                         className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
                         data-testid={`button-pricing-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
                       >
-                        Get Started
+                        Buy Now
                         <ArrowRight size={16} className="ml-2" />
                       </Button>
-                    )}
-                    <p className="text-xs text-slate-500 italic text-center mt-4">{tier.bestFor}</p>
+                    </a>
+                    <Link href={tier.slug}>
+                      <button className="w-full text-center text-sm text-amber-600 hover:text-amber-700 font-medium mt-3 transition-colors">
+                        Learn More →
+                      </button>
+                    </Link>
+                    <p className="text-xs text-slate-500 italic text-center mt-3">{tier.bestFor}</p>
                   </div>
                 </CardContent>
               </Card>

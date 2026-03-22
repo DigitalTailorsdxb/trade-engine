@@ -46,6 +46,7 @@ const features = [
 const tiers = [
   {
     name: "Quote & Design",
+    slug: "/plans/quote-and-design",
     price: "£199",
     setup: "£249",
     originalSetup: "£498",
@@ -63,6 +64,7 @@ const tiers = [
   },
   {
     name: "Full System",
+    slug: "/plans/full-system",
     price: "£299",
     setup: "£499",
     originalSetup: "£998",
@@ -74,13 +76,14 @@ const tiers = [
       "Automated follow-up sequences",
       "Priority 7-day deployment",
     ],
-    cta: "Get Started",
+    cta: "Buy Now",
     ctaHref: "https://buy.stripe.com/8x2eVe8Y61347wJcrF6g804",
     highlight: true,
     badge: "Most Popular",
   },
   {
     name: "Premium Package",
+    slug: "/plans/premium-package",
     price: "£499",
     setup: "£499",
     originalSetup: "£998",
@@ -92,7 +95,7 @@ const tiers = [
       "Lead generation strategy",
       "Priority support & optimisation",
     ],
-    cta: "Get Started",
+    cta: "Buy Now",
     ctaHref: "https://buy.stripe.com/dRm14o6PY9zA9ER9ft6g806",
     highlight: false,
   },
@@ -546,26 +549,20 @@ export default function LocationPage({ citySlug }: Props) {
                   ))}
                 </ul>
                 <div className="mt-auto">
-                  {tier.ctaHref.startsWith("http") ? (
-                    <a
-                      href={tier.ctaHref}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block w-full text-center py-3 px-6 rounded-xl font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 transition-all"
-                      data-testid={`button-buy-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
-                    >
-                      {tier.cta}
-                    </a>
-                  ) : (
-                    <a
-                      href={tier.ctaHref}
-                      onClick={scrollToContact}
-                      className="block w-full text-center py-3 px-6 rounded-xl font-semibold text-slate-900 border-2 border-slate-300 hover:border-amber-400 hover:text-amber-600 transition-all"
-                      data-testid={`button-buy-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
-                    >
-                      {tier.cta}
-                    </a>
-                  )}
+                  <a
+                    href={tier.ctaHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center py-3 px-6 rounded-xl font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 transition-all"
+                    data-testid={`button-buy-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
+                  >
+                    {tier.cta}
+                  </a>
+                  <Link href={tier.slug}>
+                    <button className="w-full text-center text-sm text-amber-600 hover:text-amber-700 font-medium mt-3 transition-colors">
+                      Learn More →
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}
