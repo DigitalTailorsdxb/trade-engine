@@ -70,8 +70,8 @@ const included = [
 const steps = [
   {
     step: "01",
-    title: "Strategy & Discovery Call",
-    desc: "A 60-minute call to understand your business goals, target market, current lead situation, and growth ambitions. We build your personalised strategy from this session.",
+    title: "Discovery",
+    desc: "We gather all the information and requirements we need from you — your business goals, target market, current lead situation, and growth ambitions. We build your personalised strategy from what you share with us.",
   },
   {
     step: "02",

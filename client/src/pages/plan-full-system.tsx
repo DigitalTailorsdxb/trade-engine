@@ -68,8 +68,8 @@ const included = [
 const steps = [
   {
     step: "01",
-    title: "Kickoff Call & Discovery",
-    desc: "A 45-minute call to understand your business, services, pricing, target area, and brand. We gather all assets — logo, photos, content — and plan the full website structure.",
+    title: "Discovery",
+    desc: "We gather all the information and requirements we need from you — your services, pricing, target area, brand assets, and any preferences you have. There's no pressure; we work around what suits you.",
   },
   {
     step: "02",

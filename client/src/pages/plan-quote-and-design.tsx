@@ -55,8 +55,8 @@ const included = [
 const steps = [
   {
     step: "01",
-    title: "Kickoff Call",
-    desc: "A 30-minute call to gather your service list, pricing structure, brand assets, and website details. We configure the quote system around your actual jobs and pricing.",
+    title: "Discovery",
+    desc: "We gather all the information and requirements we need from you — your service list, pricing structure, brand assets, and website details. We then configure the quote system around your actual jobs and pricing.",
   },
   {
     step: "02",
