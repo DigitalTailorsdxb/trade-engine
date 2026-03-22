@@ -75,7 +75,7 @@ const tiers = [
       "Priority 7-day deployment",
     ],
     cta: "Get Started",
-    ctaHref: "#contact",
+    ctaHref: "https://buy.stripe.com/8x2eVe8Y61347wJcrF6g804",
     highlight: true,
     badge: "Most Popular",
   },

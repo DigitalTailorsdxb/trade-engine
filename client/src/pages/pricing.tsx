@@ -29,7 +29,7 @@ const tiers = [
     setup: "£499",
     bestFor: "Best for landscapers who want the system running their entire enquiry process.",
     popular: true,
-    paymentLink: "",
+    paymentLink: "https://buy.stripe.com/8x2eVe8Y61347wJcrF6g804",
     features: [
       "Everything in Quote & Design plan",
       "Brand new fully white-labelled website",
