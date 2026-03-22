@@ -257,7 +257,7 @@ export default function Pricing() {
             size="lg"
             className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-6 text-lg"
             data-testid="button-pricing-cta-bottom"
-            onClick={handleContactClick}
+            onClick={() => window.location.href = "/#contact"}
           >
             Start Winning More Customers
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -328,7 +328,7 @@ export default function Pricing() {
               variant="outline"
               className="bg-white text-amber-600 border-white hover:bg-amber-50 px-8 py-6 text-lg"
               data-testid="button-pricing-contact"
-              onClick={handleContactClick}
+              onClick={() => window.location.href = "/#contact"}
             >
               Contact Us
             </Button>
