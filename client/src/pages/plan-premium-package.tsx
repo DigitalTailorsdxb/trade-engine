@@ -155,16 +155,25 @@ export default function PlanPremiumPackage() {
 
       <Navigation />
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb + Back */}
       <div className="pt-24 pb-0 bg-slate-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-1.5 text-sm text-slate-500">
-            <Link href="/" className="hover:text-amber-600 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-slate-400" />
-            <Link href="/pricing" className="hover:text-amber-600 transition-colors">Pricing</Link>
-            <ChevronRight size={14} className="text-slate-400" />
-            <span className="text-slate-800 font-medium">Premium Package</span>
-          </nav>
+          <div className="flex items-center justify-between">
+            <nav className="flex items-center gap-1.5 text-sm text-slate-500">
+              <Link href="/" className="hover:text-amber-600 transition-colors">Home</Link>
+              <ChevronRight size={14} className="text-slate-400" />
+              <Link href="/pricing" className="hover:text-amber-600 transition-colors">Pricing</Link>
+              <ChevronRight size={14} className="text-slate-400" />
+              <span className="text-slate-800 font-medium">Premium Package</span>
+            </nav>
+            <a
+              href="/pricing#pricing-cards"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-amber-600 transition-colors border border-slate-200 hover:border-amber-300 bg-white rounded-lg px-3 py-1.5 shadow-sm"
+            >
+              <ArrowRight size={14} className="rotate-180" />
+              Back to Pricing
+            </a>
+          </div>
         </div>
       </div>
 

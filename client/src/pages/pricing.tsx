@@ -104,7 +104,7 @@ export default function Pricing() {
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <section id="pricing-cards" className="py-16 px-4">
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12">
             {tiers.map((tier, index) => (
