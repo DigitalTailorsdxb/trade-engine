@@ -9,6 +9,7 @@ const tiers = [
     slug: "/plans/quote-and-design",
     price: "£199",
     setup: "£249",
+    originalSetup: "£498",
     bestFor: "Best for landscapers who want to qualify enquiries faster.",
     popular: false,
     paymentLink: "https://buy.stripe.com/dRmeVea2a5jk9ER9ft6g800",
@@ -26,6 +27,7 @@ const tiers = [
     slug: "/plans/full-system",
     price: "£299",
     setup: "£499",
+    originalSetup: "£998",
     bestFor: "Best for landscapers who want the system running their entire enquiry process.",
     popular: true,
     paymentLink: "https://buy.stripe.com/8x2eVe8Y61347wJcrF6g804",
@@ -45,6 +47,7 @@ const tiers = [
     slug: "/plans/premium-package",
     price: "£499",
     setup: "£499",
+    originalSetup: "£998",
     bestFor: "The full system plus ongoing marketing, content creation, and business development.",
     popular: false,
     paymentLink: "https://buy.stripe.com/dRm14o6PY9zA9ER9ft6g806",
@@ -103,8 +106,9 @@ export function PricingSection() {
                   </div>
 
                   <div className="mb-6">
-                    <span className="text-slate-500 text-sm">{tier.setup} setup</span>{" "}
-                    <span className="text-amber-600 text-xs">(limited time offer)</span>
+                    <span className="text-slate-400 text-sm line-through mr-1">{tier.originalSetup}</span>
+                    <span className="text-slate-600 text-sm font-medium">{tier.setup} setup</span>{" "}
+                    <span className="text-amber-600 text-xs">(50% off)</span>
                   </div>
 
                   <ul className="space-y-3 mb-8 flex-grow">
