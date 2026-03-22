@@ -76,7 +76,7 @@ export function PricingSection() {
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto mb-12">
           {tiers.map((tier, index) => (
-            <div key={index} className="relative h-full">
+            <div key={index} className="relative flex flex-col">
               {tier.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                   <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg">
@@ -85,7 +85,7 @@ export function PricingSection() {
                 </div>
               )}
               <Card
-                className={`h-full border-2 transition-all duration-300 hover:-translate-y-1 ${
+                className={`flex-1 border-2 transition-all duration-300 hover:-translate-y-1 ${
                   tier.popular
                     ? "border-amber-400 shadow-xl shadow-amber-500/20"
                     : "border-amber-400 shadow-lg hover:shadow-xl"
