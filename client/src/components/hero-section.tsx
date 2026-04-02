@@ -34,7 +34,7 @@ export function HeroSection() {
 
           {/* Subheadline */}
           <div className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto px-2 text-center">
-            <p>Instant quotes and pricing-led designs generated directly from real costs — fully automated, 24/7.</p>
+            <p>Instant quotes and pricing-led designs generated directly from your pricing — fully automated, 24/7.</p>
           </div>
 
           {/* CTA Buttons - clean and prominent */}
