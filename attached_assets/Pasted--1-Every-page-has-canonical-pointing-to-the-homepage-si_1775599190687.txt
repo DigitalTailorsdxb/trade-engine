@@ -1,0 +1,112 @@
+
+  1. Every page has canonical pointing to the homepage — site-wide disaster
+
+  This is the most serious technical SEO issue on the site. Without exception,
+  every page checked has:
+  <link rel="canonical" href="https://trade-engine.co.uk/" />
+
+  That includes:
+  - /features → canonicals to /
+  - /blog → canonicals to /
+  - /blog/how-to-quote-landscaping-jobs-without-site-visits → canonicals to /
+  - /landscaping-estimating-software-london → canonicals to /
+  - /landscaping-estimating-software-manchester → canonicals to /
+
+  You have 100+ location pages and multiple blog posts that Google is being told
+   are all duplicates of the homepage. None of them can rank. This needs to be
+  fixed immediately — it's likely why the location pages and blog posts have no
+  organic visibility.
+
+  Fix: Every page needs its own self-referencing canonical. E.g.:
+  - /blog/how-to-quote-landscaping-jobs... → canonical = that full URL
+  - /landscaping-estimating-software-london → canonical = that full URL
+  This is almost certainly a site-wide template error where the canonical is
+  hardcoded to / rather than dynamically generated.
+
+  2. Meta descriptions are identical across all pages
+
+  Every single page uses the homepage meta description verbatim:
+  ▎ "AI-powered white-label websites for landscaping businesses. Instant quotes
+  in 15 seconds, photorealistic garden designs, and 24/7 automated follow-ups.
+  Plans from £199/month."
+
+  Features page, blog index, blog posts, every location page — all identical.
+  Google shows this in SERPs and will display auto-generated snippets instead,
+  which are typically weaker. Each page needs a unique, targeted description.
+
+  ---
+  Moderate Issues
+
+  3. Location pages are near-duplicate at massive scale
+
+  100+ city pages (London, Manchester, Birmingham, Glasgow, Edinburgh, Belfast,
+  Cardif, etc.) with near-identical content. London (1,050 words) and Manchester
+   (1,033 words) have the same H2 structure with only the city name swapped. At
+  this scale, Google is very likely to deindex the majority or treat them as a
+  soft 404-equivalent quality signal.
+
+  Fix for TE vs PL: Unlike PL where you know the local territory, TE's location
+  pages need a different angle. Each city page should include: local landscaping
+   market context (e.g. London's density problem, Manchester's garden type mix),
+   any landscaping trade associations or bodies in that region, and genuinely
+  city-specific CTAs. Alternatively, consolidate to 10–15 major cities with rich
+   content rather than 100+ thin ones.
+
+  4. Blog posts have no visible author or publish date in the DOM
+
+  The post how-to-quote-landscaping-jobs-without-site-visits has 2,399 words and
+   strong, experience-led content ("after six years in the industry") but
+  there's no author byline, no publish date visible in the HTML. The schema has
+  BlogPosting but Google relies on on-page signals for E-E-A-T.
+
+  Fix: Add Lewis's name, date, and a short bio to every post. The first-person
+  voice already in the posts is a huge asset — surface it properly.
+
+  5. H1 doesn't target any real search query
+
+  Current H1: "Quote-First Website Engine for Landscaping Businesses"
+
+  "Quote-first website engine" is an invented phrase with zero search volume.
+  The H1 should target what prospects actually search — something like "AI
+  Quoting Software for Landscaping Businesses" or "Landscaping Business Software
+   — AI Quotes & Garden Design".
+
+  6. No OG image set on homepage
+
+  ogImage: null — when the Trade Engine site is shared on social media, there's
+  no preview image. Given how much social outreach is in the plan, this needs
+  fixing.
+
+  7. Duplicate SoftwareApplication schema on location pages
+
+  The London location page has two SoftwareApplication schemas — one from the
+  global template, one injected at page level. This is redundant and can confuse
+   parsers.
+
+  8. Only 2 blog posts
+
+  The sitemap lists only 2 blog posts and the blog index has 180 words of
+  content. Both posts are high quality (2,399 words each) but you need volume
+  too. The PL blog has 10 posts targeting consumer queries — TE needs a parallel
+   B2B content programme targeting trade queries: "how to get more landscaping
+  leads", "landscaping CRM comparison", "best quoting software for landscapers
+  UK", etc.
+
+  9. Supabase demo link on homepage (same as PL)
+
+  Same exposed Supabase URL with thedigitaltailorsdxb@gmail.com in the path.
+  Swap this for a production demo link with a clean path.
+
+  ---
+  Minor Issues
+
+  - /api/ disallowed in robots.txt ✓ — but also verify no critical JS/CSS assets
+   are being inadvertently blocked
+  - Direct Stripe checkout links on homepage — no conversion tracking through
+  the site. Consider routing through a /checkout or /plans/[plan] page so you
+  can track intent signals in analytics before the Stripe handoff
+  - Blog changefreq: yearly on blog posts — change to monthly so Google recrawls
+   for freshness signals
+  - LinkedIn missing from social links — trade-engine.co.uk has Facebook,
+  Instagram, YouTube in the schema. LinkedIn is the right channel for B2B SaaS.
+  Add it.

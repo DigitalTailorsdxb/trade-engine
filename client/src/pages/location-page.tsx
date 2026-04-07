@@ -278,7 +278,6 @@ export default function LocationPage({ citySlug }: Props) {
         <meta name="twitter:description" content={metaDesc} />
         <meta name="geo.placename" content={location.name} />
         <meta name="geo.region" content="GB" />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>

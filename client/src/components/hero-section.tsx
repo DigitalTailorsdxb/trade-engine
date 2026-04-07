@@ -25,10 +25,10 @@ export function HeroSection() {
 
           {/* Main headline - clean and impactful */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">Quote-First</span>
+            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">AI Quoting Software</span>
             <br />
             <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
-              Website Engine for Landscaping Businesses
+              for Landscaping Businesses
             </span>
           </h1>
 

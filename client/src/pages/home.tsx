@@ -23,7 +23,9 @@ export default function Home() {
         <meta property="og:description" content="White-label AI websites for landscaping businesses. Instant quotes in 15 seconds, photorealistic garden designs, and 24/7 automated follow-ups. From £199/month." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/" />
+        <meta property="og:image" content="https://trade-engine.co.uk/favicon.png" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/favicon.png" />
         <meta name="twitter:title" content="Trade Engine | AI Websites for Landscaping Businesses" />
         <meta name="twitter:description" content="AI-powered white-label websites for landscaping businesses. Instant quotes, garden designs, and 24/7 automated follow-ups. Plans from £199/month." />
       </Helmet>
