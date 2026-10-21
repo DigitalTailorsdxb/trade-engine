@@ -10,15 +10,15 @@ export default function Blog() {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Blog | Trade Engine - Insights for Landscaping Businesses</title>
-        <meta name="description" content="Expert insights on growing your landscaping business with AI-powered quoting, design visualisation, and automation. Written by industry professionals." />
+        <meta name="description" content="Practical insights for tradespeople on building a strong online presence, choosing a website and showcasing the work they do." />
         <link rel="canonical" href="https://trade-engine.co.uk/blog" />
         <meta property="og:title" content="Blog | Trade Engine - Insights for Landscaping Businesses" />
-        <meta property="og:description" content="Expert insights on growing your landscaping business with AI-powered quoting, design visualisation, and automation." />
+        <meta property="og:description" content="Practical insights for tradespeople on websites, showcasing your work and growing your online presence." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/blog" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Blog | Trade Engine - Insights for Landscaping Businesses" />
-        <meta name="twitter:description" content="Expert insights on growing your landscaping business with AI-powered quoting, design visualisation, and automation." />
+        <meta name="twitter:description" content="Practical insights for tradespeople on websites, showcasing your work and growing your online presence." />
       </Helmet>
       <Navigation />
       <main>

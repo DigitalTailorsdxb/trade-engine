@@ -10,15 +10,15 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact Us | Trade Engine</title>
-        <meta name="description" content="Get in touch with Trade Engine. Book a free demo call, email us, call us, or message us on WhatsApp. We're here to help your landscaping business grow." />
+        <meta name="description" content="Talk to Trade Engine about a complete, premium multi-page website for your trade business. Ask about our website, SEO and Complete Package plans." />
         <link rel="canonical" href="https://trade-engine.co.uk/contact" />
         <meta property="og:title" content="Contact Us | Trade Engine" />
-        <meta property="og:description" content="Book a free demo call, email us, call us, or message us on WhatsApp. We're here to help your landscaping business grow." />
+        <meta property="og:description" content="Talk to Trade Engine about a complete, premium multi-page website for your trade business." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/contact" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us | Trade Engine" />
-        <meta name="twitter:description" content="Book a free demo call, email us, call us, or message us on WhatsApp. We're here to help your landscaping business grow." />
+        <meta name="twitter:description" content="Talk to Trade Engine about a complete, premium multi-page website for your trade business." />
       </Helmet>
 
       <Navigation />
@@ -136,7 +136,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-1">Location</h3>
                   <p className="text-slate-600">East Midlands, United Kingdom</p>
-                  <p className="text-slate-500 text-sm mt-1">Serving landscaping businesses nationwide</p>
+                  <p className="text-slate-500 text-sm mt-1">Building websites for trades across the UK</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

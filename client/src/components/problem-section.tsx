@@ -1,116 +1,27 @@
-import { AlertCircle, Clock, UserX, Globe, ArrowRight, CheckCircle2 } from "lucide-react";
+import { AlertCircle, ArrowRight, CheckCircle2, Globe, Image, PanelsTopLeft } from "lucide-react";
 
-const painPoints = [
-  {
-    icon: Clock,
-    title: "Slow Quote Turnaround",
-    description: "Customers wait days for quotes while competitors swoop in",
-  },
-  {
-    icon: UserX,
-    title: "Lost Leads",
-    description: "Website visitors leave without converting — no capture, no follow-up",
-  },
-  {
-    icon: AlertCircle,
-    title: "No Follow-Up System",
-    description: "Leads go cold because you're too busy working to chase them",
-  },
-  {
-    icon: Globe,
-    title: "Outdated Website",
-    description: "Your online presence doesn't reflect the quality of your work",
-  },
-];
-
-const solutions = [
-  "Instant quotes in under 2 minutes",
-  "24/7 automated lead capture",
-  "AI-powered follow-up sequences",
-  "Professional, modern design",
+const essentials = [
+  { icon: PanelsTopLeft, title: "A complete multi-page site", description: "Room for the services, projects and details that make your trade business distinct." },
+  { icon: Image, title: "A place for your work", description: "Present completed jobs with the care and context that helps customers understand your craft." },
+  { icon: Globe, title: "A professional presence", description: "A considered website on your domain, designed for the devices your customers use." },
 ];
 
 export function ProblemSection() {
   return (
-    <section className="py-20 md:py-28 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Your competitors are still using contact forms.
-            <br />
-            <span className="text-primary">You'll be closing deals.</span>
-          </h2>
+    <section className="bg-muted/30 py-20 md:py-28">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-12 max-w-3xl text-center">
+          <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">Your website should show the standard of your work.</h2>
+          <p className="mt-4 text-lg text-muted-foreground">Trade Engine builds complete websites for tradespeople, not a generic landing page.</p>
         </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Pain Points */}
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center">
-                <AlertCircle size={18} className="text-destructive" />
-              </div>
-              The Old Way
-            </h3>
-            <div className="space-y-4">
-              {painPoints.map((point, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-4 p-4 bg-card rounded-md border"
-                  data-testid={`card-pain-point-${index}`}
-                >
-                  <div className="w-10 h-10 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                    <point.icon size={20} className="text-destructive" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">{point.title}</h4>
-                    <p className="text-sm text-muted-foreground">{point.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Solution */}
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
-                <CheckCircle2 size={18} className="text-accent" />
-              </div>
-              The Trade Engine Way
-            </h3>
-            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-md border p-6">
-              <div className="space-y-4 mb-6">
-                {solutions.map((solution, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-3"
-                    data-testid={`text-solution-${index}`}
-                  >
-                    <div className="w-6 h-6 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
-                      <CheckCircle2 size={14} className="text-accent-foreground" />
-                    </div>
-                    <span className="font-medium text-foreground">{solution}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center gap-2 text-primary font-semibold">
-                <ArrowRight size={18} />
-                <span>More leads, less manual work</span>
-              </div>
-            </div>
-
-            {/* Result stat */}
-            <div className="mt-6 p-4 bg-accent/10 rounded-md border border-accent/20">
-              <p className="text-lg font-semibold text-foreground">
-                Average <span className="text-accent">40% increase</span> in quote requests
-              </p>
-              <p className="text-sm text-muted-foreground mt-1">
-                Landscaping businesses see results within the first month
-              </p>
-            </div>
-          </div>
+        <div className="grid gap-5 md:grid-cols-3">
+          {essentials.map(({ icon: Icon, title, description }) => <article key={title} className="rounded-xl border bg-card p-6">
+            <Icon size={22} className="text-primary" />
+            <h3 className="mt-4 font-semibold text-foreground">{title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
+          </article>)}
         </div>
+        <div className="mt-8 flex items-center justify-center gap-2 text-sm font-semibold text-primary"><CheckCircle2 size={17} />Optional SEO and landscaper-specific Complete Package tools <ArrowRight size={16} /></div>
       </div>
     </section>
   );

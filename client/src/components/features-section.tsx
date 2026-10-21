@@ -1,199 +1,43 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Calculator,
-  ImageIcon,
-  Users,
-  Palette,
-  Workflow,
-  ChevronRight,
-  Play,
-  ExternalLink,
-} from "lucide-react";
+import { ArrowRight, ExternalLink, Globe2, PanelsTopLeft, Search, Sparkles } from "lucide-react";
 import gardenDesignImage from "@assets/design_(2)_1769642158706.png";
 
-const features = [
-  {
-    icon: Calculator,
-    title: "AI Instant Quotes",
-    tagline: "Stops tyre-kickers before first contact",
-    description: "Sets price expectations upfront - customers see real costs instantly before you lift a finger.",
-    details: [
-      "Qualifies buyers by budget reality",
-      "Reduces unpaid site visits",
-      "Anchors customers to market costs",
-      "Prevents price haggling",
-    ],
-  },
-  {
-    icon: ImageIcon,
-    title: "AI Garden Visualisation",
-    tagline: 'Removes "I can\'t picture it" blockers',
-    description: "Customers see their finished garden in 90 seconds - get faster approvals and cut revision loops.",
-    details: [
-      "Turns ideas into something tangible",
-      "Aligns expectations before work starts",
-      "Reduces scope creep post-agreement",
-      "Increases conversion 40%+",
-    ],
-  },
-  {
-    icon: Users,
-    title: "HubSpot CRM Integration",
-    tagline: "Centralises all customer data",
-    description: "Stores design, quote, and requirements in one place. Makes customer follow-ups intelligent.",
-    details: [
-      "Prevents lost information across staff",
-      "Enables easy handover to installers",
-      "Creates repeatable job records",
-      "Lead scoring for hot prospects",
-    ],
-  },
-  {
-    icon: Palette,
-    title: "White-Labelled",
-    tagline: 'Differentiates from "cowboy" competitors',
-    description: "Makes your business look premium and modern. Builds trust before the first call.",
-    details: [
-      "Positions you as professional",
-      "Signals confidence in pricing",
-      'Reduces "get 5 quotes" mentality',
-      "Your brand, your domain",
-    ],
-  },
-  {
-    icon: Workflow,
-    title: "n8n Automation",
-    tagline: "Frees you to focus on delivery",
-    description: "Automates first interaction entirely. Reduces admin workload and eliminates follow-up chasing.",
-    details: [
-      "Works 24/7 without you",
-      "Replaces manual quoting",
-      "Cuts email back-and-forth",
-      "400+ app integrations",
-    ],
-  },
+const websitePoints = [
+  { icon: PanelsTopLeft, title: "More than a landing page", copy: "A complete multi-page site with room to explain your services, show your work and introduce your business." },
+  { icon: Globe2, title: "Designed around your trade", copy: "Your brand, your domain and your business details, brought together in one coherent online presence." },
+  { icon: Search, title: "Monthly SEO updates", copy: "Included in Website + SEO and Complete Package. SEO updates are not bundled into Premium Website." },
 ];
 
-function FeatureAccordion({
-  feature,
-  isActive,
-  onClick,
-}: {
-  feature: (typeof features)[0];
-  isActive: boolean;
-  onClick: () => void;
-}) {
-  const Icon = feature.icon;
-
-  return (
-    <div className="rounded-xl overflow-hidden transition-all duration-300">
-      <button
-        onClick={onClick}
-        className={`w-full text-left p-5 transition-all duration-300 ${
-          isActive 
-            ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/20 rounded-t-xl" 
-            : "bg-white hover:bg-slate-50 text-slate-900 rounded-xl border border-slate-200"
-        }`}
-      >
-        <div className="flex items-start gap-4">
-          <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
-            isActive ? "bg-white/20" : "bg-amber-50"
-          }`}>
-            <Icon size={20} className={isActive ? "text-white" : "text-amber-600"} />
-          </div>
-          <div className="flex-1 min-w-0">
-            <h3 className="font-semibold mb-1">{feature.title}</h3>
-            <p className={`text-sm ${isActive ? "text-white/80" : "text-slate-500"}`}>
-              {feature.tagline}
-            </p>
-          </div>
-          <ChevronRight size={20} className={`flex-shrink-0 transition-transform duration-300 ${
-            isActive ? "text-white rotate-90" : "text-slate-400"
-          }`} />
-        </div>
-      </button>
-      
-      {/* Expandable content underneath */}
-      <div className={`overflow-hidden transition-all duration-300 ${
-        isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-      }`}>
-        <div className="bg-white border border-t-0 border-slate-200 rounded-b-xl p-6">
-          <p className="text-slate-600 mb-4">{feature.description}</p>
-          <ul className="space-y-2">
-            {feature.details.map((detail, index) => (
-              <li key={index} className="flex items-center gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                <span className="text-slate-700 text-sm">{detail}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function FeaturesSection() {
-  const [activeFeature, setActiveFeature] = useState(0);
-
-  const handleDemoClick = () => {
-    window.open("https://www.premium-landscapes.co.uk", "_blank", "noopener,noreferrer");
-  };
-
-  const handleToggle = (index: number) => {
-    setActiveFeature(activeFeature === index ? -1 : index);
-  };
-
+  const showExample = () => window.open("https://www.premium-landscapes.co.uk", "_blank", "noopener,noreferrer");
   return (
-    <section id="features" className="py-24 md:py-32 bg-slate-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium text-amber-600 tracking-wide uppercase mb-3">Features</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Everything You Need
-          </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            A complete system designed for landscaping businesses. No technical knowledge required.
-          </p>
+    <section id="features" className="bg-slate-50 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-14 max-w-3xl">
+          <p className="mb-3 text-sm font-medium uppercase tracking-wide text-amber-700">What we build</p>
+          <h2 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-5xl">A complete website that feels like your business.</h2>
+          <p className="mt-5 text-lg leading-relaxed text-slate-600">Premium multi-page websites for tradespeople—planned around the work you do, not squeezed into a generic template.</p>
         </div>
-
-        {/* AI Visualisation showcase */}
-        <div className="mb-12 sm:mb-20 -mx-4 sm:mx-0">
-          <div className="relative sm:max-w-4xl sm:mx-auto sm:rounded-2xl overflow-hidden glow-ring-intense">
-            <img 
-              src={gardenDesignImage} 
-              alt="AI-generated garden design" 
-              className="w-full h-auto min-h-[500px] sm:min-h-0 object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-8">
-              <div className="flex flex-col items-center text-center sm:text-left sm:flex-row sm:items-center sm:justify-between gap-4">
-                <div>
-                  <p className="text-white/60 text-sm mb-1">AI Garden Visualisation</p>
-                  <p className="text-white text-xl sm:text-2xl font-semibold">Delivered in 90 seconds</p>
-                </div>
-                <Button variant="secondary" onClick={handleDemoClick} className="w-full sm:w-auto">
-                  <Play size={16} className="mr-2" />
-                  Try Live Demo
-                  <ExternalLink size={14} className="ml-2" />
-                </Button>
-              </div>
+        <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="space-y-4">
+            {websitePoints.map(({ icon: Icon, title, copy }) => <article key={title} className="flex gap-4 rounded-xl border border-slate-200 bg-white p-5">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-amber-800"><Icon size={19} /></div>
+              <div><h3 className="font-semibold text-slate-950">{title}</h3><p className="mt-1 text-sm leading-relaxed text-slate-600">{copy}</p></div>
+            </article>)}
+            <article className="rounded-xl bg-slate-950 p-6 text-white">
+              <div className="flex items-center gap-2 text-amber-300"><Sparkles size={17} /><span className="text-sm font-semibold">Complete Package · £300/month total</span></div>
+              <p className="mt-3 text-sm leading-relaxed text-slate-300">Includes instant quoting and AI garden design, alongside the premium website and monthly SEO updates. AI garden design is for landscapers.</p>
+              <a href="/plans/complete-package" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-amber-200">See the Complete Package <ArrowRight size={15} /></a>
+            </article>
+          </div>
+          <div className="relative overflow-hidden rounded-2xl bg-slate-900">
+            <img src={gardenDesignImage} alt="AI garden design example from Complete Package" className="aspect-[4/3] w-full object-cover" />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 to-transparent p-6 pt-20 sm:p-8 sm:pt-24">
+              <p className="text-sm text-white/70">A feature-specific example</p>
+              <h3 className="mt-1 text-xl font-semibold text-white">AI garden design for landscapers</h3>
+              <Button onClick={showExample} variant="secondary" className="mt-5">Explore the live example <ExternalLink size={15} className="ml-2" /></Button>
             </div>
           </div>
-        </div>
-
-        {/* Feature accordions */}
-        <div className="max-w-3xl mx-auto space-y-3">
-          {features.map((feature, index) => (
-            <FeatureAccordion
-              key={index}
-              feature={feature}
-              isActive={activeFeature === index}
-              onClick={() => handleToggle(index)}
-            />
-          ))}
         </div>
       </div>
     </section>

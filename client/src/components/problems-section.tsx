@@ -1,89 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Ban, 
-  Clock, 
-  MessageSquareX, 
-  Eye, 
-  Calculator, 
-  Shield,
-  CheckCircle2
-} from "lucide-react";
+import { BriefcaseBusiness, Camera, Compass, PanelsTopLeft, Search, Wrench } from "lucide-react";
 
-const problems = [
-  {
-    icon: Ban,
-    problem: "Time-wasting tyre-kickers",
-    solution: "Qualifies buyers and sets price expectations upfront before you lift a finger",
-  },
-  {
-    icon: MessageSquareX,
-    problem: '"Can you just quote it?" enquiries',
-    solution: "Customers see real costs instantly - no more unpaid site visits for unrealistic budgets",
-  },
-  {
-    icon: Eye,
-    problem: '"I can\'t picture it" blockers',
-    solution: "AI visualisation shows customers their finished garden in 90 seconds - approvals happen faster",
-  },
-  {
-    icon: Clock,
-    problem: "Endless admin and follow-up chasing",
-    solution: "Automates first interaction entirely - your website works 24/7 while you focus on jobs",
-  },
-  {
-    icon: Calculator,
-    problem: "Underpricing due to guesswork",
-    solution: "Standardises pricing logic across every quote - protects your margins consistently",
-  },
-  {
-    icon: Shield,
-    problem: '"That seems expensive" objections',
-    solution: "Educates clients landscaping costs with visual proof",
-  },
+const priorities = [
+  { icon: PanelsTopLeft, title: "Show the whole business", copy: "Bring your services, team, approach and contact details together across a considered multi-page site." },
+  { icon: Camera, title: "Put the work up front", copy: "Give finished projects the space they need, so visitors can see the standard of your work." },
+  { icon: Compass, title: "Make the next step obvious", copy: "Help potential customers understand what you do and how to ask you about a job." },
+  { icon: Search, title: "Keep the site moving forward", copy: "Choose monthly SEO updates with Website + SEO or Complete Package." },
+  { icon: Wrench, title: "Built for trades", copy: "Your site is shaped around your real services rather than a generic small-business template." },
+  { icon: BriefcaseBusiness, title: "Additional tools when relevant", copy: "Instant quoting and AI garden design are exclusive to Complete Package; garden design is for landscapers." },
 ];
 
 export function ProblemsSection() {
   return (
-    <section className="py-24 md:py-32 bg-slate-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium text-amber-400 tracking-wide uppercase mb-3">
-            Sound Familiar?
-          </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Problems We Solve
-          </h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Every landscaper knows these frustrations. Our system eliminates them.
-          </p>
+    <section className="bg-slate-900 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-14 max-w-3xl">
+          <p className="mb-3 text-sm font-medium uppercase tracking-wide text-amber-400">Your online presence</p>
+          <h2 className="mb-4 text-3xl font-semibold text-white sm:text-5xl">A great job deserves a great website.</h2>
+          <p className="text-lg leading-relaxed text-slate-300">A single page rarely tells the full story. Give customers a proper view of your business and the work you’re proud to put your name to.</p>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {problems.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <Card 
-                key={index} 
-                className="bg-slate-800/50 border-slate-700 hover:border-amber-500/50 transition-all duration-300"
-                data-testid={`card-problem-${index}`}
-              >
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-6">
-                    <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0 glow-ring">
-                      <Icon size={20} className="text-red-400" />
-                    </div>
-                    <div className="flex-1 pl-4">
-                      <p className="font-semibold text-white mb-3">{item.problem}</p>
-                      <div className="flex items-start gap-3">
-                        <CheckCircle2 size={18} className="text-amber-500 flex-shrink-0 mt-0.5" />
-                        <p className="text-slate-300 text-sm leading-relaxed">{item.solution}</p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {priorities.map(({ icon: Icon, title, copy }) => <Card key={title} className="border-slate-700 bg-slate-800/70 text-white">
+            <CardContent className="p-6">
+              <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-amber-400/15 text-amber-300"><Icon size={20} /></div>
+              <h3 className="font-semibold">{title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-300">{copy}</p>
+            </CardContent>
+          </Card>)}
         </div>
       </div>
     </section>

@@ -20,6 +20,7 @@ import LocationsIndex from "@/pages/locations-index";
 import PlanQuoteAndDesign from "@/pages/plan-quote-and-design";
 import PlanFullSystem from "@/pages/plan-full-system";
 import PlanPremiumPackage from "@/pages/plan-premium-package";
+import PlanDetail from "@/pages/plan-detail";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 
 declare global {
@@ -55,6 +56,9 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/features" component={Features} />
       <Route path="/pricing" component={Pricing} />
+      <Route path="/plans/premium-website">{() => <PlanDetail planIndex={0} />}</Route>
+      <Route path="/plans/website-and-seo">{() => <PlanDetail planIndex={1} />}</Route>
+      <Route path="/plans/complete-package">{() => <PlanDetail planIndex={2} />}</Route>
       <Route path="/faq" component={FAQ} />
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />

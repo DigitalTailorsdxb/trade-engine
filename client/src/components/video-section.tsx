@@ -49,14 +49,14 @@ export function VideoSection() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 mb-8">
             <div className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
-            <span className="text-xs font-medium tracking-wide uppercase">Live System Walkthrough</span>
+            <span className="text-xs font-medium tracking-wide uppercase">Complete Package feature example</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Watch the System Build a Quote Live
+            See Instant Quoting in Action
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            From garden size → budget → full price + design in 90 seconds
+            A feature-specific example from the Premium Landscapes website
           </p>
         </div>
 
@@ -96,7 +96,7 @@ export function VideoSection() {
             data-testid="button-video-demo"
           >
             <Play size={18} className="mr-2" />
-            Try the Demo
+            Explore the Live Example
             <ArrowRight size={16} className="ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
           </Button>
           <Button

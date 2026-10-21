@@ -8,7 +8,7 @@ export default function Terms() {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Terms of Service | Trade Engine</title>
-        <meta name="description" content="Trade Engine terms of service. Important information about our AI-powered landscaping website platform, pricing, and service agreements." />
+        <meta name="description" content="Trade Engine terms of service for our website design and ongoing website services for tradespeople." />
         <link rel="canonical" href="https://trade-engine.co.uk/terms" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
@@ -52,17 +52,16 @@ export default function Terms() {
             Registered office: East Midlands, United Kingdom
           </p>
           <p>
-            Trade Engine AI Ltd provides software-based tools for indicative landscaping pricing, design visualisations, and customer data capture.
+            Trade Engine AI Ltd builds complete, premium multi-page websites for tradespeople. Depending on the selected plan, the service may also include monthly SEO updates, instant quoting, and AI garden design for landscapers.
           </p>
           <p><strong>We are not a landscaping contractor.</strong></p>
 
           <h2>3. Nature of the Service (Important)</h2>
-          <p><strong>Our platform provides:</strong></p>
+          <p><strong>Our website service may include, according to the selected plan:</strong></p>
           <ul>
-            <li>Indicative landscaping cost estimates</li>
-            <li>AI-generated concept designs and visualisations</li>
-            <li>Data collection tools for customer requirements</li>
-            <li>Storage of submitted information, designs, and quotes</li>
+            <li>Design, development and ongoing provision of a multi-page business website</li>
+            <li>Monthly SEO updates on Website + SEO and Complete Package</li>
+            <li>Instant quoting and AI garden design only in Complete Package</li>
           </ul>
           <p><strong>What the service is NOT:</strong></p>
           <ul>

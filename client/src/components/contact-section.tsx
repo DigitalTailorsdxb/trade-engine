@@ -23,7 +23,7 @@ export function ContactSection() {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Book a free video call to see Trade Engine in action and discuss how it can work for your business.
+            Talk through a complete, premium website for your trade business and choose the right plan.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export function ContactSection() {
                 Book a Video Call
               </h3>
               <p className="text-slate-600 mb-6">
-                Schedule a free 30-minute demo call. We'll show you how Trade Engine works and answer all your questions.
+                Arrange a 30-minute conversation about your business, website and the plan that fits.
               </p>
               <ul className="text-sm text-slate-600 space-y-2 mb-6 text-left">
                 <li className="flex items-center gap-3">

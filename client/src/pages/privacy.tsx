@@ -40,7 +40,7 @@ export default function Privacy() {
           <h2>1. Introduction</h2>
           <p>
             Trade Engine AI Ltd ("we", "us", "our") is committed to protecting your privacy and personal data.
-            This Privacy Policy explains how we collect, use, store, and protect personal information when you use our website, software, and services.
+            This Privacy Policy explains how we collect, use, store, and protect personal information when you use our website and website design and support services.
             By using this website, you agree to the collection and use of information in accordance with this policy.
           </p>
 

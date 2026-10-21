@@ -20,21 +20,21 @@ export function HeroSection() {
           {/* Subtle badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary mb-8">
             <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs font-medium tracking-wide uppercase">For Landscaping Businesses</span>
+            <span className="text-xs font-medium tracking-wide uppercase">Complete websites for tradespeople</span>
           </div>
 
           {/* Main headline - clean and impactful */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">AI Quoting Software</span>
+            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">A website that</span>
             <br />
             <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
-              for Landscaping Businesses
+              does your work justice
             </span>
           </h1>
 
           {/* Subheadline */}
           <div className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto px-2 text-center">
-            <p>Instant quotes and pricing-led designs generated directly from your pricing — fully automated, 24/7.</p>
+            <p>We build complete, premium multi-page websites that show what you do, how well you do it, and make it easy for customers to get in touch.</p>
           </div>
 
           {/* CTA Buttons - clean and prominent */}
@@ -46,7 +46,7 @@ export function HeroSection() {
               data-testid="button-hero-demo"
             >
               <Play size={18} className="mr-2" />
-              Try the Demo
+              View the Live Example
               <ArrowRight size={16} className="ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
             </Button>
             <Button
@@ -65,16 +65,16 @@ export function HeroSection() {
           {/* Stats - minimal and elegant */}
           <div className="flex flex-wrap gap-6 sm:gap-8 md:gap-12 border-t border-slate-200 pt-8 justify-center">
             <div className="text-center">
-              <p className="text-2xl sm:text-3xl font-bold text-amber-600">15s</p>
-              <p className="text-xs sm:text-sm text-slate-500 mt-1">Quote generation</p>
+              <p className="text-2xl sm:text-3xl font-bold text-amber-600">Multi-page</p>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">Built for your services</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl sm:text-3xl font-bold text-amber-600">90s</p>
-              <p className="text-xs sm:text-sm text-slate-500 mt-1">AI design delivery</p>
+              <p className="text-2xl sm:text-3xl font-bold text-amber-600">Your brand</p>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">Your domain, your story</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl sm:text-3xl font-bold text-amber-600">24/7</p>
-              <p className="text-xs sm:text-sm text-slate-500 mt-1">Automation</p>
+              <p className="text-2xl sm:text-3xl font-bold text-amber-600">From £129.99</p>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">Per month</p>
             </div>
           </div>
         </div>

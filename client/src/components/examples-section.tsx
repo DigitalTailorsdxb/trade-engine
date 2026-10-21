@@ -8,12 +8,12 @@ export function ExamplesSection() {
     <section className="py-24 md:py-32 bg-slate-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Try the Demo</p>
+          <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Complete Package examples</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Real Examples, Real Results
+            See the quoting and design examples
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            See exactly what your customers receive — a professional PDF quote and an AI-generated garden design, delivered automatically.
+            These feature-specific examples come from the Premium Landscapes demo. Instant quoting and AI garden design are included only in Complete Package.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export function ExamplesSection() {
                   </div>
                   <p className="text-2xl font-bold text-slate-900 mb-2">PDF Quote Example</p>
                   <p className="text-slate-600 max-w-xs mx-auto">
-                    A fully itemised quote with pricing, product selections, and project details — generated in 15 seconds.
+                    A sample itemised quote showing project selections and pricing.
                   </p>
                 </div>
               </div>

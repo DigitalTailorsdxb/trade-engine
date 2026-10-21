@@ -169,7 +169,7 @@ export default function BlogPost() {
                 Ready to See It In Action?
               </h3>
               <p className="text-white/80 mb-6 max-w-lg mx-auto">
-                Try the demo and see how instant quoting and AI design works for landscaping businesses.
+                Explore the Premium Landscapes live website and its feature-specific examples. Instant quoting and AI garden design are included only in Complete Package.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
@@ -180,7 +180,7 @@ export default function BlogPost() {
                   data-testid="button-blog-cta-demo"
                 >
                   <Play size={18} className="mr-2" />
-                  Try the Demo
+                  View Live Example
                   <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button

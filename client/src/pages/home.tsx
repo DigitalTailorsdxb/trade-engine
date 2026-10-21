@@ -16,18 +16,18 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Trade Engine | AI Websites for Landscaping Businesses</title>
-        <meta name="description" content="White-label AI websites for landscaping businesses. Instant quotes in 15 seconds, photorealistic garden designs, and 24/7 automated follow-ups. From £199/month." />
+        <title>Trade Engine | Premium Websites for Tradespeople</title>
+        <meta name="description" content="Complete, premium multi-page websites for tradespeople. Website plans from £129.99/month, with monthly SEO updates or a complete package for £300/month." />
         <link rel="canonical" href="https://trade-engine.co.uk/" />
-        <meta property="og:title" content="Trade Engine | AI Websites for Landscaping Businesses" />
-        <meta property="og:description" content="White-label AI websites for landscaping businesses. Instant quotes in 15 seconds, photorealistic garden designs, and 24/7 automated follow-ups. From £199/month." />
+        <meta property="og:title" content="Trade Engine | Premium Websites for Tradespeople" />
+        <meta property="og:description" content="Complete, premium multi-page websites for tradespeople. Plans from £129.99/month." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/" />
         <meta property="og:image" content="https://trade-engine.co.uk/favicon.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://trade-engine.co.uk/favicon.png" />
-        <meta name="twitter:title" content="Trade Engine | AI Websites for Landscaping Businesses" />
-        <meta name="twitter:description" content="AI-powered white-label websites for landscaping businesses. Instant quotes, garden designs, and 24/7 automated follow-ups. Plans from £199/month." />
+        <meta name="twitter:title" content="Trade Engine | Premium Websites for Tradespeople" />
+        <meta name="twitter:description" content="Complete, premium multi-page websites for tradespeople. Plans from £129.99/month." />
       </Helmet>
       <LaunchBanner />
       <Navigation />

@@ -12,17 +12,17 @@ const steps = [
   {
     icon: Settings,
     number: "02",
-    title: "Setup & Configuration",
+    title: "Design & Build",
     description:
-      "We configure everything with your branding — logo, colours, contact details, pricing, and automation workflows.",
-    duration: "1 week",
+      "We design your complete website around your branding, services, project photos and contact details. Complete Package also includes instant quoting and AI garden design.",
+    duration: "Your website build",
   },
   {
     icon: GraduationCap,
     number: "03",
     title: "Training",
     description:
-      "Quick walkthrough of your new system. We show you how to manage leads, adjust pricing, and make the most of every feature.",
+      "We walk you through your new website and explain how to request changes or updates.",
     duration: "1 hour session",
   },
   {
@@ -30,7 +30,7 @@ const steps = [
     number: "04",
     title: "Go Live",
     description:
-      "Your new website goes live and starts converting leads immediately. Watch the quotes roll in from day one.",
+      "Once the website is ready and approved, it goes live on your domain.",
     duration: "Launch day",
   },
   {
@@ -38,7 +38,7 @@ const steps = [
     number: "05",
     title: "Ongoing Support",
     description:
-      "We handle all updates, optimizations, and technical issues. You focus on running your business — we've got your back.",
+      "We explain how to get help with your website. Website + SEO and Complete Package also include monthly SEO updates.",
     duration: "Continuous",
   },
 ];
@@ -54,12 +54,11 @@ export function HowItWorksSection() {
             <span className="text-sm font-medium">Simple Process</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            From Zero to Converting Leads{" "}
-            <span className="text-primary">in Just One Week</span>
+            From first conversation{" "}
+            <span className="text-primary">to a website that feels like yours</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We've streamlined the entire process so you can focus on what matters — running
-            your business while we handle the tech.
+            We get to know your trade and your business, shape the site around your work, and keep you involved as it comes together.
           </p>
         </div>
 
@@ -138,7 +137,7 @@ export function HowItWorksSection() {
             <div className="text-left">
               <p className="font-semibold text-foreground">Ready to get started?</p>
               <p className="text-sm text-muted-foreground">
-                Most clients see their first lead within 48 hours of launch
+                Tell us about your trade, your services and the website you want
               </p>
             </div>
           </div>

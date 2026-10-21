@@ -29,8 +29,7 @@ export function CTASection() {
 
             {/* Subheadline */}
             <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-              Join the growing number of landscaping businesses using AI-powered websites to
-              convert more leads and close more deals.
+              Tell us what your trade business does and what you want customers to see. We’ll talk through a complete multi-page website that fits.
             </p>
 
             {/* CTA Buttons */}
@@ -63,7 +62,7 @@ export function CTASection() {
 
             {/* Trust indicators */}
             <p className="text-sm text-white/60">
-              No obligation. Free consultation. See results in your first month.
+              Explore the live example or get in touch to discuss your website.
             </p>
           </div>
         </div>

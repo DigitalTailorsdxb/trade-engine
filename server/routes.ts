@@ -15,7 +15,12 @@ export async function registerRoutes(
       const validatedData = insertContactSchema.parse(req.body);
       
       // Store the contact submission
-      const contact = await storage.createContact(validatedData);
+      const contact = await storage.createContact({
+        ...validatedData,
+        phone: validatedData.phone ?? undefined,
+        company: validatedData.company ?? undefined,
+        message: validatedData.message ?? undefined,
+      });
       
       // Return success response
       res.status(201).json({

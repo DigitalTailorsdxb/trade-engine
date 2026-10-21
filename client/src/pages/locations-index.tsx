@@ -14,19 +14,19 @@ export default function LocationsIndex() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Landscaping Estimating Software — All UK Locations | Trade Engine</title>
+        <title>Landscaping Websites Across the UK | Trade Engine</title>
         <meta
           name="description"
-          content="Trade Engine serves landscaping businesses across the UK. AI-powered quoting, garden visualisation, and automated follow-ups — available in 99 cities and towns. Find your location."
+          content="Trade Engine builds complete, premium multi-page websites for landscaping businesses across the UK. Find your location and explore our website plans."
         />
         <link rel="canonical" href="https://trade-engine.co.uk/locations" />
-        <meta property="og:title" content="Landscaping Estimating Software — All UK Locations | Trade Engine" />
-        <meta property="og:description" content="AI-powered landscaping estimating software available across the UK. Find your city and see how Trade Engine can help your landscaping business grow." />
+        <meta property="og:title" content="Landscaping Websites Across the UK | Trade Engine" />
+        <meta property="og:description" content="Complete, premium multi-page websites for landscaping businesses across the UK." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/locations" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Landscaping Estimating Software — All UK Locations | Trade Engine" />
-        <meta name="twitter:description" content="AI-powered landscaping estimating software available across the UK in 99 cities and towns." />
+        <meta name="twitter:title" content="Landscaping Websites Across the UK | Trade Engine" />
+        <meta name="twitter:description" content="Complete, premium multi-page websites for landscaping businesses across the UK." />
       </Helmet>
 
       <Navigation />
@@ -39,11 +39,11 @@ export default function LocationsIndex() {
             <span className="text-amber-700 text-sm font-medium">{totalLocations} UK locations</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-5">
-            Landscaping Estimating Software<br className="hidden sm:block" />
+            Websites for Landscapers<br className="hidden sm:block" />
             Across the UK
           </h1>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
-            Trade Engine serves landscaping businesses in cities and towns across England, Scotland, Wales, and Northern Ireland. Select your location to find out how we can help you win more jobs.
+            We build complete, premium multi-page websites for landscaping businesses in cities and towns across England, Scotland, Wales, and Northern Ireland. Select a location to explore.
           </p>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function LocationsIndex() {
               Don't see your city?
             </h2>
             <p className="text-slate-300 mb-8 max-w-xl mx-auto">
-              We serve landscaping businesses across the whole of the UK. If your town isn't listed, get in touch — we can still help.
+              We work with tradespeople throughout the UK. If your town isn't listed, get in touch and tell us about your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
