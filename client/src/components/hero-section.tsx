@@ -20,21 +20,21 @@ export function HeroSection() {
           {/* Subtle badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary mb-8">
             <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs font-medium tracking-wide uppercase">Complete websites for tradespeople</span>
+            <span className="text-xs font-medium tracking-wide uppercase">Trade websites built around your business</span>
           </div>
 
           {/* Main headline - clean and impactful */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">A website that</span>
+            <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">Trade websites</span>
             <br />
             <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 bg-clip-text text-transparent">
-              does your work justice
+              made to do your work justice
             </span>
           </h1>
 
           {/* Subheadline */}
           <div className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto px-2 text-center">
-            <p>We build complete, premium multi-page websites that show what you do, how well you do it, and make it easy for customers to get in touch.</p>
+            <p>Complete, premium multi-page websites for tradespeople. Put your services and projects in focus, then give every visitor a clear way to enquire.</p>
           </div>
 
           {/* CTA Buttons - clean and prominent */}

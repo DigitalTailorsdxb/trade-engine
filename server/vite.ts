@@ -5,6 +5,7 @@ import viteConfig from "../vite.config";
 import fs from "fs";
 import path from "path";
 import { nanoid } from "nanoid";
+import { installSeoRoutes, pageHtml, type PageRenderer } from "./page-response";
 
 const viteLogger = createLogger();
 
@@ -29,6 +30,9 @@ export async function setupVite(server: Server, app: Express) {
     appType: "custom",
   });
 
+  const loadRenderer = async () =>
+    await vite.ssrLoadModule("/src/entry-server.tsx") as PageRenderer;
+  installSeoRoutes(app, loadRenderer);
   app.use(vite.middlewares);
 
   app.use("/{*path}", async (req, res, next) => {
@@ -48,8 +52,10 @@ export async function setupVite(server: Server, app: Express) {
         `src="/src/main.tsx"`,
         `src="/src/main.tsx?v=${nanoid()}"`,
       );
-      const page = await vite.transformIndexHtml(url, template);
-      res.status(200).set({ "Content-Type": "text/html" }).end(page);
+      const transformed = await vite.transformIndexHtml(url, template);
+      const renderer = await loadRenderer();
+      const page = renderer.render(url);
+      res.status(page.status).set({ "Content-Type": "text/html" }).end(pageHtml(transformed, page));
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
       next(e);

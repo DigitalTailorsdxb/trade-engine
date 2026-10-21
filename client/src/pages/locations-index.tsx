@@ -21,12 +21,14 @@ export default function LocationsIndex() {
         />
         <link rel="canonical" href="https://trade-engine.co.uk/locations" />
         <meta property="og:title" content="Landscaping Websites Across the UK | Trade Engine" />
-        <meta property="og:description" content="Complete, premium multi-page websites for landscaping businesses across the UK." />
+        <meta property="og:description" content="Complete landscaping websites across the UK. Complete Package is exclusively for landscaping companies." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/locations" />
+        <meta property="og:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Landscaping Websites Across the UK | Trade Engine" />
-        <meta name="twitter:description" content="Complete, premium multi-page websites for landscaping businesses across the UK." />
+        <meta name="twitter:description" content="Complete landscaping websites across the UK. Complete Package is exclusively for landscaping companies." />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
       </Helmet>
 
       <Navigation />
@@ -43,7 +45,7 @@ export default function LocationsIndex() {
             Across the UK
           </h1>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
-            We build complete, premium multi-page websites for landscaping businesses in cities and towns across England, Scotland, Wales, and Northern Ireland. Select a location to explore.
+            We build complete, premium multi-page websites for landscaping businesses in cities and towns across the UK. Select a location to explore. Complete Package is available exclusively to landscaping companies; our £129.99 and £149.99 monthly plans are open to all trades.
           </p>
         </div>
       </section>
@@ -66,7 +68,7 @@ export default function LocationsIndex() {
                     {locs.map((loc) => (
                       <Link
                         key={loc.slug}
-                        href={`/landscaping-estimating-software-${loc.slug}`}
+                        href={`/landscaping-websites/${loc.slug}`}
                         className="group flex items-center justify-between bg-slate-50 hover:bg-amber-50 border border-slate-200 hover:border-amber-300 rounded-xl px-4 py-3 transition-all"
                         data-testid={`link-location-${loc.slug}`}
                       >

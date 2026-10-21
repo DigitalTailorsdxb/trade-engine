@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
-import { HelmetProvider } from "react-helmet-async";
+import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
@@ -17,6 +17,7 @@ import BlogPost from "@/pages/blog-post";
 import NotFound from "@/pages/not-found";
 import LocationPage from "@/pages/location-page";
 import LocationsIndex from "@/pages/locations-index";
+import Landscaping from "@/pages/landscaping";
 import PlanQuoteAndDesign from "@/pages/plan-quote-and-design";
 import PlanFullSystem from "@/pages/plan-full-system";
 import PlanPremiumPackage from "@/pages/plan-premium-package";
@@ -29,7 +30,8 @@ declare global {
   }
 }
 
-const LOCATION_PREFIX = "/landscaping-estimating-software-";
+const LEGACY_LOCATION_PREFIX = "/landscaping-estimating-software-";
+const LOCATION_PREFIX = "/landscaping-websites/";
 
 function usePageTracking() {
   const [location] = useLocation();
@@ -46,8 +48,10 @@ function Router() {
   usePageTracking();
   const [location] = useLocation();
 
-  if (location.startsWith(LOCATION_PREFIX)) {
-    const citySlug = location.slice(LOCATION_PREFIX.length).split("?")[0];
+  if (location.startsWith(LOCATION_PREFIX) || location.startsWith(LEGACY_LOCATION_PREFIX)) {
+    const citySlug = location.startsWith(LOCATION_PREFIX)
+      ? location.slice(LOCATION_PREFIX.length).split("?")[0]
+      : location.slice(LEGACY_LOCATION_PREFIX.length).split("?")[0];
     return <LocationPage citySlug={citySlug} />;
   }
 
@@ -55,6 +59,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/features" component={Features} />
+      <Route path="/landscaping-websites" component={Landscaping} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/plans/premium-website">{() => <PlanDetail planIndex={0} />}</Route>
       <Route path="/plans/website-and-seo">{() => <PlanDetail planIndex={1} />}</Route>
@@ -74,9 +79,9 @@ function Router() {
   );
 }
 
-function App() {
+function App({ helmetContext }: { helmetContext?: { helmet?: HelmetServerState } } = {}) {
   return (
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <Toaster />

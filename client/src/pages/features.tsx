@@ -6,21 +6,26 @@ import { ArrowRight, Check, ExternalLink, Globe2, Search, Sparkles } from "lucid
 
 const benefits = [
   { icon: Globe2, title: "A complete website", body: "Multi-page websites built around your services, your work and the customers you want to reach—not a one-page placeholder." },
-  { icon: Search, title: "Monthly SEO updates", body: "Included with Website + SEO and Complete Package, giving your website regular on-page attention." },
-  { icon: Sparkles, title: "Quoting and garden design", body: "Instant quoting and AI garden design are available together in Complete Package. AI garden design is for landscaping businesses." },
+  { icon: Search, title: "Monthly SEO updates", body: "Included with Website + SEO for every trade, and Complete Package for landscaping companies only." },
+  { icon: Sparkles, title: "Quoting and garden design", body: "Instant quoting and AI garden design are included only in Complete Package at £300/month total, available exclusively to landscaping companies." },
 ];
 
 export default function Features() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>What’s Included | Trade Engine Websites for Tradespeople</title>
-        <meta name="description" content="Explore Trade Engine's complete multi-page websites for tradespeople, monthly SEO updates, and Complete Package features for landscapers." />
+        <title>Trade Website Features | Trade Engine</title>
+        <meta name="description" content="Explore complete trade websites, monthly SEO updates and landscaping-only Complete Package features, with instant quoting and AI garden design." />
         <link rel="canonical" href="https://trade-engine.co.uk/features" />
-        <meta property="og:title" content="What’s Included | Trade Engine" />
-        <meta property="og:description" content="Complete websites, monthly SEO updates and optional quoting and AI garden design for landscapers." />
+        <meta property="og:title" content="Trade Website Features | Trade Engine" />
+        <meta property="og:description" content="Complete trade websites and monthly SEO updates. Complete Package with quoting and AI garden design is exclusively for landscaping companies." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/features" />
+        <meta property="og:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Trade Website Features | Trade Engine" />
+        <meta name="twitter:description" content="Explore complete trade websites, SEO options and Complete Package, exclusively for landscaping companies." />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
       </Helmet>
       <Navigation />
       <main>
@@ -53,7 +58,7 @@ export default function Features() {
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300">Optional, not assumed</p>
                   <h3 className="mt-3 text-2xl font-semibold">AI features live in Complete Package.</h3>
-                  <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300">Instant quoting and AI garden design are not part of the base website plans. They are both included in Complete Package at £300/month total. Garden design is aimed at landscapers.</p>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300">Complete Package is available exclusively to landscaping companies at £300/month total. It includes the premium multi-page website, monthly SEO updates, instant quoting and AI garden design. Premium Website and Website + SEO are available across the trades.</p>
                 </div>
                 <Link href="/plans/complete-package" className="inline-flex items-center justify-center gap-2 rounded-lg bg-amber-400 px-5 py-3 font-semibold text-slate-950 hover:bg-amber-300">View Complete Package <ArrowRight size={16} /></Link>
               </div>

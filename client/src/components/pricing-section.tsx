@@ -17,7 +17,7 @@ export function PricingSection() {
         <PlanCards />
 
         <p className="text-center text-slate-500 text-sm max-w-2xl mx-auto">
-          Instant quoting and AI garden design are included only with Complete Package. The £300/month price is the total, not an add-on.
+          Complete Package is exclusively for landscaping companies: £300/month total, including instant quoting and AI garden design. The other two plans serve businesses across the trades.
         </p>
       </div>
     </section>

@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink, Globe2, PanelsTopLeft, Search, Sparkles } from "lucide-react";
-import gardenDesignImage from "@assets/design_(2)_1769642158706.png";
+const gardenDesignImage = "/images/landscaping-garden-design.webp";
 
 const websitePoints = [
   { icon: PanelsTopLeft, title: "More than a landing page", copy: "A complete multi-page site with room to explain your services, show your work and introduce your business." },
   { icon: Globe2, title: "Designed around your trade", copy: "Your brand, your domain and your business details, brought together in one coherent online presence." },
-  { icon: Search, title: "Monthly SEO updates", copy: "Included in Website + SEO and Complete Package. SEO updates are not bundled into Premium Website." },
+  { icon: Search, title: "Monthly SEO updates", copy: "Included in Website + SEO for businesses across the trades, and Complete Package for landscaping companies only." },
 ];
 
 export function FeaturesSection() {
@@ -26,12 +26,12 @@ export function FeaturesSection() {
             </article>)}
             <article className="rounded-xl bg-slate-950 p-6 text-white">
               <div className="flex items-center gap-2 text-amber-300"><Sparkles size={17} /><span className="text-sm font-semibold">Complete Package · £300/month total</span></div>
-              <p className="mt-3 text-sm leading-relaxed text-slate-300">Includes instant quoting and AI garden design, alongside the premium website and monthly SEO updates. AI garden design is for landscapers.</p>
+              <p className="mt-3 text-sm leading-relaxed text-slate-300">Available exclusively to landscaping companies. Includes the premium website, monthly SEO updates, instant quoting and AI garden design at £300/month total.</p>
               <a href="/plans/complete-package" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-amber-200">See the Complete Package <ArrowRight size={15} /></a>
             </article>
           </div>
           <div className="relative overflow-hidden rounded-2xl bg-slate-900">
-            <img src={gardenDesignImage} alt="AI garden design example from Complete Package" className="aspect-[4/3] w-full object-cover" />
+            <img src={gardenDesignImage} alt="AI garden design example from Complete Package" className="aspect-[4/3] w-full object-cover" loading="lazy" width={1000} height={667} />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 to-transparent p-6 pt-20 sm:p-8 sm:pt-24">
               <p className="text-sm text-white/70">A feature-specific example</p>
               <h3 className="mt-1 text-xl font-semibold text-white">AI garden design for landscapers</h3>

@@ -1,15 +1,15 @@
 import { Link } from "wouter";
 import { SiFacebook, SiInstagram, SiYoutube, SiLinkedin } from "react-icons/si";
-import logoImageDark from "@assets/ChatGPT_Image_Jan_29,_2026,_12_14_24_AM_1769645677011.png";
 
 const footerLinks = {
   product: [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Features", href: "/features" },
+    { label: "Pricing", href: "/pricing" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Landscaping websites", href: "/landscaping-websites" },
   ],
   company: [
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/contact" },
     { label: "Blog", href: "/blog" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
@@ -50,9 +50,11 @@ export function Footer() {
           <div className="md:col-span-2 sm:col-span-2">
             <div className="mb-4">
               <img 
-                src={logoImageDark} 
+                src="/images/trade-engine-logo-dark.webp"
                 alt="Trade Engine" 
-                className="h-24 sm:h-32 md:h-40 w-auto"
+                className="h-7 sm:h-8 md:h-9 w-auto max-w-full"
+                width={421}
+                height={64}
               />
             </div>
             <p className="text-slate-400 mb-6 max-w-sm leading-relaxed">
@@ -133,7 +135,7 @@ export function Footer() {
               {featuredLocations.map((loc) => (
                 <li key={loc.slug}>
                   <Link
-                    href={`/landscaping-estimating-software-${loc.slug}`}
+                    href={`/landscaping-websites/${loc.slug}`}
                     className="text-slate-400 hover:text-white transition-colors"
                     data-testid={`link-footer-location-${loc.slug}`}
                   >
@@ -156,6 +158,13 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-slate-800">
+          <div className="mb-8 flex flex-col gap-3 rounded-xl border border-slate-700 bg-slate-800/70 p-5 sm:flex-row sm:items-center sm:justify-between">
+            <p className="font-semibold text-white">Ready to talk about a trade website?</p>
+            <div className="flex flex-col gap-2 text-sm sm:flex-row sm:gap-6">
+              <a className="font-medium text-amber-300 hover:text-amber-200" href="tel:+447877934782">Call 07877 934782</a>
+              <a className="font-medium text-amber-300 hover:text-amber-200" href="mailto:hello@trade-engine.co.uk">hello@trade-engine.co.uk</a>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-slate-500">
               © {new Date().getFullYear()} Trade Engine AI Ltd. All rights reserved.

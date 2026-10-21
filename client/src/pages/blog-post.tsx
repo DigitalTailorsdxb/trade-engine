@@ -49,6 +49,7 @@ export default function BlogPost() {
   if (!post) {
     return (
       <div className="min-h-screen bg-background">
+        <Helmet><title>Article Not Found | Trade Engine Blog</title><meta name="robots" content="noindex, nofollow" /></Helmet>
         <Navigation />
         <main className="pt-32 pb-24">
           <div className="max-w-4xl mx-auto px-4 text-center">
@@ -81,20 +82,20 @@ export default function BlogPost() {
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://trade-engine.co.uk/blog/${post.slug}`} />
-        <meta property="og:image" content={post.image} />
+        <meta property="og:image" content={`https://trade-engine.co.uk${post.image}`} />
         <meta property="article:published_time" content="2026-02-28" />
         <meta property="article:author" content={post.author} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${post.title} | Trade Engine Blog`} />
         <meta name="twitter:description" content={post.excerpt} />
-        <meta name="twitter:image" content={post.image} />
+        <meta name="twitter:image" content={`https://trade-engine.co.uk${post.image}`} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             headline: post.title,
             description: post.excerpt,
-            image: post.image,
+            image: `https://trade-engine.co.uk${post.image}`,
             url: `https://trade-engine.co.uk/blog/${post.slug}`,
             datePublished: "2026-02-28",
             author: {
@@ -106,7 +107,7 @@ export default function BlogPost() {
               name: "Trade Engine AI Ltd",
               logo: {
                 "@type": "ImageObject",
-                url: "https://trade-engine.co.uk/favicon.png",
+                url: "https://trade-engine.co.uk/images/trade-engine-logo.webp",
               },
             },
           })}
@@ -148,6 +149,8 @@ export default function BlogPost() {
               <img
                 src={post.image}
                 alt={post.title}
+                width={1200}
+                height={655}
                 className="w-full aspect-[2/1] object-cover"
               />
             </div>
@@ -166,10 +169,10 @@ export default function BlogPost() {
 
             <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary to-primary/80 text-center">
               <h3 className="text-2xl font-bold text-white mb-3">
-                Ready to See It In Action?
+                Looking for a website for your trade?
               </h3>
               <p className="text-white/80 mb-6 max-w-lg mx-auto">
-                Explore the Premium Landscapes live website and its feature-specific examples. Instant quoting and AI garden design are included only in Complete Package.
+                Explore a complete Trade Engine website, compare monthly plans or read about websites built specifically for landscaping companies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
@@ -180,7 +183,7 @@ export default function BlogPost() {
                   data-testid="button-blog-cta-demo"
                 >
                   <Play size={18} className="mr-2" />
-                  View Live Example
+                  View Premium Landscapes
                   <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button
@@ -194,6 +197,8 @@ export default function BlogPost() {
                     Book a Call
                   </a>
                 </Button>
+                <Link href="/pricing" className="inline-flex items-center justify-center rounded-md border border-white/30 px-5 py-3 font-semibold text-white hover:bg-white/10">Compare plans</Link>
+                <Link href="/landscaping-websites" className="inline-flex items-center justify-center rounded-md border border-white/30 px-5 py-3 font-semibold text-white hover:bg-white/10">Landscaping websites</Link>
               </div>
             </div>
           </div>

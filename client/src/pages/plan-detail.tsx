@@ -9,21 +9,38 @@ import { plans } from "@/lib/pricing-data";
 export default function PlanDetail({ planIndex }: { planIndex: number }) {
   const plan = plans[planIndex];
   const canonical = `https://trade-engine.co.uk${plan.slug}`;
+  const description = planIndex === 2
+    ? "Exclusively for landscaping companies: a premium website, monthly SEO updates, instant quoting and AI garden design. Complete Package is £300/month total."
+    : `${plan.summary} ${plan.price}/month. Available to businesses across the trades.`;
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
         <title>{plan.name} — {plan.price}/month | Trade Engine</title>
-        <meta name="description" content={`${plan.summary} ${plan.price}/month. Complete multi-page websites for tradespeople.`} />
+        <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
         <meta property="og:title" content={`${plan.name} | Trade Engine`} />
-        <meta property="og:description" content={`${plan.summary} ${plan.price}/month.`} />
+        <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonical} />
+        <meta property="og:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${plan.name} | Trade Engine`} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Product",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://trade-engine.co.uk/" },
+            { "@type": "ListItem", position: 2, name: "Pricing", item: "https://trade-engine.co.uk/pricing" },
+            { "@type": "ListItem", position: 3, name: plan.name, item: canonical },
+          ],
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
           name: `Trade Engine ${plan.name}`,
-          description: plan.summary,
+          description,
           offers: { "@type": "Offer", price: plan.price.replace("£", ""), priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: plan.price.replace("£", ""), priceCurrency: "GBP", unitText: "MONTH" } },
         })}</script>
       </Helmet>
@@ -43,6 +60,7 @@ export default function PlanDetail({ planIndex }: { planIndex: number }) {
               <span className="text-slate-500">/ month</span>
             </div>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">{plan.summary}</p>
+            {planIndex === 2 && <p className="mt-4 inline-flex rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-950">Available exclusively to landscaping companies · £300/month total</p>}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild className="bg-slate-950 px-6 text-white hover:bg-slate-800">
                 <Link href="/contact">Talk about your website <ArrowRight size={16} className="ml-2" /></Link>

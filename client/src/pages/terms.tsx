@@ -60,8 +60,8 @@ export default function Terms() {
           <p><strong>Our website service may include, according to the selected plan:</strong></p>
           <ul>
             <li>Design, development and ongoing provision of a multi-page business website</li>
-            <li>Monthly SEO updates on Website + SEO and Complete Package</li>
-            <li>Instant quoting and AI garden design only in Complete Package</li>
+            <li>Monthly SEO updates on Website + SEO and Complete Package (available exclusively to landscaping companies)</li>
+            <li>Instant quoting and AI garden design only in Complete Package, exclusively for landscaping companies at £300/month total</li>
           </ul>
           <p><strong>What the service is NOT:</strong></p>
           <ul>

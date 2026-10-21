@@ -5,9 +5,9 @@ const priorities = [
   { icon: PanelsTopLeft, title: "Show the whole business", copy: "Bring your services, team, approach and contact details together across a considered multi-page site." },
   { icon: Camera, title: "Put the work up front", copy: "Give finished projects the space they need, so visitors can see the standard of your work." },
   { icon: Compass, title: "Make the next step obvious", copy: "Help potential customers understand what you do and how to ask you about a job." },
-  { icon: Search, title: "Keep the site moving forward", copy: "Choose monthly SEO updates with Website + SEO or Complete Package." },
+  { icon: Search, title: "Keep the site moving forward", copy: "Choose monthly SEO updates with Website + SEO, or with Complete Package for landscaping companies only." },
   { icon: Wrench, title: "Built for trades", copy: "Your site is shaped around your real services rather than a generic small-business template." },
-  { icon: BriefcaseBusiness, title: "Additional tools when relevant", copy: "Instant quoting and AI garden design are exclusive to Complete Package; garden design is for landscapers." },
+  { icon: BriefcaseBusiness, title: "Additional tools for landscaping companies", copy: "Instant quoting and AI garden design are included only in Complete Package, exclusively for landscaping companies at £300/month total." },
 ];
 
 export function ProblemsSection() {

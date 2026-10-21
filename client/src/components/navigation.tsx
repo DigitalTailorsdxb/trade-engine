@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
-import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
 
 
 const navLinks = [
   { href: "/", label: "Home", isPage: true },
   { href: "/features", label: "Features", isPage: true },
+  { href: "/landscaping-websites", label: "Landscaping", isPage: true },
   { href: "/pricing", label: "Pricing", isPage: true },
   { href: "/faq", label: "FAQ", isPage: true },
   { href: "/contact", label: "Contact", isPage: true },
@@ -57,18 +57,20 @@ export function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav className="flex items-center justify-between h-16 md:h-20">
+        <nav className="flex items-center justify-between h-10 xl:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center" data-testid="link-logo">
             <img 
-              src={logoImage} 
+              src="/images/trade-engine-logo.webp"
               alt="Trade Engine" 
-              className="h-32 sm:h-40 md:h-48 w-auto"
+              className="h-6 xl:h-7 w-auto"
+              width={514}
+              height={79}
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden xl:flex items-center gap-5">
             {navLinks.map((link) => (
               link.isPage ? (
                 <Link
@@ -94,7 +96,11 @@ export function Navigation() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden xl:flex items-center gap-5">
+            <a href="tel:+447877934782" className="whitespace-nowrap text-sm font-semibold text-slate-700 hover:text-amber-700" aria-label="Call Trade Engine on 07877 934782">07877 934782</a>
+            <a href="mailto:hello@trade-engine.co.uk" className="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-amber-700">hello@trade-engine.co.uk</a>
+          </div>
+          <div className="hidden xl:block">
             <Button
               asChild
               className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 border-0"
@@ -109,16 +115,21 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="xl:hidden p-2 text-foreground"
             data-testid="button-mobile-menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </nav>
 
+        <div className="flex h-6 items-center justify-between gap-2 border-t border-slate-200/70 px-1 text-[10px] font-semibold sm:text-xs xl:hidden">
+          <a href="tel:+447877934782" className="whitespace-nowrap text-slate-800 hover:text-amber-800">Call 07877 934782</a>
+          <a href="mailto:hello@trade-engine.co.uk" className="whitespace-nowrap text-slate-800 hover:text-amber-800">hello@trade-engine.co.uk</a>
+        </div>
+
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t bg-background">
+          <div className="xl:hidden py-4 border-t bg-background">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 link.isPage ? (
@@ -143,6 +154,8 @@ export function Navigation() {
                   </a>
                 )
               ))}
+              <a href="tel:+447877934782" className="px-4 py-2 font-semibold text-slate-800">Call 07877 934782</a>
+              <a href="mailto:hello@trade-engine.co.uk" className="px-4 py-2 font-semibold text-slate-800">hello@trade-engine.co.uk</a>
               <div className="px-4 pt-2">
                 <Button
                   asChild

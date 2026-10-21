@@ -1,0 +1,1 @@
+- [SEO rendering approach](seo-rendering.md) — preserve the existing React stack; public content must be readable without JavaScript and remain interactive after hydration.

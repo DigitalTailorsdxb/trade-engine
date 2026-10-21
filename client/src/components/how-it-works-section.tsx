@@ -14,7 +14,7 @@ const steps = [
     number: "02",
     title: "Design & Build",
     description:
-      "We design your complete website around your branding, services, project photos and contact details. Complete Package also includes instant quoting and AI garden design.",
+      "We design your complete website around your branding, services, project photos and contact details. Complete Package, exclusively for landscaping companies, also includes instant quoting and AI garden design.",
     duration: "Your website build",
   },
   {
@@ -38,7 +38,7 @@ const steps = [
     number: "05",
     title: "Ongoing Support",
     description:
-      "We explain how to get help with your website. Website + SEO and Complete Package also include monthly SEO updates.",
+      "We explain how to get help with your website. Website + SEO and Complete Package also include monthly SEO updates; Complete Package is for landscaping companies only.",
     duration: "Continuous",
   },
 ];

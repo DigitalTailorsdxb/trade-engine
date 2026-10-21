@@ -12,13 +12,13 @@ interface Props { citySlug: string; }
 export default function LocationPage({ citySlug }: Props) {
   const location = getLocation(citySlug);
   if (!location) return <NotFound />;
-  const title = `Premium Landscaping Websites in ${location.name} | Trade Engine`;
-  const description = `Trade Engine builds complete, premium multi-page websites for landscaping businesses in ${location.name} and across ${location.region}. Plans from £129.99/month.`;
-  const canonical = `https://trade-engine.co.uk/landscaping-estimating-software-${location.slug}`;
+  const title = `Landscaping Websites in ${location.name} | Trade Engine`;
+  const description = `Landscaping websites for ${location.name} companies. Premium multi-page designs from £129.99/month, with monthly SEO options. See our live example.`;
+  const canonical = `https://trade-engine.co.uk/landscaping-websites/${location.slug}`;
   const faqs = [
     {
       q: `How much does a landscaping website cost in ${location.name}?`,
-      a: "Our Premium Website plan is £129.99/month. Website + SEO is £149.99/month and includes monthly SEO updates. Complete Package is £300/month total and adds instant quoting and AI garden design.",
+      a: "Premium Website is £129.99/month. Website + SEO is £149.99/month and includes monthly SEO updates. Complete Package is £300/month total and is exclusively for landscaping companies; it includes a premium website, monthly SEO updates, instant quoting and AI garden design.",
     },
     {
       q: "Do you build a complete website or just a landing page?",
@@ -26,7 +26,7 @@ export default function LocationPage({ citySlug }: Props) {
     },
     {
       q: "Is AI garden design included in every plan?",
-      a: "No. AI garden design and instant quoting are included only in Complete Package at £300/month total. AI garden design is specifically for landscaping businesses.",
+      a: "Complete Package is available exclusively to landscaping companies at £300/month total. It includes instant quoting and AI garden design alongside the website and monthly SEO updates. The two other plans are available to businesses across the trades.",
     },
     {
       q: "Can I see a live website example?",
@@ -52,6 +52,20 @@ export default function LocationPage({ citySlug }: Props) {
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonical} />
+        <meta property="og:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://trade-engine.co.uk/" },
+            { "@type": "ListItem", position: 2, name: "Landscaping websites", item: "https://trade-engine.co.uk/landscaping-websites" },
+            { "@type": "ListItem", position: 3, name: location.name, item: canonical },
+          ],
+        })}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
       <Navigation />
@@ -60,15 +74,15 @@ export default function LocationPage({ citySlug }: Props) {
           <div className="mx-auto max-w-5xl">
             <nav className="mb-12 flex items-center gap-2 text-sm text-slate-500" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-amber-700">Home</Link><ChevronRight size={14} />
-              <Link href="/locations" className="hover:text-amber-700">Locations</Link><ChevronRight size={14} />
+              <Link href="/landscaping-websites" className="hover:text-amber-700">Landscaping websites</Link><ChevronRight size={14} />
               <span className="text-slate-800">{location.name}</span>
             </nav>
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm text-amber-900">
               <MapPin size={15} /> Landscaping businesses in {location.name}
             </div>
-            <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-6xl">A website that does your landscaping business justice.</h1>
+            <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-6xl">Landscaping websites in {location.name}</h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
-              We build complete, premium multi-page websites for landscapers in {location.name} and across {location.region}. Put your services, projects and business in the best light online.
+              We build complete, premium multi-page landscaping websites for companies in {location.name} and across {location.region}. Put your services, projects and business in the best light online, with a clear route for customers to enquire.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/pricing" className="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-950 px-6 py-3 font-semibold text-white hover:bg-slate-800">Compare website plans <ArrowRight size={16} /></Link>
@@ -97,7 +111,7 @@ export default function LocationPage({ citySlug }: Props) {
             <div className="mb-12 text-center">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">Plans for {location.name}</p>
               <h2 className="mt-3 text-3xl font-semibold text-slate-950">Choose the right level of support.</h2>
-              <p className="mt-3 text-slate-600">All plans are for complete multi-page websites.</p>
+              <p className="mt-3 text-slate-600">All plans start with a complete multi-page website. Complete Package at £300/month total is exclusively for landscaping companies; the £129.99 and £149.99 plans are open to all trades.</p>
             </div>
             <PlanCards />
           </div>

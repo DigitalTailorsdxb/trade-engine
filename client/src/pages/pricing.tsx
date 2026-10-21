@@ -12,12 +12,17 @@ export default function Pricing() {
     <div className="min-h-screen bg-white">
       <Helmet>
         <title>Website Pricing | Plans from £129.99/month | Trade Engine</title>
-        <meta name="description" content="Premium, multi-page websites for tradespeople. Premium Website £129.99/month, Website + SEO £149.99/month, or Complete Package £300/month total." />
+        <meta name="description" content="Compare premium multi-page websites for tradespeople: Premium Website £129.99/month, Website + SEO £149.99/month, or Complete Package £300/month total for landscaping companies only." />
         <link rel="canonical" href="https://trade-engine.co.uk/pricing" />
         <meta property="og:title" content="Website Pricing | Trade Engine" />
         <meta property="og:description" content="Three clear monthly plans for complete, premium websites for tradespeople." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/pricing" />
+        <meta property="og:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Trade Website Pricing | Trade Engine" />
+        <meta name="twitter:description" content="Compare three monthly website plans. Complete Package at £300/month total is exclusively for landscaping companies." />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -43,7 +48,7 @@ export default function Pricing() {
         <section id="pricing-cards" className="px-4 py-14 sm:py-20">
           <PlanCards />
           <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-slate-500">
-            Website + SEO includes monthly SEO updates. Instant quoting and AI garden design are only included in Complete Package; AI garden design is for landscapers. Complete Package is £300/month total.
+            Website + SEO includes monthly SEO updates. Complete Package is exclusively for landscaping companies: £300/month total for the website, monthly SEO updates, instant quoting and AI garden design.
           </p>
         </section>
         <section className="bg-amber-50 px-4 py-16">

@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Calendar, Clock, Video, ArrowRight } from "lucide-react";
-import logoImage from "@assets/ChatGPT_Image_Jan_28,_2026,_11_37_25_PM_1769643450348.png";
 
 export function ContactSection() {
   const handleBookCall = () => {
@@ -14,9 +13,11 @@ export function ContactSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <img 
-            src={logoImage} 
+            src="/images/trade-engine-logo.webp"
             alt="Trade Engine" 
             className="h-24 sm:h-32 md:h-40 w-auto mx-auto mb-6"
+            width={768}
+            height={512}
           />
           <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Get In Touch</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">

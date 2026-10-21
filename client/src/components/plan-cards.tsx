@@ -24,6 +24,11 @@ export function PlanCards({ compact = false }: { compact?: boolean }) {
           <p className={`mt-3 min-h-14 text-sm leading-relaxed ${index === 2 ? "text-slate-300" : "text-slate-600"}`}>
             {plan.summary}
           </p>
+          {index === 2 && (
+            <p className="mt-3 rounded-lg border border-amber-300/30 bg-amber-300/10 px-3 py-2 text-xs font-semibold leading-relaxed text-amber-200">
+              Landscaping companies only · £300/month total
+            </p>
+          )}
           <div className="mt-6 flex items-baseline gap-2">
             <span className={`text-4xl font-semibold tracking-tight ${index === 2 ? "text-amber-300" : "text-slate-950"}`}>
               {plan.price}

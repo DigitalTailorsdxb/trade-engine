@@ -13,7 +13,7 @@ export function ExamplesSection() {
             See the quoting and design examples
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            These feature-specific examples come from the Premium Landscapes demo. Instant quoting and AI garden design are included only in Complete Package.
+            These feature-specific examples come from the Premium Landscapes demo. They are included only in Complete Package at £300/month total, available exclusively to landscaping companies.
           </p>
         </div>
 

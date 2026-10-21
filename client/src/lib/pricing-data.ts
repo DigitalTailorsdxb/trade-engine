@@ -34,15 +34,16 @@ export const plans = [
     price: "£300",
     slug: "/plans/complete-package",
     legacySlug: "/plans/premium-package",
-    summary: "The full package: premium website, monthly SEO, instant quoting and AI garden design.",
+    summary: "A complete monthly package exclusively for landscaping companies: premium website, monthly SEO, instant quoting and AI garden design.",
     details: [
       "Premium multi-page website",
       "Monthly SEO updates",
       "Instant quoting",
       "AI garden design for landscaping businesses",
-      "The complete package at £300/month total",
+      "Available exclusively to landscaping companies",
+      "£300/month total",
     ],
-    bestFor: "For businesses wanting every included feature; AI garden design is for landscapers.",
+    bestFor: "For landscaping companies only. £300/month is the total price, not an add-on.",
   },
 ] as const;
 
@@ -55,17 +56,17 @@ export const pricingFaqs = [
   {
     question: "What is the difference between the plans?",
     answer:
-      "Premium Website is £129.99/month. Website + SEO is £149.99/month and includes monthly SEO updates. Complete Package is £300/month total and includes the premium website, monthly SEO updates, instant quoting and AI garden design for landscapers.",
+      "Premium Website is £129.99/month and Website + SEO is £149.99/month; both are available to businesses across the trades. Complete Package is £300/month total and is exclusively for landscaping companies. It includes the premium website, monthly SEO updates, instant quoting and AI garden design.",
   },
   {
     question: "Is Complete Package £300 an add-on?",
     answer:
-      "No. £300/month is the total monthly price for Complete Package, including the premium website, monthly SEO updates, instant quoting and AI garden design.",
+      "No. £300/month is the total monthly price, not an add-on. Complete Package is exclusively for landscaping companies and includes the premium website, monthly SEO updates, instant quoting and AI garden design.",
   },
   {
     question: "Is AI included in every plan?",
     answer:
-      "No. Instant quoting and AI garden design are included only in Complete Package. AI garden design is specifically relevant to landscaping businesses.",
+      "No. Instant quoting and AI garden design are included only in Complete Package, which is exclusively for landscaping companies.",
   },
   {
     question: "What does monthly SEO updates mean?",
@@ -80,6 +81,6 @@ export const pricingFaqs = [
   {
     question: "Do you work with trades beyond landscaping?",
     answer:
-      "Yes. Trade Engine builds websites for businesses across the trades. The AI garden design feature in Complete Package is specifically for landscapers.",
+      "Yes. Premium Website (£129.99/month) and Website + SEO (£149.99/month) are for businesses across the trades. Complete Package (£300/month total) is exclusively for landscaping companies.",
   },
 ];

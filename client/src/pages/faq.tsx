@@ -8,9 +8,18 @@ export default function FAQ() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>FAQs | Trade Engine Website Plans</title>
-        <meta name="description" content="Answers about Trade Engine's premium multi-page websites for tradespeople, pricing, monthly SEO updates and Complete Package." />
+        <title>Trade Website FAQs | Trade Engine</title>
+        <meta name="description" content="Answers about trade websites, monthly plans and SEO updates. Complete Package at £300/month total is exclusively for landscaping companies." />
         <link rel="canonical" href="https://trade-engine.co.uk/faq" />
+        <meta property="og:title" content="Trade Website FAQs | Trade Engine" />
+        <meta property="og:description" content="Clear answers about trade websites, monthly SEO updates and plans for tradespeople." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trade-engine.co.uk/faq" />
+        <meta property="og:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Trade Website FAQs | Trade Engine" />
+        <meta name="twitter:description" content="Clear answers about trade websites, monthly SEO updates and plans for tradespeople." />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

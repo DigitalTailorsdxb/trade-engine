@@ -2,7 +2,9 @@
 
 ## Overview
 
-Trade Engine sells complete, premium websites for trade businesses, not SaaS and not just landing pages. Pricing: Premium Website £129.99/month; Website + SEO £149.99/month including monthly SEO updates; Complete Package £300/month total including the premium website, monthly SEO updates, instant quoting and AI garden design. The £300 package is not an additional charge. Premium Landscapes remains the live website example, and existing AI demo links should be preserved. Do not reintroduce the former SaaS tiers, setup-fee promotions, or unconfirmed setup fees and contract terms.
+Trade Engine sells complete, premium websites for trade businesses, not SaaS and not just landing pages. Pricing: Premium Website £129.99/month; Website + SEO £149.99/month including monthly SEO updates; Complete Package £300/month total including the premium website, monthly SEO updates, instant quoting and AI garden design. The entire Complete Package is exclusively for landscaping companies; the other two plans serve all trades. The £300 package is not an additional charge. Premium Landscapes remains the live website example, and existing AI demo links should be preserved. Do not reintroduce the former SaaS tiers, setup-fee promotions, or unconfirmed setup fees and contract terms.
+
+SEO targets: "trade websites" is the primary keyword and "landscaping websites" is secondary. The phone number and email must remain easy to find on both desktop and mobile, including the shared navigation and footer.
 
 The application follows a full-stack TypeScript architecture with a React frontend, Express backend, and PostgreSQL database. The site includes:
 - **Home page**: Hero, Video Walkthrough, Problems, Product Teaser, Examples (PDF/Design), Features preview, Pricing, Testimonials, FAQ, Contact sections

@@ -9,16 +9,18 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Blog | Trade Engine - Insights for Landscaping Businesses</title>
-        <meta name="description" content="Practical insights for tradespeople on building a strong online presence, choosing a website and showcasing the work they do." />
+        <title>Trade Website Advice | Trade Engine Blog</title>
+        <meta name="description" content="Practical advice for tradespeople on choosing a website, presenting services and projects, and making it easier for customers to enquire." />
         <link rel="canonical" href="https://trade-engine.co.uk/blog" />
-        <meta property="og:title" content="Blog | Trade Engine - Insights for Landscaping Businesses" />
+        <meta property="og:title" content="Trade Website Advice | Trade Engine Blog" />
         <meta property="og:description" content="Practical insights for tradespeople on websites, showcasing your work and growing your online presence." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/blog" />
+        <meta property="og:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Blog | Trade Engine - Insights for Landscaping Businesses" />
+        <meta name="twitter:title" content="Trade Website Advice | Trade Engine Blog" />
         <meta name="twitter:description" content="Practical insights for tradespeople on websites, showcasing your work and growing your online presence." />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
       </Helmet>
       <Navigation />
       <main>
@@ -27,10 +29,10 @@ export default function Blog() {
             <div className="text-center mb-16">
               <p className="text-sm font-medium text-primary tracking-wide uppercase mb-3">Blog</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-                Insights for Landscaping Businesses
+                Ideas for better trade websites
               </h1>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Practical advice on quoting, lead generation, and growing your landscaping business with technology.
+                Practical advice on websites, presenting your work and creating a clear next step for customers across the trades.
               </p>
             </div>
 
@@ -46,6 +48,8 @@ export default function Blog() {
                     <div className="aspect-[2/1] overflow-hidden">
                       <img
                         src={post.image}
+                        width={1200}
+                        height={655}
                         alt={post.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"

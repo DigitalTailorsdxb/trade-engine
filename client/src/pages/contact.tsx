@@ -10,15 +10,17 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact Us | Trade Engine</title>
-        <meta name="description" content="Talk to Trade Engine about a complete, premium multi-page website for your trade business. Ask about our website, SEO and Complete Package plans." />
+        <meta name="description" content="Talk to Trade Engine about a premium multi-page trade website, monthly SEO updates, or Complete Package for landscaping companies." />
         <link rel="canonical" href="https://trade-engine.co.uk/contact" />
         <meta property="og:title" content="Contact Us | Trade Engine" />
         <meta property="og:description" content="Talk to Trade Engine about a complete, premium multi-page website for your trade business." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trade-engine.co.uk/contact" />
+        <meta property="og:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us | Trade Engine" />
         <meta name="twitter:description" content="Talk to Trade Engine about a complete, premium multi-page website for your trade business." />
+        <meta name="twitter:image" content="https://trade-engine.co.uk/images/trade-websites-social.jpg" />
       </Helmet>
 
       <Navigation />
@@ -32,7 +34,7 @@ export default function Contact() {
               Let's Talk
             </h1>
             <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
-              Ready to transform your landscaping business? We'd love to hear from you.
+              Tell us about your trade business and the website you need. Call, email or book a conversation.
             </p>
           </div>
         </section>

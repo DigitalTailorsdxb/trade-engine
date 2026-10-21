@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import thumbnailImage from "@assets/ChatGPT_Image_Feb_28,_2026,_12_51_22_PM_1772283436093.png";
 
 export function VideoSection() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -56,7 +55,7 @@ export function VideoSection() {
             See Instant Quoting in Action
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            A feature-specific example from the Premium Landscapes website
+            A feature-specific example from Premium Landscapes. Complete Package is exclusively for landscaping companies.
           </p>
         </div>
 
@@ -69,9 +68,11 @@ export function VideoSection() {
             {!isPlaying ? (
               <div className="relative">
                 <img
-                  src={thumbnailImage}
+                  src="/images/premium-landscapes-demo.webp"
                   alt="Watch the system build a quote live"
                   className="w-full aspect-video object-cover"
+                  width={1200}
+                  height={800}
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none" />
               </div>

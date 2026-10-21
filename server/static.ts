@@ -1,8 +1,10 @@
 import express, { type Express } from "express";
 import fs from "fs";
 import path from "path";
+import { pathToFileURL } from "url";
+import { installSeoRoutes, pageHtml, type PageRenderer } from "./page-response";
 
-export function serveStatic(app: Express) {
+export async function serveStatic(app: Express) {
   const distPath = path.resolve(__dirname, "public");
   if (!fs.existsSync(distPath)) {
     throw new Error(
@@ -10,10 +12,19 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  const renderer = await import(
+    pathToFileURL(path.resolve(__dirname, "ssr", "entry-server.js")).href
+  ) as PageRenderer;
+  const template = await fs.promises.readFile(path.resolve(distPath, "index.html"), "utf-8");
+  installSeoRoutes(app, async () => renderer);
+  app.use(express.static(distPath, { index: false }));
 
-  // fall through to index.html if the file doesn't exist
-  app.use("/{*path}", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  app.get("/{*path}", (req, res, next) => {
+    try {
+      const page = renderer.render(req.originalUrl);
+      res.status(page.status).type("html").send(pageHtml(template, page));
+    } catch (error) {
+      next(error);
+    }
   });
 }

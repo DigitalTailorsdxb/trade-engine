@@ -3,7 +3,7 @@ import { ArrowUpRight, Check, PanelsTopLeft, Route, Search } from "lucide-react"
 const values = [
   { icon: PanelsTopLeft, title: "A fuller picture", copy: "A multi-page structure gives each part of your business its own space." },
   { icon: Route, title: "A clear customer journey", copy: "Make it easy to move from discovering your work to getting in touch." },
-  { icon: Search, title: "Care beyond launch", copy: "Monthly SEO updates are included with Website + SEO and Complete Package." },
+  { icon: Search, title: "Care beyond launch", copy: "Monthly SEO updates are included with Website + SEO and Complete Package. Complete Package is exclusively for landscaping companies." },
 ];
 
 export function TestimonialsSection() {
@@ -27,7 +27,7 @@ export function TestimonialsSection() {
         <div className="mt-14 flex flex-col gap-4 rounded-2xl border border-amber-200 bg-amber-50 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div>
             <p className="font-semibold text-slate-950">AI quoting and garden design are optional.</p>
-            <p className="mt-1 text-sm text-slate-600">Both are included in Complete Package at £300/month total; garden design is for landscapers.</p>
+            <p className="mt-1 text-sm text-slate-600">Complete Package is exclusively for landscaping companies at £300/month total, including instant quoting and AI garden design.</p>
           </div>
           <a href="/plans/complete-package" className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800"><Check size={16} />See Complete Package</a>
         </div>

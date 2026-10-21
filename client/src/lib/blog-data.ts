@@ -1,5 +1,5 @@
-import blogImage1 from "@assets/blog-quoting-landscaping-jobs.png";
-import blogImage2 from "@assets/blog-weekend-enquiries.png";
+const blogImage1 = "/images/landscaping-quoting-advice.webp";
+const blogImage2 = "/images/trade-website-enquiries.webp";
 
 export interface BlogPost {
   slug: string;
@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     date: "28 February 2026",
     readTime: "12 min read",
     author: "Lewis Reid",
-    authorBio: "Lewis Reid ran a landscaping business in the UK for six years before building Trade Engine, an AI-powered quoting and design system for landscaping companies.",
+    authorBio: "Lewis Reid draws on experience running a UK landscaping business to help tradespeople present their services and work clearly online.",
     content: [
       `I spent six years running a landscaping business before I built Trade Engine. During those years, I must have done over a thousand site visits. At least 600 of them went absolutely nowhere.`,
       `I'd drive 30 minutes to look at someone's garden, spend an hour measuring and discussing what they wanted, drive home, spend another two hours creating a detailed quote with material breakdowns and labour costs, send it off, and then... nothing. Or worse, I'd get the "it's more than we thought" email three days later.`,
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     date: "28 February 2026",
     readTime: "14 min read",
     author: "Lewis Reid",
-    authorBio: "Lewis Reid ran a UK landscaping business for six years and lost approximately 47 weekend leads before he figured out he needed automation. He now builds instant quoting systems for landscapers who'd quite like to have their weekends back.",
+    authorBio: "Lewis Reid draws on experience running a UK landscaping business to help tradespeople present their services and work clearly online.",
     content: [
       `It's Saturday evening. You're having dinner with your family, properly switched off from work for once. Somewhere across town, a couple is sitting in their garden talking about finally getting that patio done they've been putting off for two years.`,
       `They pull out their phone, Google "landscapers near me," find your website, and fill in your contact form. Budget's realistic. Timeline's flexible. They're ready to move forward.`,
